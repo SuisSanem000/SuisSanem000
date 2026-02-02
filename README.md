@@ -1,24 +1,6 @@
 # Portfolio Projects
 
-Hello, these are the projects I worked on them, during my past roles. 
-A collection of production-ready projects showcasing expertise in full-stack development, developer tooling, data visualization, and modern web architectures.
-
----
-
-## Projects Overview
-
-**[json-generator](./json-generator)** – VSCode extension and npm package for generating nested sample JSON data using custom templates
-
-**[json-viewer-website-json-viewer-tool](./json-viewer-website-json-viewer-tool)** – Marketing and sales platform for JSON Viewer product with authentication, licensing, and technical blog (12+ articles)
-
-**[internal-task-manager](./internal-task-manager)** – Internal task management system built with PNPM monorepo architecture
-
-**[news-feed-app](./news-feed-app)** – Full-stack news aggregation platform with custom UI library and client-server architecture
-
-**[high-performanc-grid-component](./high-performanc-grid-component)** – Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
-
-**[data-visualization-tool-manager](./data-visualization-tool-manager)** – Sophisticated client manager for data analytics tool with query execution, file management, and licensing systems
-
+Hello, these are the projects I worked on during my past roles. A collection of production-ready projects showcasing expertise in full-stack development, developer tooling, data visualization, and modern web architectures.
 
 ---
 
@@ -49,6 +31,22 @@ These projects represent hands-on experience across **full-stack web development
 - **Task & Project Management** — Internal tools, productivity systems
 - **Content Platforms** — Technical blogging, documentation, educational content
 - **Enterprise Features** — Licensing systems, seat management, user authentication
+
+---
+
+## Projects Overview
+
+**[json-generator](./json-generator)** – VSCode extension and npm package for generating nested sample JSON data using custom templates
+
+**[json-viewer-website-json-viewer-tool](./json-viewer-website-json-viewer-tool)** – Marketing and sales platform for JSON Viewer product with authentication, licensing, and technical blog (12+ articles)
+
+**[internal-task-manager](./internal-task-manager)** – Internal task management system built with PNPM monorepo architecture
+
+**[news-feed-app](./news-feed-app)** – Full-stack news aggregation platform with custom UI library and client-server architecture
+
+**[high-performanc-grid-component](./high-performanc-grid-component)** – Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
+
+**[data-visualization-tool-manager](./data-visualization-tool-manager)** – Sophisticated client manager for data analytics tool with query execution, file management, and licensing systems
 
 ---
 
