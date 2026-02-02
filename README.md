@@ -40,8 +40,6 @@ These projects represent hands-on experience across **full-stack web development
 
 **[json-viewer-website-json-viewer-tool](./json-viewer-website-json-viewer-tool)** – Marketing and sales platform for JSON Viewer product with authentication, licensing, and technical blog (12+ articles)
 
-**[internal-task-manager](./internal-task-manager)** – Internal task management system built with PNPM monorepo architecture
-
 **[news-feed-app](./news-feed-app)** – Full-stack news aggregation platform with custom UI library and client-server architecture
 
 **[high-performanc-grid-component](./high-performanc-grid-component)** – Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
