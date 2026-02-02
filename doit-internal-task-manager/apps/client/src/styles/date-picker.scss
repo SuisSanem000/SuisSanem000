@@ -1,0 +1,29 @@
+.date-picker {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  height: min-content;
+
+  input[type="date"] {
+    width: min-content;
+    background-color: transparent;
+  }
+
+  &-reset {
+    background: none;
+    border: none;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    cursor: pointer;
+    color: var(--color-emphasis-medium);
+    &:hover {
+      color: var(--color-emphasis-high);
+    }
+  }
+
+  &.is-visible {
+    display: inline-flex;
+  }
+}

@@ -1,0 +1,77 @@
+@use "sparrow/src/styles/style-effects" as *;
+@use "sparrow/src/styles/style-scaling" as *;
+@use "sparrow/src/styles/style-common" as *;
+@use "sparrow/src/styles/style-effects" as *;
+@use "sparrow/src/styles/style-text" as *;
+
+.columns-manager {
+  --columns-manager-button-color: var(--color-emphasis-medium);
+  --columns-manager-background-color: var(--color-invert-high);
+  display: none;
+  user-select: none;
+  flex-direction: column;
+  width: min-content;
+  @include padding(6px);
+  @include elevation(40);
+  @include border-radius(9px);
+  @include gap(7px, column);
+  background-color: var(--columns-manager-background-color);
+  position: relative;
+  .visible-items, .invisible-items {
+    @include gap(3px, column);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+  }
+
+  &.is-visible {
+    display: flex;
+  }
+
+  .draggable {
+    &.is-dragging {
+      top: 6px;
+      left: 6px;
+      .cm-item {
+        @include elevation(24);
+      }
+    }
+  }
+
+  .cm-item {
+    min-width: 241px;
+
+    &.is-filled {
+      box-shadow: none;
+    }
+
+    .cm-button {
+      .icon {
+        color: var(--columns-manager-button-color);
+      }
+
+      &.is-ghost:disabled {
+        .icon {
+          --columns-manager-button-color: var(--color-emphasis-12);
+        }
+      }
+    }
+
+    .cm-button-stack {
+      display: flex;
+    }
+
+    .input {
+      width: calc(100% - 90px);
+    }
+  }
+
+  .draggable-shadow {
+    height: 24px;
+    width: 100%;
+    background-color: var(--color-emphasis-08);
+    @include depth(1);
+    @include border-radius(6px);
+  }
+}

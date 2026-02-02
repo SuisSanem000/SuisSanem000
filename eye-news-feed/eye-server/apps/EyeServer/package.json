@@ -1,0 +1,45 @@
+{
+  "name": "eye-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "crawler": "node dist/crawler.js > output.log 2>&1",
+    "generateAllJSONFiles": "node dist/staticGenerators/generateAllJSONFiles.js > output.log 2>&1",
+    "generateAllImageFiles": "node dist/staticGenerators/generateAllImageFiles.js > output.log 2>&1",
+    "saveContentsInFile": "node dist/staticGenerators/saveContentsInFile.js > output.log 2>&1",
+    "crawler-dev": "ts-node src/crawler.ts > output.log 2>&1",
+    "generateAllJSONFiles-dev": "ts-node src/staticGenerators/generateAllJSONFiles.ts > output.log 2>&1",
+    "generateAllImageFiles-dev": "ts-node src/staticGenerators/generateAllImageFiles.ts > output.log 2>&1",
+    "saveContentsInFile-dev": "ts-node src/staticGenerators/saveContentsInFile.ts > output.log 2>&1",
+    "test": "echo Error: no test specified && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "axios": "^1.6.5",
+    "cheerio": "1.0.0-rc.12",
+    "feedparser": "^2.2.10",
+    "fs": "0.0.1-security",
+    "he": "^1.2.0",
+    "jsdom": "^24.0.0",
+    "openai": "4.0.0",
+    "pg": "^8.11.3",
+    "sanitize-html": "^2.11.0",
+    "sharp": "^0.33.2",
+    "sharp-ico": "^0.1.5"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/he": "^1.2.3",
+    "@types/jsdom": "^21.1.6",
+    "@types/mozilla-readability": "^0.2.1",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.10.9",
+    "@types/sanitize-html": "^2.9.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

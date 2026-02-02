@@ -1,0 +1,8 @@
+# macOS specific
+.DS_Store
+
+# Editor directories and files
+.idea/
+
+# Exclude .json files
+*.json

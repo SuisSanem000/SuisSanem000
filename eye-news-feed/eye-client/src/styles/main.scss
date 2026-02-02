@@ -1,0 +1,30 @@
+@use "title-bar" as *;
+@use "news" as *;
+@use "news-preview" as *;
+@use "filter" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--color-background-2);
+
+  .eye-app-container {
+    max-width: 1184px;
+    margin: 0 auto;
+
+    .news-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: var(--color-background-1);
+    }
+  }
+}

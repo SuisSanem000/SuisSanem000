@@ -1,0 +1,219 @@
+@use "sparrow/src/styles/style-common" as *;
+
+.container {
+  outline: none;
+  height: fit-content;
+  background-color: var(--color-invert-high);
+  user-select: none;
+}
+
+.headerBlock {
+  display: flex;
+  height: 25px;
+  border: 1px solid var(--color-emphasis-08);
+  border-left: none;
+}
+
+.normalCellContainer {
+  display: flex;
+  width: 100%;
+
+  .headerCell {
+    --header-cell-background-color: unset;
+    --header-cell-text-color: var(--color-emphasis-high);
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: var(--header-cell-text-color);
+    text-transform: capitalize;
+    padding: 3px 9px;
+
+    &:first-child {
+      width: 815px;
+      padding: 3px 9px 3px 39px;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--color-emphasis-08);
+    }
+
+    &:not(:first-child) {
+      width: 151px;
+    }
+
+    .resizeHandle {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+}
+
+.rowBlock {
+  display: flex;
+  align-items: stretch;
+  height: 25px;
+  border: 1px solid var(--color-emphasis-08);
+  border-top: none;
+  border-left: none;
+  --row-hover-color: var(--color-emphasis-04);
+  @include overlay;
+  @include overlay-hover() {
+    background-color: var(--row-hover-color);
+  }
+
+
+  .cell {
+    --cell-background-color: transparent;
+    --cell-text-color: var(--color-emphasis-high);
+    --cell-indent-count: 0;
+    --multi-select-item-color-background: unset;
+    --multi-select-item-color-text: unset;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:first-child {
+      width: 815px;
+
+      &:not(.has-indent) {
+        .cell-wrapper {
+          .text:first-child {
+            padding: 3px 9px 3px 39px;
+          }
+
+          .edit-box:nth-child(2) {
+            padding: 3px 9px 3px 9px;
+            margin: 0 0 0 30px;
+          }
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      width: 151px;
+
+      &.is-focused {
+        box-shadow: 0 0 0 1px var(--color-primary-high), inset 0 0 0 1px var(--color-primary-high);
+        background-color: var(--color-invert-high);
+        margin-right: 1px;
+        border: none;
+
+        .cell-wrapper {
+          .edit-box {
+            &:focus {
+              box-shadow: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--color-emphasis-08);
+    }
+
+    &-wrapper {
+      > .text {
+        color: var(--cell-text-color);
+        z-index: 1;
+        flex: 1 1 0;
+        display: none;
+        padding: 3px 9px;
+
+        &.is-visible {
+          display: block;
+        }
+      }
+
+      .edit-box {
+        width: 100%;
+      }
+    }
+
+    .cell-icon {
+      display: inline-flex;
+      cursor: pointer;
+      padding: 3px 6px;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      flex: 1 1 0;
+      margin: 0 0 0 calc(30px * var(--cell-indent-count));
+      height: 100%;
+      // Wrap text content
+      white-space: nowrap;
+      //overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .add-popup {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      min-width: 100%;
+      z-index: 2;
+    }
+
+    &.is-selected {
+      background-color: var(--color-primary-12);
+    }
+
+    // Cell Status
+    &-status {
+      display: flex;
+
+      .text {
+        text-align: center;
+      }
+
+      .add-popup {
+        .text {
+          text-align: start;
+        }
+      }
+
+      @include overlay() {
+        background-color: var(--cell-background-color);
+        border-radius: 3px;
+        margin: 1px;
+      }
+    }
+
+    // Cell Text
+    .edit-box {
+      display: none;
+      flex: 1 1 0;
+      height: 100%;
+      padding: 3px 9px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      margin: 0;
+      min-width: 0;
+
+      &.is-visible {
+        display: block;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 1px var(--color-primary-high), inset 0 0 0 1px var(--color-primary-high);
+        background-color: var(--color-invert-high);
+        margin-right: 1px;
+        border: none;
+      }
+    }
+
+    .multi-selected-result-item {
+      display: inline-block;
+      color: var(--multi-select-item-color-text);
+      background-color: var(--multi-select-item-color-background);
+    }
+  }
+}

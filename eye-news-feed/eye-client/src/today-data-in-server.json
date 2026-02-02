@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Supabase Blog: Open Source Firebase alternative Blog",
+    "icon16": "https://supabase.com/favicon/favicon-196x196.png",
+    "articles": [
+      {
+        "title": "Supabase Launch Week X Hackathon",
+        "url": "https://supabase.com/blog/supabase-hackathon-lwx",
+        "summary": "Build an Open Source Project over 10 days. 5 prize categories.",
+        "imageUrl": "https://supabase.com/images/blog/lwx-hackathon/ogimage.png",
+        "crawledDate": "2023-12-05T15:30:00.000Z",
+        "publishedDate": "2023-12-05T00:00:00.000Z"
+      },
+      {
+        "title": "Launch Week X Community Meetups",
+        "url": "https://supabase.com/blog/community-meetups-lwx",
+        "summary": "The Supabase Community Meetups are back, and this time we've got more events happening all over the world!",
+        "imageUrl": "https://supabase.com/images/blog/lwx-community-meetups/meetups.jpg",
+        "crawledDate": "2023-12-05T15:20:00.000Z",
+        "publishedDate": "2023-12-05T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "name": "Uber Blog: Open Source Firebase alternative Blog",
+    "icon16": "https://supabase.com/favicon/favicon-196x196.png",
+    "articles": [
+      {
+        "title": "Supabase Launch Week X Hackathon",
+        "url": "https://supabase.com/blog/supabase-hackathon-lwx",
+        "summary": "Build an Open Source Project over 10 days. 5 prize categories.",
+        "imageUrl": "https://supabase.com/images/blog/lwx-hackathon/ogimage.png",
+        "crawledDate": "2023-12-05T15:15:00.000Z",
+        "publishedDate": "2023-12-05T00:00:00.000Z"
+      },
+      {
+        "title": "Launch Week X Community Meetups",
+        "url": "https://supabase.com/blog/community-meetups-lwx",
+        "summary": "The Supabase Community Meetups are back, and this time we've got more events happening all over the world!",
+        "imageUrl": "https://supabase.com/images/blog/lwx-community-meetups/meetups.jpg",
+        "crawledDate": "2023-12-05T15:25:00.000Z",
+        "publishedDate": "2023-12-05T00:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+.draggable {
+  &.is-dragging {
+    position: absolute;
+    z-index: 1000;
+  }
+}

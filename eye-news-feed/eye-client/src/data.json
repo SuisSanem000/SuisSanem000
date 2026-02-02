@@ -1,0 +1,467 @@
+[
+  {
+    "id": "1",
+    "date": "Today",
+    "isExpanded": false,
+    "news": [
+      {
+        "id": "new1",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/amazon-web-services.png",
+        "title": "Amazon announces three new serverless offerings to kick off AWS re:Invent 2023",
+        "description": "Amazon kicked off AWS re:Invent, its annual customer conference, in Las Vegas tonight with a few new serverless offerings designed to make it easier to manage Aurora, ElastiCache and Redshift serverless services.",
+        "url": "https://techcrunch.com/2023/11/27/amazon-announces-three-new-serverless-offerings-to-kick-off-reinvent/",
+        "isRead": false
+      },
+      {
+        "id": "new2",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/pinecone.png",
+        "title": "Pinecone drops $100M investment on $750M valuation, as vector database demand grows",
+        "description": "When Pinecone launched a vector database aimed at data scientists in 2021, it was probably ahead of its time. But as the use cases began to take shape last year, the company began pushing AI-driven semantic search. With the rise of LLMs in the public consciousness, companies are beginning to see the value of vector databases even more.",
+        "url": "https://techcrunch.com/2023/04/27/pinecone-drops-100m-investment-on-750m-valuation-as-vector-database-demand-grows/",
+        "isRead": false
+      },
+      {
+        "id": "new3",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/airport-departure-board.png",
+        "title": "Mondee security lapse exposed flight itineraries and unencrypted credit card numbers",
+        "description": "Travel giant Mondee has secured an exposed database that was spilling sensitive customer information, including detailed flight and hotel itineraries and unencrypted credit card numbers.",
+        "url": "https://techcrunch.com/2023/08/02/mondee-data-exposed-credit-cards-flight-itineraries/",
+        "isRead": false
+      },
+      {
+        "id": "new4",
+        "sourceName": "Medium",
+        "icon": "/assets/icons/medium.svg",
+        "image": "/assets/images/monday-mondaydb-new-database.png",
+        "title": "Why Monday.com decided to build its new database instead of buying one",
+        "description": "onday.com launched more than a decade ago looking to help companies build a highly flexible set of business tools like CRM, marketing, operations and HR, built in customized ways you simply couldn’t find out of the box. It learned that companies not only liked that flexibility, but they also pushed the boundaries so far that it was going to outpace the ability of the underlying database technology to continue to handle all of the use cases.",
+        "url": "https://techcrunch.com/2023/10/22/monday-mondaydb-new-database/",
+        "isRead": false
+      },
+      {
+        "id": "new5",
+        "sourceName": "Data Engineering Weekly",
+        "icon": "/assets/icons/data-engineering-weekly.svg",
+        "image": "/assets/images/database-platform.png",
+        "title": "ScyllaDB raises $43M to scale its NoSQL database platform",
+        "description": "Investors have an appetite for databases, it seems.\n\nToday, ScyllaDB, a startup developing database tech for high-throughput, low-latency workloads, announced that it raised $43 million in a funding round led by Eight Roads Ventures with participation from AB Private Credit Investors, AllianceBernstein, TLV partners, Magma Ventures and Qualcomm Ventures.",
+        "url": "https://techcrunch.com/2023/10/17/scylladb-raises-43m-to-scale-its-nosql-database-platform/",
+        "isRead": false
+      },
+      {
+        "id": "new6",
+        "sourceName": "Substack",
+        "icon": "/assets/icons/amit.svg",
+        "image": "/assets/images/planetscale-mysql.png",
+        "title": "PlanetScale forks MySQL to add vector support",
+        "description": "It seems like everyone in the database business is thinking about how to capitalize on the growth of AI by adding support for vectors to their products. That, after all, remains to be the easiest way to feed up-to-date data to foundation models. Almost 28 years after its launch, MySQL may not have much hype surrounding it anymore, but it remains among the most often-used databases and it powers the vast majority of the web. Today, PlanetScale, the well-funded MySQL database company founded by the co-creators of the Vitess open source project, announced that it is forking MySQL in order to add vector support — in part because the team believes that MySQL-owner Oracle isn’t moving fast enough to do the same.",
+        "url": "https://techcrunch.com/2023/10/03/planetscale-forks-mysql-to-add-vector-support/",
+        "isRead": false
+      },
+      {
+        "id": "new7",
+        "sourceName": "Roundup",
+        "icon": "/assets/icons/roundup.svg",
+        "image": "/assets/images/immutable-database.png",
+        "title": "Codenotary brings its immutable database to the cloud",
+        "description": "Codenotary‘s focus is on software supply chain security and monitoring Kubernetes deployments, but at the heart of these services is the company’s popular open source immudb immutable database. At this point, the playbook for commercializing popular open source projects seems pretty immutable, too, so it’s maybe no surprise that Codenotary today announced immudb Vault, a tamper-proof database cloud service.",
+        "url": "https://techcrunch.com/2023/06/21/cloudnotary-brings-its-immutable-database-to-the-cloud/",
+        "isRead": false
+      },
+      {
+        "id": "new8",
+        "sourceName": "Medium",
+        "icon": "/assets/icons/medium.svg",
+        "image": "/assets/images/qdrant-an-open-source.png",
+        "title": "Qdrant, an open source vector database startup, wants to help AI developers leverage unstructured data",
+        "description": "For many, ChatGPT and the generative AI hype train signals the arrival of artificial intelligence into the mainstream. But while there’s little question of a seismic sea change these past six months in terms of public awareness, the growing demand for AI could be outpacing the infrastructure required to power the myriad use cases that are emerging — and this is something that German startup Qdrant is looking to address.",
+        "url": "https://techcrunch.com/2023/04/19/qdrant-an-open-source-vector-database-startup-wants-to-help-ai-developers-leverage-unstructured-data/",
+        "isRead": false
+      },
+      {
+        "id": "new9",
+        "sourceName": "Start Data Engineering",
+        "icon": "/assets/icons/start-data-engineering.svg",
+        "image": "/assets/images/mongodb-new-workloads.png",
+        "title": "MongoDB readies its Atlas database service for new workloads",
+        "description": "At its MongoDB.local NYC event, MongoDB today announced a slew of product releases and updates. Given the company’s focus on its fully managed Atlas service, it’s no surprise that the majority of news focuses on that platform, with improved support for AI and semantic search workloads, dedicated search nodes to better enable search use cases and new capabilities to process streaming data, among others.",
+        "url": "https://techcrunch.com/2023/06/22/mongodb-readies-its-atlas-database-service-for-new-workloads/",
+        "isRead": false
+      },
+      {
+        "id": "new10",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/relational-database.png",
+        "title": "Neon, a relational database startup, lands $46M investment",
+        "description": "Neon, a startup that’s building a serverless open source alternative to AWS Aurora Postgres, today announced that it raised around $46 million in a new funding round, about $30 million of which came from Menlo VC.",
+        "url": "https://techcrunch.com/2023/08/01/neon-a-relational-database-startup-lands-30m-investment/",
+        "isRead": false
+      },
+      {
+        "id": "new11",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/database-schema.png",
+        "title": "Ariga is helping developers define database schema as code",
+        "description": "As companies look to update their databases, especially in a cloud-native context, with so many different databases out there, it’s a huge challenge for developers when migrating from one environment to another. Ariga, an early-stage startup, wants to help by letting users define database schema as code, and greatly simplify how they interact and manage databases over time.",
+        "url": "https://techcrunch.com/2023/06/01/ariga-is-helping-developers-define-database-schema-as-code/",
+        "isRead": false
+      },
+      {
+        "id": "new12",
+        "sourceName": "The Seattle Data Guy",
+        "icon": "/assets/icons/the-seattle-data-guy.svg",
+        "image": "/assets/images/duckdb-based-platform.png",
+        "title": "Database startup MotherDuck lands $52.5M to grow its DuckDB-based platform",
+        "description": "A few weeks ago, it was reported that MotherDuck, the company commercializing the lightweight database platform DuckDB, was in talks to raise new capital from VC firm Felicis.",
+        "url": "https://techcrunch.com/2023/09/20/database-startup-motherduck-lands-52-5m-to-grow-its-duckdb-based-platform/",
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "date": "4 December",
+    "isExpanded": false,
+    "news": [
+      {
+        "id": "new7",
+        "sourceName": "Roundup",
+        "icon": "/assets/icons/roundup.svg",
+        "image": "/assets/images/immutable-database.png",
+        "title": "Codenotary brings its immutable database to the cloud",
+        "description": "Codenotary‘s focus is on software supply chain security and monitoring Kubernetes deployments, but at the heart of these services is the company’s popular open source immudb immutable database. At this point, the playbook for commercializing popular open source projects seems pretty immutable, too, so it’s maybe no surprise that Codenotary today announced immudb Vault, a tamper-proof database cloud service.",
+        "url": "https://techcrunch.com/2023/06/21/cloudnotary-brings-its-immutable-database-to-the-cloud/",
+        "isRead": false
+      },
+      {
+        "id": "new8",
+        "sourceName": "Medium",
+        "icon": "/assets/icons/medium.svg",
+        "image": "/assets/images/qdrant-an-open-source.png",
+        "title": "Qdrant, an open source vector database startup, wants to help AI developers leverage unstructured data",
+        "description": "For many, ChatGPT and the generative AI hype train signals the arrival of artificial intelligence into the mainstream. But while there’s little question of a seismic sea change these past six months in terms of public awareness, the growing demand for AI could be outpacing the infrastructure required to power the myriad use cases that are emerging — and this is something that German startup Qdrant is looking to address.",
+        "url": "https://techcrunch.com/2023/04/19/qdrant-an-open-source-vector-database-startup-wants-to-help-ai-developers-leverage-unstructured-data/",
+        "isRead": false
+      },
+      {
+        "id": "new9",
+        "sourceName": "Start Data Engineering",
+        "icon": "/assets/icons/start-data-engineering.svg",
+        "image": "/assets/images/mongodb-new-workloads.png",
+        "title": "MongoDB readies its Atlas database service for new workloads",
+        "description": "At its MongoDB.local NYC event, MongoDB today announced a slew of product releases and updates. Given the company’s focus on its fully managed Atlas service, it’s no surprise that the majority of news focuses on that platform, with improved support for AI and semantic search workloads, dedicated search nodes to better enable search use cases and new capabilities to process streaming data, among others.",
+        "url": "https://techcrunch.com/2023/06/22/mongodb-readies-its-atlas-database-service-for-new-workloads/",
+        "isRead": false
+      },
+      {
+        "id": "new10",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/relational-database.png",
+        "title": "Neon, a relational database startup, lands $46M investment",
+        "description": "Neon, a startup that’s building a serverless open source alternative to AWS Aurora Postgres, today announced that it raised around $46 million in a new funding round, about $30 million of which came from Menlo VC.",
+        "url": "https://techcrunch.com/2023/08/01/neon-a-relational-database-startup-lands-30m-investment/",
+        "isRead": false
+      },
+      {
+        "id": "new11",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/database-schema.png",
+        "title": "Ariga is helping developers define database schema as code",
+        "description": "As companies look to update their databases, especially in a cloud-native context, with so many different databases out there, it’s a huge challenge for developers when migrating from one environment to another. Ariga, an early-stage startup, wants to help by letting users define database schema as code, and greatly simplify how they interact and manage databases over time.",
+        "url": "https://techcrunch.com/2023/06/01/ariga-is-helping-developers-define-database-schema-as-code/",
+        "isRead": false
+      },
+      {
+        "id": "new12",
+        "sourceName": "Start Data Engineering",
+        "icon": "/assets/icons/the-seattle-data-guy.svg",
+        "image": "/assets/images/duckdb-based-platform.png",
+        "title": "Database startup MotherDuck lands $52.5M to grow its DuckDB-based platform",
+        "description": "A few weeks ago, it was reported that MotherDuck, the company commercializing the lightweight database platform DuckDB, was in talks to raise new capital from VC firm Felicis.",
+        "url": "https://techcrunch.com/2023/09/20/database-startup-motherduck-lands-52-5m-to-grow-its-duckdb-based-platform/",
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "date": "3 December",
+    "isExpanded": false,
+    "news": [
+      {
+        "id": "new1",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/amazon-web-services.png",
+        "title": "Amazon announces three new serverless offerings to kick off AWS re:Invent 2023",
+        "description": "Amazon kicked off AWS re:Invent, its annual customer conference, in Las Vegas tonight with a few new serverless offerings designed to make it easier to manage Aurora, ElastiCache and Redshift serverless services.",
+        "url": "https://techcrunch.com/2023/11/27/amazon-announces-three-new-serverless-offerings-to-kick-off-reinvent/",
+        "isRead": false
+      },
+      {
+        "id": "new2",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/pinecone.png",
+        "title": "Pinecone drops $100M investment on $750M valuation, as vector database demand grows",
+        "description": "When Pinecone launched a vector database aimed at data scientists in 2021, it was probably ahead of its time. But as the use cases began to take shape last year, the company began pushing AI-driven semantic search. With the rise of LLMs in the public consciousness, companies are beginning to see the value of vector databases even more.",
+        "url": "https://techcrunch.com/2023/04/27/pinecone-drops-100m-investment-on-750m-valuation-as-vector-database-demand-grows/",
+        "isRead": false
+      },
+      {
+        "id": "new3",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/airport-departure-board.png",
+        "title": "Mondee security lapse exposed flight itineraries and unencrypted credit card numbers",
+        "description": "Travel giant Mondee has secured an exposed database that was spilling sensitive customer information, including detailed flight and hotel itineraries and unencrypted credit card numbers.",
+        "url": "https://techcrunch.com/2023/08/02/mondee-data-exposed-credit-cards-flight-itineraries/",
+        "isRead": false
+      },
+      {
+        "id": "new4",
+        "sourceName": "Medium",
+        "icon": "/assets/icons/medium.svg",
+        "image": "/assets/images/monday-mondaydb-new-database.png",
+        "title": "Why Monday.com decided to build its new database instead of buying one",
+        "description": "onday.com launched more than a decade ago looking to help companies build a highly flexible set of business tools like CRM, marketing, operations and HR, built in customized ways you simply couldn’t find out of the box. It learned that companies not only liked that flexibility, but they also pushed the boundaries so far that it was going to outpace the ability of the underlying database technology to continue to handle all of the use cases.",
+        "url": "https://techcrunch.com/2023/10/22/monday-mondaydb-new-database/",
+        "isRead": false
+      },
+      {
+        "id": "new5",
+        "sourceName": "Data Engineering Weekly",
+        "icon": "/assets/icons/data-engineering-weekly.svg",
+        "image": "/assets/images/database-platform.png",
+        "title": "ScyllaDB raises $43M to scale its NoSQL database platform",
+        "description": "Investors have an appetite for databases, it seems.\n\nToday, ScyllaDB, a startup developing database tech for high-throughput, low-latency workloads, announced that it raised $43 million in a funding round led by Eight Roads Ventures with participation from AB Private Credit Investors, AllianceBernstein, TLV partners, Magma Ventures and Qualcomm Ventures.",
+        "url": "https://techcrunch.com/2023/10/17/scylladb-raises-43m-to-scale-its-nosql-database-platform/",
+        "isRead": false
+      },
+      {
+        "id": "new6",
+        "sourceName": "Substack",
+        "icon": "/assets/icons/amit.svg",
+        "image": "/assets/images/planetscale-mysql.png",
+        "title": "PlanetScale forks MySQL to add vector support",
+        "description": "It seems like everyone in the database business is thinking about how to capitalize on the growth of AI by adding support for vectors to their products. That, after all, remains to be the easiest way to feed up-to-date data to foundation models. Almost 28 years after its launch, MySQL may not have much hype surrounding it anymore, but it remains among the most often-used databases and it powers the vast majority of the web. Today, PlanetScale, the well-funded MySQL database company founded by the co-creators of the Vitess open source project, announced that it is forking MySQL in order to add vector support — in part because the team believes that MySQL-owner Oracle isn’t moving fast enough to do the same.",
+        "url": "https://techcrunch.com/2023/10/03/planetscale-forks-mysql-to-add-vector-support/",
+        "isRead": false
+      },
+      {
+        "id": "new7",
+        "sourceName": "Roundup",
+        "icon": "/assets/icons/roundup.svg",
+        "image": "/assets/images/immutable-database.png",
+        "title": "Codenotary brings its immutable database to the cloud",
+        "description": "Codenotary‘s focus is on software supply chain security and monitoring Kubernetes deployments, but at the heart of these services is the company’s popular open source immudb immutable database. At this point, the playbook for commercializing popular open source projects seems pretty immutable, too, so it’s maybe no surprise that Codenotary today announced immudb Vault, a tamper-proof database cloud service.",
+        "url": "https://techcrunch.com/2023/06/21/cloudnotary-brings-its-immutable-database-to-the-cloud/",
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "date": "2 December",
+    "isExpanded": false,
+    "news": [
+      {
+        "id": "new1",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/amazon-web-services.png",
+        "title": "Amazon announces three new serverless offerings to kick off AWS re:Invent 2023",
+        "description": "Amazon kicked off AWS re:Invent, its annual customer conference, in Las Vegas tonight with a few new serverless offerings designed to make it easier to manage Aurora, ElastiCache and Redshift serverless services.",
+        "url": "https://techcrunch.com/2023/11/27/amazon-announces-three-new-serverless-offerings-to-kick-off-reinvent/",
+        "isRead": false
+      },
+      {
+        "id": "new2",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/pinecone.png",
+        "title": "Pinecone drops $100M investment on $750M valuation, as vector database demand grows",
+        "description": "When Pinecone launched a vector database aimed at data scientists in 2021, it was probably ahead of its time. But as the use cases began to take shape last year, the company began pushing AI-driven semantic search. With the rise of LLMs in the public consciousness, companies are beginning to see the value of vector databases even more.",
+        "url": "https://techcrunch.com/2023/04/27/pinecone-drops-100m-investment-on-750m-valuation-as-vector-database-demand-grows/",
+        "isRead": false
+      },
+      {
+        "id": "new3",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/airport-departure-board.png",
+        "title": "Mondee security lapse exposed flight itineraries and unencrypted credit card numbers",
+        "description": "Travel giant Mondee has secured an exposed database that was spilling sensitive customer information, including detailed flight and hotel itineraries and unencrypted credit card numbers.",
+        "url": "https://techcrunch.com/2023/08/02/mondee-data-exposed-credit-cards-flight-itineraries/",
+        "isRead": false
+      },
+      {
+        "id": "new4",
+        "sourceName": "Medium",
+        "icon": "/assets/icons/medium.svg",
+        "image": "/assets/images/monday-mondaydb-new-database.png",
+        "title": "Why Monday.com decided to build its new database instead of buying one",
+        "description": "onday.com launched more than a decade ago looking to help companies build a highly flexible set of business tools like CRM, marketing, operations and HR, built in customized ways you simply couldn’t find out of the box. It learned that companies not only liked that flexibility, but they also pushed the boundaries so far that it was going to outpace the ability of the underlying database technology to continue to handle all of the use cases.",
+        "url": "https://techcrunch.com/2023/10/22/monday-mondaydb-new-database/",
+        "isRead": false
+      },
+      {
+        "id": "new5",
+        "sourceName": "Data Engineering Weekly",
+        "icon": "/assets/icons/data-engineering-weekly.svg",
+        "image": "/assets/images/database-platform.png",
+        "title": "ScyllaDB raises $43M to scale its NoSQL database platform",
+        "description": "Investors have an appetite for databases, it seems.\n\nToday, ScyllaDB, a startup developing database tech for high-throughput, low-latency workloads, announced that it raised $43 million in a funding round led by Eight Roads Ventures with participation from AB Private Credit Investors, AllianceBernstein, TLV partners, Magma Ventures and Qualcomm Ventures.",
+        "url": "https://techcrunch.com/2023/10/17/scylladb-raises-43m-to-scale-its-nosql-database-platform/",
+        "isRead": false
+      },
+      {
+        "id": "new6",
+        "sourceName": "Substack",
+        "icon": "/assets/icons/amit.svg",
+        "image": "/assets/images/planetscale-mysql.png",
+        "title": "PlanetScale forks MySQL to add vector support",
+        "description": "It seems like everyone in the database business is thinking about how to capitalize on the growth of AI by adding support for vectors to their products. That, after all, remains to be the easiest way to feed up-to-date data to foundation models. Almost 28 years after its launch, MySQL may not have much hype surrounding it anymore, but it remains among the most often-used databases and it powers the vast majority of the web. Today, PlanetScale, the well-funded MySQL database company founded by the co-creators of the Vitess open source project, announced that it is forking MySQL in order to add vector support — in part because the team believes that MySQL-owner Oracle isn’t moving fast enough to do the same.",
+        "url": "https://techcrunch.com/2023/10/03/planetscale-forks-mysql-to-add-vector-support/",
+        "isRead": false
+      },
+      {
+        "id": "new7",
+        "sourceName": "Roundup",
+        "icon": "/assets/icons/roundup.svg",
+        "image": "/assets/images/immutable-database.png",
+        "title": "Codenotary brings its immutable database to the cloud",
+        "description": "Codenotary‘s focus is on software supply chain security and monitoring Kubernetes deployments, but at the heart of these services is the company’s popular open source immudb immutable database. At this point, the playbook for commercializing popular open source projects seems pretty immutable, too, so it’s maybe no surprise that Codenotary today announced immudb Vault, a tamper-proof database cloud service.",
+        "url": "https://techcrunch.com/2023/06/21/cloudnotary-brings-its-immutable-database-to-the-cloud/",
+        "isRead": false
+      },
+      {
+        "id": "new8",
+        "sourceName": "Medium",
+        "icon": "../assets/icons/medium.svg",
+        "image": "./assets/images/qdrant-an-open-source.png",
+        "title": "Qdrant, an open source vector database startup, wants to help AI developers leverage unstructured data",
+        "description": "For many, ChatGPT and the generative AI hype train signals the arrival of artificial intelligence into the mainstream. But while there’s little question of a seismic sea change these past six months in terms of public awareness, the growing demand for AI could be outpacing the infrastructure required to power the myriad use cases that are emerging — and this is something that German startup Qdrant is looking to address.",
+        "url": "https://techcrunch.com/2023/04/19/qdrant-an-open-source-vector-database-startup-wants-to-help-ai-developers-leverage-unstructured-data/",
+        "isRead": false
+      },
+      {
+        "id": "new9",
+        "sourceName": "Start Data Engineering",
+        "icon": "/assets/icons/start-data-engineering.svg",
+        "image": "/assets/images/mongodb-new-workloads.png",
+        "title": "MongoDB readies its Atlas database service for new workloads",
+        "description": "At its MongoDB.local NYC event, MongoDB today announced a slew of product releases and updates. Given the company’s focus on its fully managed Atlas service, it’s no surprise that the majority of news focuses on that platform, with improved support for AI and semantic search workloads, dedicated search nodes to better enable search use cases and new capabilities to process streaming data, among others.",
+        "url": "https://techcrunch.com/2023/06/22/mongodb-readies-its-atlas-database-service-for-new-workloads/",
+        "isRead": false
+      },
+      {
+        "id": "new10",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/relational-database.png",
+        "title": "Neon, a relational database startup, lands $46M investment",
+        "description": "Neon, a startup that’s building a serverless open source alternative to AWS Aurora Postgres, today announced that it raised around $46 million in a new funding round, about $30 million of which came from Menlo VC.",
+        "url": "https://techcrunch.com/2023/08/01/neon-a-relational-database-startup-lands-30m-investment/",
+        "isRead": false
+      },
+      {
+        "id": "new11",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/database-schema.png",
+        "title": "Ariga is helping developers define database schema as code",
+        "description": "As companies look to update their databases, especially in a cloud-native context, with so many different databases out there, it’s a huge challenge for developers when migrating from one environment to another. Ariga, an early-stage startup, wants to help by letting users define database schema as code, and greatly simplify how they interact and manage databases over time.",
+        "url": "https://techcrunch.com/2023/06/01/ariga-is-helping-developers-define-database-schema-as-code/",
+        "isRead": false
+      },
+      {
+        "id": "new12",
+        "sourceName": "The Seattle Data Guy",
+        "icon": "/assets/icons/the-seattle-data-guy.svg",
+        "image": "/assets/images/duckdb-based-platform.png",
+        "title": "Database startup MotherDuck lands $52.5M to grow its DuckDB-based platform",
+        "description": "A few weeks ago, it was reported that MotherDuck, the company commercializing the lightweight database platform DuckDB, was in talks to raise new capital from VC firm Felicis.",
+        "url": "https://techcrunch.com/2023/09/20/database-startup-motherduck-lands-52-5m-to-grow-its-duckdb-based-platform/",
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "date": "1 December",
+    "isExpanded": false,
+    "news": [
+      {
+        "id": "new7",
+        "sourceName": "Roundup",
+        "icon": "/assets/icons/roundup.svg",
+        "image": "/assets/images/immutable-database.png",
+        "title": "Codenotary brings its immutable database to the cloud",
+        "description": "Codenotary‘s focus is on software supply chain security and monitoring Kubernetes deployments, but at the heart of these services is the company’s popular open source immudb immutable database. At this point, the playbook for commercializing popular open source projects seems pretty immutable, too, so it’s maybe no surprise that Codenotary today announced immudb Vault, a tamper-proof database cloud service.",
+        "url": "https://techcrunch.com/2023/06/21/cloudnotary-brings-its-immutable-database-to-the-cloud/",
+        "isRead": false
+      },
+      {
+        "id": "new8",
+        "sourceName": "Medium",
+        "icon": "/assets/icons/medium.svg",
+        "image": "/assets/images/qdrant-an-open-source.png",
+        "title": "Qdrant, an open source vector database startup, wants to help AI developers leverage unstructured data",
+        "description": "For many, ChatGPT and the generative AI hype train signals the arrival of artificial intelligence into the mainstream. But while there’s little question of a seismic sea change these past six months in terms of public awareness, the growing demand for AI could be outpacing the infrastructure required to power the myriad use cases that are emerging — and this is something that German startup Qdrant is looking to address.",
+        "url": "https://techcrunch.com/2023/04/19/qdrant-an-open-source-vector-database-startup-wants-to-help-ai-developers-leverage-unstructured-data/",
+        "isRead": false
+      },
+      {
+        "id": "new9",
+        "sourceName": "Start Data Engineering",
+        "icon": "/assets/icons/start-data-engineering.svg",
+        "image": "/assets/images/mongodb-new-workloads.png",
+        "title": "MongoDB readies its Atlas database service for new workloads",
+        "description": "At its MongoDB.local NYC event, MongoDB today announced a slew of product releases and updates. Given the company’s focus on its fully managed Atlas service, it’s no surprise that the majority of news focuses on that platform, with improved support for AI and semantic search workloads, dedicated search nodes to better enable search use cases and new capabilities to process streaming data, among others.",
+        "url": "https://techcrunch.com/2023/06/22/mongodb-readies-its-atlas-database-service-for-new-workloads/",
+        "isRead": false
+      },
+      {
+        "id": "new10",
+        "sourceName": "Modern Data Stack",
+        "icon": "/assets/icons/modern-data-stack.svg",
+        "image": "/assets/images/relational-database.png",
+        "title": "Neon, a relational database startup, lands $46M investment",
+        "description": "Neon, a startup that’s building a serverless open source alternative to AWS Aurora Postgres, today announced that it raised around $46 million in a new funding round, about $30 million of which came from Menlo VC.",
+        "url": "https://techcrunch.com/2023/08/01/neon-a-relational-database-startup-lands-30m-investment/",
+        "isRead": false
+      },
+      {
+        "id": "new11",
+        "sourceName": "TechCrunch",
+        "icon": "/assets/icons/tech-crunch.svg",
+        "image": "/assets/images/database-schema.png",
+        "title": "Ariga is helping developers define database schema as code",
+        "description": "As companies look to update their databases, especially in a cloud-native context, with so many different databases out there, it’s a huge challenge for developers when migrating from one environment to another. Ariga, an early-stage startup, wants to help by letting users define database schema as code, and greatly simplify how they interact and manage databases over time.",
+        "url": "https://techcrunch.com/2023/06/01/ariga-is-helping-developers-define-database-schema-as-code/",
+        "isRead": false
+      },
+      {
+        "id": "new12",
+        "sourceName": "The Seattle Data Guy",
+        "icon": "/assets/icons/the-seattle-data-guy.svg",
+        "image": "/assets/images/duckdb-based-platform.png",
+        "title": "Database startup MotherDuck lands $52.5M to grow its DuckDB-based platform",
+        "description": "A few weeks ago, it was reported that MotherDuck, the company commercializing the lightweight database platform DuckDB, was in talks to raise new capital from VC firm Felicis.",
+        "url": "https://techcrunch.com/2023/09/20/database-startup-motherduck-lands-52-5m-to-grow-its-duckdb-based-platform/",
+        "isRead": false
+      }
+    ]
+  }
+]

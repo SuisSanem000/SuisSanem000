@@ -1,0 +1,38 @@
+{
+  "name": "eye-custom-crawler",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "lobsters": "ts-node src/lobsters.ts > output.log 2>&1",
+    "rssCrawler": "ts-node src/rssCrawler.ts > output.log 2>&1",
+    "queryGenerator": "ts-node src/database/queryGenerator.ts > output.log 2>&1",
+    "dbdb": "ts-node src/dbdb.ts > output.log 2>&1",
+    "dbEngines": "ts-node src/dbEngines.ts > output.log 2>&1",
+    "getContents": "node src/getContents.js > output.log 2>&1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "1.0.0-rc.12",
+    "fs": "0.0.1-security",
+    "jsdom": "^24.0.0",
+    "node-fetch": "^3.3.2",
+    "readable-stream-clone": "^0.0.7",
+    "sanitize-html": "^2.11.0",
+    "sharp": "^0.33.2",    "@mozilla/readability": "^0.5.0",
+
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^20.11.0",
+    "@types/sqlite3": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

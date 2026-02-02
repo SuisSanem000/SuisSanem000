@@ -1,0 +1,37 @@
+:root, [data-theme="light"] {
+  --color-transparent: transparent;
+
+  --color-purple: #6F69D8;
+  --color-pink: #C6439B;
+  --color-red: #D64050;
+  --color-orange: #B16300;
+  --color-green: #498510;
+  --color-bermuda: #008D5C;
+  --color-blue: #0D8AD9;
+
+  --color-purple-invert: #D8CCFF;
+  --color-pink-invert: #FFAFE7;
+  --color-red-invert: #FFBFBF;
+  --color-orange-invert: #FFDEA6;
+  --color-green-invert:#B7EDAB;
+  --color-bermuda-invert: #6EE0B7;
+  --color-blue-invert: #A6D8FF;
+}
+
+[data-theme="dark"] {
+  --color-purple: #D8CCFF;
+  --color-pink: #FFAFE7;
+  --color-red: #FFBFBF;
+  --color-orange: #FFDEA6;
+  --color-green:#B7EDAB;
+  --color-bermuda: #6EE0B7;
+  --color-blue: #A6D8FF;
+
+  --color-purple-invert: #6F69D8;
+  --color-pink-invert: #C6439B;
+  --color-red-invert: #D64050;
+  --color-orange-invert: #B16300;
+  --color-green-invert: #498510;
+  --color-bermuda-invert: #008D5C;
+  --color-blue-invert: #0D8AD9;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "How-To Guides and Tutorials",
+    "short_name": "HW",
+    "description": "Articles that provide step-by-step instructions aimed at helping readers understand and execute specific tasks or projects within the IT realm. These can range from software installation and configuration to programming techniques and troubleshooting."
+  },
+  {
+    "name": "Technology Reviews and Comparisons",
+    "short_name": "TR",
+    "description": "Comprehensive analyses that evaluate the features, benefits, and limitations of new technologies, devices, or software. Comparisons often pit similar products against each other to determine which offers the best value or meets specific user requirements."
+  },
+  {
+    "name": "Tech News and Industry Updates",
+    "short_name": "TN",
+    "description": "Timely articles that inform readers about the latest developments in the IT industry, including new product launches, updates to software, regulatory changes, or significant events like mergers and acquisitions."
+  },
+  {
+    "name": "Case Studies and Success Stories",
+    "short_name": "CS",
+    "description": "In-depth articles that explore specific instances where technology has been successfully implemented to solve a problem or enhance performance in a business or organizational setting. These stories provide real-world examples and insights into practical applications of IT solutions."
+  },
+  {
+    "name": "Security Alerts and Updates",
+    "short_name": "SA",
+    "description": "Articles focused on cybersecurity, providing the latest information on potential threats, vulnerabilities, and protective measures. This content is crucial for IT professionals who need to safeguard their systems and data against cyber attacks."
+  },
+  {
+    "name": "Opinion Pieces and Thought Leadership",
+    "short_name": "OT",
+    "description": "Articles where industry experts share their opinions, insights, and predictions about the future of technology. These pieces often discuss emerging trends, challenges, and opportunities within the IT sector."
+  },
+  {
+    "name": "Research Findings and Reports",
+    "short_name": "RR",
+    "description": "Detailed articles that analyze data from recent studies or research efforts related to IT topics. These findings can cover areas such as advancements in technology, user behavior statistics, or market trends."
+  },
+  {
+    "name": "Interviews with Industry Experts",
+    "short_name": "IE",
+    "description": "Articles that feature conversations with leading figures in the IT industry. These interviews provide unique perspectives and expert insights into current tech trends, innovations, and strategic advice."
+  }
+]

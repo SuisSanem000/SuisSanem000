@@ -1,0 +1,26 @@
+@use "sparrow/src/styles/style-effects" as *;
+@use "sparrow/src/styles/style-scaling" as *;
+@use "sparrow/src/styles/style-common" as *;
+@use "sparrow/src/styles/style-effects" as *;
+
+.color-picker {
+  --color-picker-color: unset;
+  @include padding(6px);
+  @include border-radius(9px);
+  @include elevation(40);
+  height: fit-content;
+  background-color: var(--color-invert-high);
+  display: none;
+
+  &.is-visible {
+    display: inline-flex;
+  }
+
+  .color-item {
+    .icon {
+      color: var(--color-picker-color);
+      font-size: 12px;
+      @include padding(3px 1.5px);
+    }
+  }
+}

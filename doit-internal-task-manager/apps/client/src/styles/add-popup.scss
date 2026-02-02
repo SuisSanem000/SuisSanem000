@@ -1,0 +1,152 @@
+@use "sparrow/src/styles/style-effects" as *;
+@use "sparrow/src/styles/style-scaling" as *;
+@use "sparrow/src/styles/style-common" as *;
+@use "sparrow/src/styles/style-effects" as *;
+@use "sparrow/src/styles/style-text" as *;
+
+.add-popup {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  height: fit-content;
+  min-width: 85px;
+  background-color: var(--color-invert-high);
+  @include elevation(40);
+  @include border-radius(9px);
+  @include padding(6px);
+  @include gap(3px, column);
+
+  .textbox {
+    @include overlay() {
+      @include depth(1);
+      @include border-radius(6px);
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &:last-of-type + button {
+      margin: 3px 0 0;
+    }
+  }
+
+  .invisible-caption {
+    &:not(:first-Child) {
+      margin: 3px 0 0 0;
+    }
+  }
+
+  .edit-button, .done-button {
+    .text {
+      --text-text-color: var(--color-emphasis-high);
+      color: var(--text-text-color);
+    }
+
+    &:disabled {
+      .text {
+        --text-text-color: var(--color-emphasis-24);
+        color: var(--text-text-color);
+      }
+      .icon {
+        --button-text-color: var(--color-emphasis-24);
+        color: var(--text-text-color);
+      }
+    }
+  }
+
+  &.is-visible {
+    display: flex;
+  }
+
+  .draggable {
+    &.is-dragging {
+      width: calc(100% - 12px);
+      background-color: var(--color-invert-high);
+      @include border-radius(6px);
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .draggable-shadow {
+    height: 24px;
+    width: 100%;
+    background-color: var(--color-emphasis-08);
+    @include depth(1);
+    @include border-radius(6px);
+  }
+}
+
+.add-item {
+  user-select: none;
+  --add-color-background: unset;
+  --add-color-text: unset;
+  @include padding(3px 6px);
+  height: min-content;
+  max-height: 24px;
+
+  @include overlay() {
+    background-color: var(--add-color-background);
+    @include border-radius(3px);
+  }
+
+  .text, .icon {
+    position: relative;
+    color: var(--add-color-text);
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.draggable {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-item {
+  --edit-color-background: unset;
+  --edit-color-text: unset;
+  --edit-color-icon: unset;
+
+  &.text-field.is-default,
+  &.text-field.is-focused {
+    .input {
+      color: var(--edit-color-text);
+      @include text-style('body-600');
+    }
+  }
+
+  &.text-field.is-default {
+    background-color: var(--edit-color-background);
+  }
+
+  .edit-button-stack {
+    display: flex;
+    align-items: center;
+
+    .edit-button {
+      position: relative;
+
+      .color-button {
+        .icon {
+          color: var(--edit-color-icon);
+          font-size: 12px;
+          @include padding(3px);
+          position: relative;
+        }
+      }
+
+      .color-picker {
+        position: absolute;
+        top: 18px;
+        left: -6px;
+        z-index: 2;
+      }
+    }
+  }
+}
