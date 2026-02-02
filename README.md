@@ -7,17 +7,18 @@ A collection of production-ready projects showcasing expertise in full-stack dev
 
 ## Projects Overview
 
-**[Dadroit JSON Generator](./dadroit-json-generator)** — VSCode extension and npm package for generating nested sample JSON data using custom templates
+**[json-generator](./json-generator)** – VSCode extension and npm package for generating nested sample JSON data using custom templates
 
-**[Dadroit Website](./datroid-website-json-viewer-tool)** — Marketing and sales platform for JSON Viewer product with authentication, licensing, and technical blog (12+ articles)
+**[json-viewer-website-json-viewer-tool](./json-viewer-website-json-viewer-tool)** – Marketing and sales platform for JSON Viewer product with authentication, licensing, and technical blog (12+ articles)
 
-**[DoIt Task Manager](./doit-internal-task-manager)** — Internal task management system built with PNPM monorepo architecture
+**[internal-task-manager](./internal-task-manager)** – Internal task management system built with PNPM monorepo architecture
 
-**[Eye News Feed](./eye-news-feed)** — Full-stack news aggregation platform with custom UI library and client-server architecture
+**[news-feed-app](./news-feed-app)** – Full-stack news aggregation platform with custom UI library and client-server architecture
 
-**[High-Performance Grid Component](./high-performanc-grid-component)** — Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
+**[high-performance-grid-component](./high-performance-grid-component)** – Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
 
-**[Olive Manager](./olive-manager-data-visualization-tool)** — Sophisticated client manager for data analytics tool with query execution, file management, and licensing systems
+**[data-visualization-tool-manager](./data-visualization-tool-manager)** – Sophisticated client manager for data analytics tool with query execution, file management, and licensing systems
+
 
 ---
 
