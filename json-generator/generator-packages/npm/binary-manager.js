@@ -4,7 +4,7 @@ const JSZip = require('jszip');
 const https = require('https');
 const path = require('path');
 
-const BASE_URL = 'https://github.com/DadroitOrganization/Generator/releases/download/Release_Version_1.0.0.351';
+const BASE_URL = 'https://github.com/JSON GeneratorOrganization/Generator/releases/download/Release_Version_1.0.0.351';
 
 function getBinaryFileName() {
     switch (os.platform()) {

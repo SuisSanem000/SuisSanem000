@@ -64,13 +64,13 @@ So, to sum it up, there are online JSON generators that you can easily find on t
 
 Now that you have read this far, you might be wondering if there is a better and more complete choice for making mock JSON data. Keep reading to find out.
 
-## Dadroit JSON Generator: A Tool For Generating Customizable Mock Data
+## JSON Generator: A Tool For Generating Customizable Mock Data
 
-While developing the [Dadroit JSON viewer](https://dadroit.com/), we needed mock JSON data to test every part of our backend code. We wanted this data to have specific features for our application, which are common among software developers. We decided to share it with others, so we created the [Dadroit JSON Generator](https://github.com/DadroitOrganization/Generator).
+While developing a JSON viewer application, we needed mock JSON data to test every part of our backend code. We wanted this data to have specific features for our application, which are common among software developers. We decided to share it with others, so we created the [JSON Generator](https://github.com/JSONGenerator/Generator).
 
 This practical tool generates completely customizable fake data files with ease. Its robust features are flexible and free to apply to your mock data generation needs. It is fast, generating up to 100K objects per second, and it supports many functionalities to create versatile JSON files.
 
-## What Makes Dadroit JSON Generator Different?
+## What Makes This JSON Generator Different?
 
 - Highly customizable data types and schema that can be tailored to your requirements.
 - No size limitations, with the ability to generate up to 100k rows per second.
@@ -80,11 +80,11 @@ This practical tool generates completely customizable fake data files with ease.
 - Compatible with most platforms, including Mac, Linux, and Windows.
 - Very intuitive and easy to use.
 
-> We've just rolled out a new VSCode extension, powered by the Dadroit JSON Generator, designed to effortlessly integrate JSON mock data production into your development workflow! Learn more its features in our [introductory blog post](https://dadroit.com/blog/json-generator-vscode-extension/).
+> We've just rolled out a new VSCode extension, powered by the JSON Generator, designed to effortlessly integrate JSON mock data production into your development workflow! Learn more about its features in our introductory blog post.
 
-## How Does Dadroit JSON Generator Work? Let’s Make an Example JSON File.
+## How Does The JSON Generator Work? Let’s Make an Example JSON File.
 
-The [Dadroit JSON Generator](https://github.com/DadroitOrganization/Generator) tool can be used to generate mock JSON data files using a custom JSON-based and functional template language. This language includes variants (numbers, strings, arrays), loops, templates, and math functions like random, min, max, count, and more. Moreover, it supports embedding one template completely inside another for reusing.
+The [JSON Generator](https://github.com/JSONGenerator/Generator) tool can be used to generate mock JSON data files using a custom JSON-based and functional template language. This language includes variants (numbers, strings, arrays), loops, templates, and math functions like random, min, max, count, and more. Moreover, it supports embedding one template completely inside another for reusing.
 
 Here are the steps to use it:
 
@@ -117,7 +117,7 @@ To use the tool, you should have a template file that looks something like this.
 
 ### Step 2: Running the Tool to Create a JSON File
 
-After saving the template file from the previous step as **`Sample.json`**, download the command line tool from the [GitHub](https://github.com/DadroitOrganization/Generator/releases/tag/Release_Sample_Data) repository, and run the following command:
+After saving the template file from the previous step as **`Sample.json`**, download the command line tool from the [GitHub](https://github.com/JSONGenerator/Generator/releases/tag/Release_Sample_Data) repository, and run the following command:
 
 ```bash
 JSONGeneratorCLI Sample.json
@@ -141,11 +141,11 @@ You will receive a mock JSON data file that looks like this.
 
 ## Improving Your JSON Mock Data Files
 
-Now that you have learned the fundamentals of using Dadroit JSON Generator, you may be wondering how to create a custom JSON mock data file. The answer is simple: by preparing a JSON template file.
+Now that you have learned the fundamentals of using the JSON Generator, you may be wondering how to create a custom JSON mock data file. The answer is simple: by preparing a JSON template file.
 
-This document will introduce you to all the features and functionalities of Dadroit JSON Generator. These tools empower you to create any JSON mock data file you need, in various sizes, schemas, and field types.
+This document will introduce you to all the features and functionalities of the JSON Generator. These tools empower you to create any JSON mock data file you need, in various sizes, schemas, and field types.
 
-All these functions can be used in the schema template file and fed to Dadroit JSON Generator, as explained in the previous section. Now, let's explore these functions in detail. You can also find sample schemas and their corresponding output files on the GitHub repository. Feel free to modify these schemas to fit your needs, as long as you use the correct syntax.
+All these functions can be used in the schema template file and fed to the JSON Generator, as explained in the previous section. Now, let's explore these functions in detail. You can also find sample schemas and their corresponding output files on the GitHub repository. Feel free to modify these schemas to fit your needs, as long as you use the correct syntax.
 
 ## Detailed Process for Generating Random Dummy Data
 
@@ -358,7 +358,7 @@ You’ll get something like this output file, which is the result of the loop de
 }
 ```
 
-To create large JSON files, you can specify `$Count` as much as you need. We have used this approach to generate [JSON files](https://github.com/DadroitOrganization/Generator/releases/tag/Release_Sample_Data) for performance testing our application using this syntax.
+To create large JSON files, you can specify `$Count` as much as you need. We have used this approach to generate [JSON files](https://github.com/JSONGenerator/Generator/releases/tag/Release_Sample_Data) for performance testing our application using this syntax.
 
 ## Design Your Loops By Customizing Iterators
 
@@ -552,21 +552,21 @@ These last few functions can help you construct any JSON schema you have in mind
 use JSON files containing random text as suppliers to make a variety of JSON files, as long as they meet the proper
 syntax requirements, which are not complicated based on these tutorials. For a more sophisticated use case of this
 function, check out
-the [Movies samples in GitHub](https://github.com/DadroitOrganization/Generator/blob/main/Samples/Movies.json). A
+the [Movies samples in GitHub](https://github.com/JSONGenerator/Generator/blob/main/Samples/Movies.json). A
 template file is also available in the sample folder.
 
 ## Final Words
 
-That's about it for this tool use case. If you need mock data to evaluate your app, [Dadroit JSON Generator](https://github.com/DadroitOrganization/Generator) can generate fake yet realistic mock data in JSON format. It's easy to use and flexible in generating data that fulfills all your needs.
+That's about it for this tool use case. If you need mock data to evaluate your app, the [JSON Generator](https://github.com/JSONGenerator/Generator) can generate fake yet realistic mock data in JSON format. It's easy to use and flexible in generating data that fulfills all your needs.
 
-One practical feature of this tool is its flexible custom language template, which you can use as a template for the output data. We described this custom language template in detail in this post, and you can find some profound samples in the project repository on [GitHub](https://github.com/DadroitOrganization/Generator/tree/main/Samples).
+One practical feature of this tool is its flexible custom language template, which you can use as a template for the output data. We described this custom language template in detail in this post, and you can find some profound samples in the project repository on [GitHub](https://github.com/JSONGenerator/Generator/tree/main/Samples).
 
-We generated some [sample JSON files](https://github.com/DadroitOrganization/Generator/releases/tag/Release_Sample_Data) using this tool and tested our beloved [Dadroit JSON Viewer](https://dadroit.com/) with them.
+We generated some [sample JSON files](https://github.com/JSONGenerator/Generator/releases/tag/Release_Sample_Data) using this tool and tested our JSON Viewer application with them.
 
 Now that you know all this new information, you can do one of the following:
 
 - Check out
-  the [generated JSON files](https://github.com/DadroitOrganization/Generator/releases/tag/Release_Sample_Data) to have
+  the [generated JSON files](https://github.com/JSONGenerator/Generator/releases/tag/Release_Sample_Data) to have
   a closer look at the results of the tool.
 - Download the tool, play with it using available sample schemas, or practice this simple schema-generating process
   more, which only needs knowledge of JSON format good enough, and then use your imagination and try the tool to

@@ -16,7 +16,7 @@ og:
 
 TLDR; In this beginner-friendly guide we explain how to work with JSON in the SQLite database. We start with the benefits and use cases of SQLite and JSON, separated and in combination, and then cover the essential JSON functions in SQLite. After that, we provide practical examples for a hands-on understanding of the overall usage of JSON in the SQLite database. We also provided some more practical queries in the final sections.
 
-*We’ve also published an advanced guide about JSON in the SQLite that is complementary to this article, [check it out here](https://dadroit.com/blog/json-querying/).*
+*We’ve also published an advanced guide about JSON in the SQLite that is complementary to this article, [check it out here](https://the tool.com/blog/json-querying/).*
 
 In this guide, we explore a fascinating intersection between two popular technologies: JSON and SQLite. Knowing how to use JSON with SQLite is important in modern software development, especially when dealing with complex data structures that may not completely fit in a tabular structure. Whether you're an experienced developer or an eager beginner to expand your knowledge, this tutorial will help you start learning how to use JSON in the SQLite database.
 
@@ -77,10 +77,10 @@ SQLite manages and manipulates JSON data using [JSON functions](https://www.sqli
 
 ## Practical Series of Examples for Understanding JSON Encode and Decode Functions in SQLite
 
-In this section, we’ve provided minimal examples and a brief explanation for each of the JSON functions we listed in the previous section. We use an example of JSON data from the [Dadroit JSON generator](https://dadroit.com/blog/json-generator/). Here is the original JSON to give you context.
+In this section, we’ve provided minimal examples and a brief explanation for each of the JSON functions we listed in the previous section. We use an example of JSON data from the [JSON Generator](https://the tool.com/blog/json-generator/). Here is the original JSON to give you context.
 
-![This is a sample JSON file opened in Dadroit JSON Viewer, to be used throughout the post about a movie record, consisting of these fields: "ID", "Name", "Year", "Genre" and "Cast" as arrays, "Director", "Runtime", and "Rate”.](images/dadroit-json-viewer-movie-json.png)
-Figure: This is a sample JSON file opened in Dadroit JSON Viewer, to be used throughout the post about a movie record, consisting of these fields: "ID", "Name", "Year", "Genre" and "Cast" as arrays, "Director", "Runtime", and "Rate”.
+![This is a sample JSON file opened in JSON Viewer, to be used throughout the post about a movie record, consisting of these fields: "ID", "Name", "Year", "Genre" and "Cast" as arrays, "Director", "Runtime", and "Rate”.](images/the tool-json-viewer-movie-json.png)
+Figure: This is a sample JSON file opened in JSON Viewer, to be used throughout the post about a movie record, consisting of these fields: "ID", "Name", "Year", "Genre" and "Cast" as arrays, "Director", "Runtime", and "Rate”.
 
 ## The `json()` Function in SQLite
 

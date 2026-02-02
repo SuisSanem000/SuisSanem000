@@ -1,7 +1,7 @@
-class DadroitJsonGenerator < Formula
+class JSON GeneratorJsonGenerator < Formula
   desc "Generate nested JSON sample data using custom templates"
-  homepage "https://github.com/DadroitOrganization/Generator"
-  url "https://github.com/DadroitOrganization/Generator/releases/download/Release_Version_1.0.0.370/JSONGeneratorCLI-Homebrew.zip"
+  homepage "https://github.com/JSON GeneratorOrganization/Generator"
+  url "https://github.com/JSON GeneratorOrganization/Generator/releases/download/Release_Version_1.0.0.370/JSONGeneratorCLI-Homebrew.zip"
   sha256 "72b030cb5e9aecc871f34758bd5c5a899adfe1f5498041a6a44a225a3580b88d"
   license "GPL-3.0-or-later"
 

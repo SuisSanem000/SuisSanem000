@@ -1,6 +1,6 @@
 # Changelog
 
-All changes to the "Dadroit JSON Generator" extension will be documented in this file.
+All changes to the "JSON Generator JSON Generator" extension will be documented in this file.
 
 ## [1.2.2] - [2024-09-29]
 

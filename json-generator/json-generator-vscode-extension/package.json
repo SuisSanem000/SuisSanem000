@@ -1,10 +1,10 @@
 {
-  "name": "dadroit-json-generator",
-  "displayName": "Dadroit JSON Generator",
+  "name": "json-generator",
+  "displayName": "JSON Generator",
   "description": "Generate nested sample JSON data using custom templates.",
   "version": "1.2.2",
   "icon": "images/icon.png",
-  "publisher": "Dadroit",
+  "publisher": "JSONGenerator",
   "preview": false,
   "keywords": [
     "JSON",
@@ -21,9 +21,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DadroitOrganization/JSONGeneratorExtension.git"
+    "url": "https://github.com/JSONGenerator/JSONGeneratorExtension.git"
   },
-  "author": "Dadroit hi@dadroit.com",
+  "author": "JSON Generator Team",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -34,9 +34,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/DadroitOrganization/JSONGeneratorExtension/issues"
+    "url": "https://github.com/JSONGenerator/JSONGeneratorExtension/issues"
   },
-  "homepage": "https://github.com/DadroitOrganization/JSONGeneratorExtension.git",
+  "homepage": "https://github.com/JSONGenerator/JSONGeneratorExtension.git",
   "activationEvents": [
     "*"
   ],
@@ -46,12 +46,12 @@
       {
         "command": "Generate JSON Sample",
         "title": "Generate JSON Sample",
-        "category": "Dadroit"
+        "category": "JSON Generator"
       },
       {
         "command": "Generate JSON",
         "title": "Generate JSON",
-        "category": "Dadroit"
+        "category": "JSON Generator"
       }
     ]
   },

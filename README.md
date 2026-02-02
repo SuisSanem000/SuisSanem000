@@ -15,7 +15,7 @@ A collection of production-ready projects showcasing expertise in full-stack dev
 
 **[news-feed-app](./news-feed-app)** – Full-stack news aggregation platform with custom UI library and client-server architecture
 
-**[high-performance-grid-component](./high-performance-grid-component)** – Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
+**[high-performanc-grid-component](./high-performanc-grid-component)** – Reusable React component for visualizing large JSON/CSV datasets with tree and grid views
 
 **[data-visualization-tool-manager](./data-visualization-tool-manager)** – Sophisticated client manager for data analytics tool with query execution, file management, and licensing systems
 

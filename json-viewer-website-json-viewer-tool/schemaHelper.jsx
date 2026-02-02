@@ -27,22 +27,22 @@ function extractFrontMatterData(markdownData) {
         images.push({
             "@context": "https://schema.org/",
             "@type": "ImageObject",
-            "url": "https://dadroit.com" + imageUrl,
-            "contentUrl": "https://dadroit.com" + imageUrl,
+            "url": "https://jsonviewer.tools" + imageUrl,
+            "contentUrl": "https://jsonviewer.tools" + imageUrl,
             "description": description,
-            "license": "https://dadroit.com/legal/",
-            "creditText": "Dadroit",
+            "license": "https://jsonviewer.tools/legal/",
+            "creditText": "JSON Viewer",
             "author": {
                 "@type": "Organization",
-                "name": "Dadroit"
+                "name": "JSON Viewer"
             },
             "creator": {
                 "@type": "Organization",
-                "name": "Dadroit",
-                "url": "https://dadroit.com/"
+                "name": "JSON Viewer",
+                "url": "https://jsonviewer.tools/"
             },
-            "acquireLicensePage": "https://dadroit.com/legal/",
-            "copyrightNotice": "Copyright © 2025 Dadroit. All rights reserved."
+            "acquireLicensePage": "https://jsonviewer.tools/legal/",
+            "copyrightNotice": "Copyright © 2025 JSON Viewer. All rights reserved."
         });
     }
     return images;
@@ -58,23 +58,23 @@ export const generateArticleSchema = (markdownFileName, markdownData, markdownCo
         "@type": "Article",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://dadroit.com/blog/${markdownFileName}/`
+            "@id": `https://jsonviewer.tools/blog/${markdownFileName}/`
         },
-        "url": `https://dadroit.com/blog/${markdownFileName}/`,
+        "url": `https://jsonviewer.tools/blog/${markdownFileName}/`,
         "headline": markdownData.title,
         "datePublished": markdownData.date + "+00:00",
         "dateModified": markdownData.modified_date + "+00:00",
         "author": {
             "@type": "Organization",
-            "name": "Dadroit",
-            "url": "https://dadroit.com/"
+            "name": "JSON Viewer",
+            "url": "https://jsonviewer.tools/"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Dadroit",
+            "name": "JSON Viewer",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://dadroit.com/logo.png"
+                "url": "https://jsonviewer.tools/logo.png"
             }
         },
         "description": markdownData.description

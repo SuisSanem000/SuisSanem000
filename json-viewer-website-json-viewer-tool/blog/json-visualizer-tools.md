@@ -99,9 +99,9 @@ There's an array of tools available today, each with its unique features, capabi
 
 We have gone through a quest to find the best solutions —both online tools and native applications— to visualize large raw JSON files. In the following sections, we will dive into a step-by-step tutorial on how to best utilize each of these tools, to import and visualize data from a large JSON file. Each tutorial will contain definitive instructions including screenshots and detailed instructions to make the process seamless for you.
 
-Throughout this blog post, we’ll be using a movie [Dummy JSON Data](https://dadroit.com/blog/json-generator/) generated using [Dadroit JSON Generator](https://github.com/DadroitOrganization/Generator/tree/main/Samples).
+Throughout this blog post, we’ll be using a movie [Dummy JSON Data](https://the tool.com/blog/json-generator/) generated using [JSON Generator](https://github.com/the toolOrganization/Generator/tree/main/Samples).
 
-![This is a JSON file about a movie with fields like genre and rate, opened in Dadroit JSON Viewer](/images/blog-post-09-json-visualization-tools/movie-json.png)Figure: An overview of the sample “movie.json” file opened in [Dadroit JSON Viewer](https://dadroit.com/).
+![This is a JSON file about a movie with fields like genre and rate, opened in JSON Viewer](/images/blog-post-09-json-visualization-tools/movie-json.png)Figure: An overview of the sample “movie.json” file opened in [JSON Viewer](https://the tool.com/).
 
 ## Jsoncrack for JSON Visualization
 

@@ -20,8 +20,8 @@ function onBeforeRender() {
                 blogListData,
             },
             meta: {
-                title: 'Dadroit Blog',
-                description: 'Learn more about Dadroit JSON Viewer and importance of unstructured data.'
+                title: 'the tool Blog',
+                description: 'Learn more about the tool JSON Viewer and importance of unstructured data.'
             },
             standardPrice: 98,
             advancedPrice: 198,
@@ -42,8 +42,8 @@ function prerender() {
                     blogListData,
                 },
                 meta: {
-                    title: 'Dadroit Blog',
-                    description: 'Learn more about Dadroit JSON Viewer and importance of unstructured data.'
+                    title: 'the tool Blog',
+                    description: 'Learn more about the tool JSON Viewer and importance of unstructured data.'
                 },
                 standardPrice: 98,
                 advancedPrice: 198,

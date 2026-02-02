@@ -42,7 +42,7 @@ Is JSON challenging to store? For storage, like many other log formats, you can 
 
 Is JSON hard to create? Almost all programming languages support JSON format, and there are several ways to deal with them and convert objects both to and from JSON; In fact, creating JSON is considerably simpler than any other data format in today's programming world.
 
-Is JSON complicated to analyze? There are a range of solutions, each with their own pros and cons. From advanced databases or data lakes to limited text editors. Nearly all well-known databases have native JSON support. If necessary, JSON can be converted to a more conventional row-based data structure for faster and more thorough analysis. Most data lakes support JSON and can scale processing them to terabytes and petabytes. And the simplest solution can be a good old text editor as a lifesaver on a rainy night. There is also a middle-spot solution: special-made tools like Dadroit JSON Viewer to quickly get an overview of your JSON data.
+Is JSON complicated to analyze? There are a range of solutions, each with their own pros and cons. From advanced databases or data lakes to limited text editors. Nearly all well-known databases have native JSON support. If necessary, JSON can be converted to a more conventional row-based data structure for faster and more thorough analysis. Most data lakes support JSON and can scale processing them to terabytes and petabytes. And the simplest solution can be a good old text editor as a lifesaver on a rainy night. There is also a middle-spot solution: special-made tools like a JSON Viewer to quickly get an overview of your JSON data.
 
 Is JSON big and inefficient? Although it could be argued that JSON is not optimal because it is a text-based format and the key of each item is repeated for every entry. However, as discussed m[a](https://www.lucidchart.com/techblog/2019/12/06/json-compression-alternative-binary-formats-and-compression-methods/)[a](https://www.uber.com/en-NL/blog/trip-data-squeeze-json-encoding-compression/)ny times, simple compression formats like Zip, GZip, or [ZSTD](https://github.com/facebook/zstd) will be a fit choice to reduce the size to the level of other formats or even better. To top it all off, remember that almost all web servers, like [Apache](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html) or [NGINX](https://docs.nginx.com/nginx/admin-guide/web-server/compression/), support compression of JSON natively.
 
@@ -52,7 +52,7 @@ Just searching for the name of your preferred programming language and "JSON log
 
 There are many good databases to store and analyze JSON data. [PostgreSQL](https://www.postgresql.org/docs/9.3/functions-json.html), [MySQL](https://dev.mysql.com/doc/refman/8.0/en/json.html), [MongoDB](https://www.mongodb.com/compatibility/json-to-mongodb) or [SQLite](https://www.sqlite.org/json1.html) are some popular ones. In this way, you can only use the database's built-in tools and many of their third-party tools to log, analyze, and report with almost zero lines of code.
 
-There are many interfaces to view the JSON log files, like [Dadroit JSON Viewer](https://dadroit.com/) made by us. It can handle gigantic log files and search through them at a millisecond level. You can have a quick view of the data, look up a lifesaving value, or export it to other formats like CSV or XML.
+There are many interfaces to view the JSON log files. Specialized tools can handle gigantic log files and search through them at a millisecond level. You can have a quick view of the data, look up a lifesaving value, or export it to other formats like CSV or XML.
 
 ## Summary
 
@@ -60,6 +60,6 @@ There are many interfaces to view the JSON log files, like [Dadroit JSON Viewer]
 - It is very simple to save, and there are several storage options, ranging from databases to files.
 -  It can be optimized thanks to fast compression algorithms already available in most tools
 - The structure is not limited, it can grow as needed in a future-proof manner
-- There are many tools that can view, process and analyze it, including the powerful [Dadroit JSON Viewer](https://dadroit.com/).
+- There are many tools that can view, process and analyze it, including powerful JSON Viewer applications.
 
-PS, you can use [Dadroit JSON Generator](https://github.com/DadroitOrganization/Generator) project to produce useful random test data for testing your services, and it has a cool language to do that. Maybe we'll be talking about it more in the future.
+PS, you can use the [JSON Generator](https://github.com/JSONGenerator/Generator) project to produce useful random test data for testing your services, and it has a cool language to do that. Maybe we'll be talking about it more in the future.

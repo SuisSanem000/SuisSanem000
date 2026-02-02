@@ -1,4 +1,4 @@
-# Dadroit JSON Generator
+# JSON Generator
 
 A powerful VSCode extension and npm package for generating nested sample JSON data using custom templates.
 

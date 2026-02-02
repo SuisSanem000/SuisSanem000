@@ -1,2 +1,3 @@
-# GeneratorPackages
-These are packages for Dadroit JSON Generator, released on famous marketplaces, made based on the original cli tool.
+# Generator Packages
+
+These are packages for JSON Generator, released on famous marketplaces, made based on the original CLI tool.

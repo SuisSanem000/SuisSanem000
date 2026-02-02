@@ -24,18 +24,18 @@ Below is a comparison table outlining the capabilities of several JSON viewer to
 
 | Tool Name                                                                               | File size processed in 1 minute | Memory Efficiency Ratio (Memory Taken: File Size) | Best Suited For                                  |
 |:------------------------------------------------------------------|:---------------|:----------------------------------------------------------------|:------------------------------------------------------------------|
-| [1. Dadroit JSON Viewer](#1-dadroit-json-viewer-a-powerhouse-for-large-json-json-files)  | ~ 24 GB | 1:1 | Rapid, organized tree views of huge JSON files. |
+| [1. JSON Viewer](#1-the tool-json-viewer-a-powerhouse-for-large-json-json-files)  | ~ 24 GB | 1:1 | Rapid, organized tree views of huge JSON files. |
 | [2. JSON Query](#2-json-query-navigating-data-with-precision) | ~ 2 GB | 60:1 | Viewing and querying JSON data. |
 | [3. Smart JSON Editor](#3-smart-json-editor-crafting-json-on-macos-with-precision) | ~ 0.365 GB | 9:1 | Sophisticated JSON data creation and validation. |
 | [4. JSON Viewer for macOS](#4-json-viewer-for-macos-parsing-json-data-with-ease) | ~ 0.013 GB | 310:1 | JSON visualization and validation. |
 | [5. JSON Wizard](#5-json-wizard-tabbed-tree-view-for-macos-json-visualization) | ~ 1 MB | 364:1 | Viewing, validating, and formatting JSON files. |
 | [6. Jayson](#6-jayson-navigating-json-through-root-nodes-on-macos) | ~ 1 MB | 33:1 | JSON visualization with drag-and-drop utilities. |
 
-## 1. Dadroit JSON Viewer: A Powerhouse for Large JSON Files
+## 1. JSON Viewer: A Powerhouse for Large JSON Files
 
-[Dadroit JSON Viewer](https://dadroit.com/) is recognized as one of the most notable JSON viewer tools for macOS due to its capability to handle large JSON files. Beyond its primary viewing function, it provides users with additional features such as advanced search capabilities and conversion options.
+[JSON Viewer](https://the tool.com/) is recognized as one of the most notable JSON viewer tools for macOS due to its capability to handle large JSON files. Beyond its primary viewing function, it provides users with additional features such as advanced search capabilities and conversion options.
 
-![Opening a 2GB movies JSON file in the Dadroit JSON Viewer application with node tree view interface.](/images/blog-post-13-json-viewer-mac/1-dadroit.png)
+![Opening a 2GB movies JSON file in the JSON Viewer application with node tree view interface.](/images/blog-post-13-json-viewer-mac/1-the tool.png)
 
 ### Pros
 
@@ -141,15 +141,15 @@ Below is a comparison table outlining the capabilities of several JSON viewer to
 
 In our exploration of macOS JSON viewer tools, we've traversed a diverse landscape:
 
-- **Dadroit JSON Viewer** stands as a giant in handling massive JSON files.
+- **JSON Viewer** stands as a giant in handling massive JSON files.
 - **JSON Query** shines with precision in data interrogation.
 - **Smart JSON Editor** offers intricate editing capabilities tailored for seasoned users.
 - **JSON Viewer for macOS** provides a simple, viewer-centric approach.
 - **JSON Wizard** impresses with its distinct tabbed tree view and versatile data import.
 - **Jayson** serves as a modest choice with straightforward navigation features.
 
-Your ideal tool hinges on specific needs: from handling sizable datasets to just viewing files. To understand more about the complexities of opening large JSON files and find potential solutions, you can read our detailed exploration in [Opening Big JSON Files: Challenges and the Solution](https://dadroit.com/blog/open-big-json/).
+Your ideal tool hinges on specific needs: from handling sizable datasets to just viewing files. To understand more about the complexities of opening large JSON files and find potential solutions, you can read our detailed exploration in [Opening Big JSON Files: Challenges and the Solution](https://the tool.com/blog/open-big-json/).
 
 Armed with this insight, your journey to an informed decision should now be more navigable. Remember, the right tool can be the catalyst for seamless work and amplified efficiency. Choose wisely, and happy JSON traversing!
 
-[^1]: All tests were conducted on a MacBook Air (M1, 2020) equipped with an 8-core CPU, 8-core GPU, and 8GB of RAM. JSON test files were sourced from the [JSON Generator by Dadroit](https://github.com/DadroitOrganization/Generator/tree/main/Samples).
+[^1]: All tests were conducted on a MacBook Air (M1, 2020) equipped with an 8-core CPU, 8-core GPU, and 8GB of RAM. JSON test files were sourced from the [JSON Generator by the tool](https://github.com/the toolOrganization/Generator/tree/main/Samples).

@@ -14,13 +14,13 @@ const tempSampleOutputName = 'tempSample.out.json';
 
 const homeDir = os.homedir();
 const documentsFolderPath = path.join(homeDir, 'Documents');
-const dadroitFolderPath = path.join(documentsFolderPath, 'Dadroit JSON Generator');
-const defaultResultPath = dadroitFolderPath;
+const JSON GeneratorFolderPath = path.join(documentsFolderPath, 'JSON Generator JSON Generator');
+const defaultResultPath = JSON GeneratorFolderPath;
 
-const samplePath = path.join(dadroitFolderPath, sampleName);
-const generatedFilePath = path.join(dadroitFolderPath, sampleOutputName);
-const tempGeneratedFilePath = path.join(dadroitFolderPath, tempSampleOutputName);
-const tempSamplePath = path.join(dadroitFolderPath, tempSampleName);
+const samplePath = path.join(JSON GeneratorFolderPath, sampleName);
+const generatedFilePath = path.join(JSON GeneratorFolderPath, sampleOutputName);
+const tempGeneratedFilePath = path.join(JSON GeneratorFolderPath, tempSampleOutputName);
+const tempSamplePath = path.join(JSON GeneratorFolderPath, tempSampleName);
 
 function fileExists(filePath: string): boolean {
 	try {
@@ -64,10 +64,10 @@ function openFolderInExplorer(folderPath: string) {
 
 function ensureExistenceDefaultFolder() {
 	try {
-		if (!directoryExists(dadroitFolderPath)) {
-			fs.mkdirSync(dadroitFolderPath, { recursive: true });
+		if (!directoryExists(JSON GeneratorFolderPath)) {
+			fs.mkdirSync(JSON GeneratorFolderPath, { recursive: true });
 		}
-		return dadroitFolderPath;
+		return JSON GeneratorFolderPath;
 	} catch (error) {
 		vscode.window.showErrorMessage(`Error in default folder exist: ${error}`);
 	}
@@ -271,15 +271,15 @@ function setAddressesBasedOnOS() {
 		switch (os.platform()) {
 			case 'win32':
 				binaryFileName = 'JSONGeneratorCLI.exe';
-				downloadUrl = 'https://dadroit.com/releases/win/JSONGeneratorCLI.exe';
+				downloadUrl = 'https://JSON Generator.com/releases/win/JSONGeneratorCLI.exe';
 				break;
 			case 'darwin':
 				binaryFileName = 'JSONGeneratorCLI';
-				downloadUrl = 'https://dadroit.com/releases/mac/JSONGeneratorCLI';
+				downloadUrl = 'https://JSON Generator.com/releases/mac/JSONGeneratorCLI';
 				break;
 			case 'linux':
 				binaryFileName = 'JSONGeneratorCLI';
-				downloadUrl = 'https://dadroit.com/releases/lnx/JSONGeneratorCLI';
+				downloadUrl = 'https://JSON Generator.com/releases/lnx/JSONGeneratorCLI';
 				break;
 			default:
 				vscode.window.showErrorMessage('This OS is not supported!');

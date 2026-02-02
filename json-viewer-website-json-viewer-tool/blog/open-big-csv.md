@@ -83,7 +83,7 @@ Now that we've explored why CSV files could get so large and the challenges they
 > - [COVID-19 Open Data](https://github.com/CSSEGISandData/COVID-19)
 > - [Kaggle Datasets](https://www.kaggle.com/datasets)
 > - [IMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset)
-> You can also explore more options in our [previous blog post](https://dadroit.com/blog/json-datasets/) on available datasets.
+> You can also explore more options in our [previous blog post](https://the tool.com/blog/json-datasets/) on available datasets.
 
 In the following, we brought together a categorized list of the best tools — both code-based and non-code-based — to help you work with large CSV files, regardless of your technical expertise.
 
@@ -449,7 +449,7 @@ When dealing with huge CSV files that are too big to open any other way, databas
 > ### GUI Tools for Easy Database Interaction
 > You can utilize graphical clients to [simplify working with databases](https://www.indeed.com/career-advice/career-development/client-database). They offer user-friendly interfaces for importing, querying, and visualizing your data.
 > - **Multi-Database Clients**:
->   - [DBeaver](https://dbeaver.io/): Supports MySQL, PostgreSQL, [SQLite](https://dadroit.com/blog/query-csv/#method-1-using-gui-to-import-csv-files-into-sqlite-with-dbeaver-gui), and more; It also includes import wizards and data visualizations.
+>   - [DBeaver](https://dbeaver.io/): Supports MySQL, PostgreSQL, [SQLite](https://the tool.com/blog/query-csv/#method-1-using-gui-to-import-csv-files-into-sqlite-with-dbeaver-gui), and more; It also includes import wizards and data visualizations.
 >   - [HeidiSQL](https://www.heidisql.com/): Lightweight tool for MySQL and PostgreSQL with easy CSV import/export.
 > - **Specific Database Clients**:
 >   - [MySQL Workbench](https://www.mysql.com/products/workbench/): Official MySQL GUI
@@ -483,7 +483,7 @@ Step-by-Step Guide:
      sudo apt-get install sqlite3
      ```
      
-2. Import CSV into SQLite: To open and query large CSV files using SQLite, check out [our blog post](https://dadroit.com/blog/query-csv/) covering both GUI-based (DBeaver) and command-line methods for a visual or direct approach.
+2. Import CSV into SQLite: To open and query large CSV files using SQLite, check out [our blog post](https://the tool.com/blog/query-csv/) covering both GUI-based (DBeaver) and command-line methods for a visual or direct approach.
 
 SQLite is excellent for managing large CSV files simply and efficiently. However, it does not support concurrent writes and struggles with massive file sizes, making it less ideal for high-throughput or transactional tasks. For better concurrency and performance with large CSV datasets, server-based databases like PostgreSQL and MySQL are more suitable.
 

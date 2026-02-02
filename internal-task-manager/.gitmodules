@@ -1,4 +1,0 @@
-[submodule "packages/web"]
-	path = packages/web
-	url = git@gitlab.com:sparrowgroup/web.git
-	branch = develop

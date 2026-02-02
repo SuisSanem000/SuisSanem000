@@ -160,5 +160,5 @@ Here we brought any other proper dataset or service that offers open data.
   documentation.
 
 ## So, to wrap it up.
-We carefully picked and described these websites to give you a thorough overview of open-data providers out there. We focused on JSON because it is almost the de facto and chosen format to exchange data everyplace in the tech industry. JSON comes in handy, particularly when facing the [challenge of opening large-scale data files](https://dadroit.com/blog/open-big-json/).
-And on your journey, if you had a JSON file to explore, you can use our Dadroit JSON Viewer, it is fast, and free for academics!
+We carefully picked and described these websites to give you a thorough overview of open-data providers out there. We focused on JSON because it is almost the de facto and chosen format to exchange data everyplace in the tech industry. JSON comes in handy, particularly when facing the [challenge of opening large-scale data files](https://the tool.com/blog/open-big-json/).
+And on your journey, if you had a JSON file to explore, you can use our JSON Viewer, it is fast, and free for academics!

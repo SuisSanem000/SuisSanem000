@@ -1,4 +1,4 @@
-# Eye - News Feed Application
+# News Feed App
 
 A full-stack news feed application with a modern client-server architecture and custom UI library integration.
 
@@ -13,7 +13,7 @@ A full-stack news feed application with a modern client-server architecture and 
 
 ## Purpose
 
-Eye is a personalized news aggregation and consumption platform designed to deliver curated content to users. The application demonstrates a clean separation between client and server, with custom reusable UI libraries managed as workspace packages.
+This is a personalized news aggregation and consumption platform designed to deliver curated content to users. The application demonstrates a clean separation between client and server, with custom reusable UI libraries managed as workspace packages.
 
 ## Main Features
 
@@ -86,8 +86,8 @@ isNewsRead(key: string): Promise<boolean> {
 - Graceful degradation without connection
 
 **Client-Server Separation**
-- Dedicated `eye-client` (Vite + TypeScript)
-- Dedicated `eye-server` (Node.js backend)
+- Dedicated `client` (Vite + TypeScript)
+- Dedicated `server` (Node.js backend)
 - RESTful API contracts between layers
 - Independent deployment and scaling
 

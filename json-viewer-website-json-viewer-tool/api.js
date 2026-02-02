@@ -30,7 +30,7 @@ export {
     apiLog
 }
 
-const BASE_URL = "https://api.dadroit.com";
+const BASE_URL = "https://api.JSON Viewer.com";
 
 const isUserLogin = () => {
     let token = typeof localStorage !== 'undefined' && localStorage.getItem("access_token");

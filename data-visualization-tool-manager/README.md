@@ -1,4 +1,4 @@
-# Olive Manager - Data Visualization Tool Client Manager
+# Data Visualization Tool Manager
 
 A sophisticated TypeScript client manager for CSV and JSON data analytics and visualization, featuring advanced file management, query execution, and licensing systems.
 
@@ -11,7 +11,7 @@ A sophisticated TypeScript client manager for CSV and JSON data analytics and vi
 
 ## Purpose
 
-Olive Manager serves as the core client-side management layer for a data analytics and visualization tool. It orchestrates file operations, data processing, query execution, user settings, and licensing for CSV/JSON datasets. The architecture demonstrates advanced TypeScript patterns and event-driven design.
+This tool serves as the core client-side management layer for a data analytics and visualization application. It orchestrates file operations, data processing, query execution, user settings, and licensing for CSV/JSON datasets. The architecture demonstrates advanced TypeScript patterns and event-driven design.
 
 ## Main Features
 

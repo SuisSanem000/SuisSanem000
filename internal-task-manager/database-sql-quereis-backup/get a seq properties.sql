@@ -1,1 +1,0 @@
-SELECT * FROM priority_id_seq1;

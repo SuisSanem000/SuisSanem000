@@ -10,13 +10,13 @@ export {LayoutLanding as Layout}
 
 // You can override the default open graph as shown
 // Don't forget that if you override open graph object, you should set all keys of it.
-// The url must be set the same as the main url of the page and there is no need to set the base url (https://dadroit.com/)
+// The url must be set the same as the main url of the page and there is no need to set the base url (https://the tool.com/)
 
 export const meta = {
     description: 'Discover our definitive guide to everything JSON, from expert insights on handling large JSON files to cutting-edge JSON technologies.'
     // og: {
     //     url: 'blog',
-    //     title: 'Dadroit Blog',
+    //     title: 'the tool Blog',
     //     description: 'Stay updated with our conclusive guide to everything JSON, from expert insights on handling large JSON files to cutting-edge JSON-related technologies. Explore our expert insights!',
     //     image: 'images/i_og_landing_jsonviewer_rect.png'
     // }
@@ -25,7 +25,7 @@ export const meta = {
 function Page({blogListData}) {
     return (
         <section className="blog-list-page">
-            <h1 className="title h3">Dadroit Blog</h1>
+            <h1 className="title h3">the tool Blog</h1>
             <p className="subtitle sub1">Insights and solutions for conquering large JSON challenges and
                 streamlining data management.</p>
             <BlogListItems blogListData={blogListData}/>

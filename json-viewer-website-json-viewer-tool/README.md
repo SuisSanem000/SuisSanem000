@@ -1,6 +1,6 @@
-# Dadroit Website - JSON Viewer Product Site
+# JSON Viewer Website - JSON Viewer Tool
 
-A comprehensive marketing and sales platform for Dadroit Desktop JSON Viewer, featuring user authentication, licensing management, and a technical blog.
+A comprehensive marketing and sales platform for a Desktop JSON Viewer, featuring user authentication, licensing management, and a technical blog.
 
 ## Tech Stack
 
@@ -11,7 +11,7 @@ A comprehensive marketing and sales platform for Dadroit Desktop JSON Viewer, fe
 
 ## Purpose
 
-This website serves as the primary marketing, sales, and support platform for the Dadroit Desktop JSON Viewer product. It handles user registration, account management, license purchasing, and provides educational content through technical articles. As a key project early in my career (2020), I was responsible for both initial development and ongoing maintenance/feature additions.
+This website serves as the primary marketing, sales, and support platform for a Desktop JSON Viewer product. It handles user registration, account management, license purchasing, and provides educational content through technical articles. As a key project early in my career (2020), I was responsible for both initial development and ongoing maintenance/feature additions.
 
 ## Main Features
 

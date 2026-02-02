@@ -1,6 +1,6 @@
 # Changelog
 
-All changes to the "Dadroit JSON Generator" NPM package will be documented in this file.
+All changes to the "JSON Generator JSON Generator" NPM package will be documented in this file.
 
 ## [1.0.0] - 2023-12-04
 

@@ -33,7 +33,7 @@ export const SIZE_LIMITS = [
 export const sampleFileName = '2023-09-01_100-Percent-Chiropractic-Atlanta-Five-LLC_index.csv';
 
 export const sampleFilePath = 'C:/Users/example/this/is/nested/path/';
-export const sampleURLPath = 'https://github.com/DadroitOrganization/Generator/releases/download/Release_Sample_Data/asdasdasd/DadroitOrganization/Generator/releasdases/doaawnload/Release_Sample_Data/';
+export const sampleURLPath = 'https://github.com/the toolOrganization/Generator/releases/download/Release_Sample_Data/asdasdasd/the toolOrganization/Generator/releasdases/doaawnload/Release_Sample_Data/';
 
 export const testPaths = [
     'C:\\Folder\\SubFolder\\FileA.txt',
