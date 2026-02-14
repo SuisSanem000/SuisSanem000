@@ -1,6 +1,6 @@
 # Portfolio Projects
 
-Hello, these are the projects I worked on during my past roles. A collection of production-ready projects showcasing expertise in full-stack web development, developer tooling, data visualization, and modern web architectures.
+Hello, these are the projects I worked on during my past roles, starting in 2020. A collection of production-ready projects showcasing expertise in full-stack web development, developer tooling, data visualization, and modern web architectures.
 
 ---
 
