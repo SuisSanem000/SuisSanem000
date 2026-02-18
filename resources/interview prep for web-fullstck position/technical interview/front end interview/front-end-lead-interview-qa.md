@@ -159,7 +159,7 @@ src/
 
 | Approach | Pros | Cons |
 |----------|------|------|
-| **CSS Modules** | Scoped by default, zero runtime, SSR-safe | No dynamic styling |
+| **CSS Modules** | Scoped by default, How scoping works: The build tool renames your .box class to a unique hash like .Component_box__a8f2z. This guarantees no conflicts between files. , zero runtime, SSR-safe | No dynamic styling |
 | **Tailwind** | Fast prototyping, consistent tokens | Verbose JSX, learning curve |
 | **CSS-in-JS** (styled-components) | Dynamic styles, co-located | Runtime cost, SSR complexity |
 | **Vanilla CSS** + custom properties | No deps, full control | Not scoped, manual naming |
@@ -193,6 +193,16 @@ src/
 - Discriminated unions for state machines (`{ status: 'loading' } | { status: 'success', data: T }`)
 - `as const` for literal types
 - Avoid `any` — use `unknown` + type narrowing instead
+> | | `any` | `unknown` |
+> |---|---|---|
+> | **Type Checking** | Disabled (wildcard) | Enabled (must check type) |
+> | **Safety** | Unsafe (can access non-existent props) | Safe (compiler errors if used blindly) |
+> | **Use Case** | Migrating legacy JS | External API data / User input |
+> ```ts
+> const x: any = 'hello';  x.foo(); // ✅ OK (Runtime Error)
+> const y: unknown = 'hello'; y.foo(); // ❌ Compiler Error: Object is of type 'unknown'
+> if (typeof y === 'string') y.toUpperCase(); // ✅ OK after narrowing
+> ```
 
 ---
 
