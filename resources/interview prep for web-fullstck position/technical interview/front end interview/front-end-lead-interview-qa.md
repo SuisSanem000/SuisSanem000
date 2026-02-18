@@ -21,6 +21,12 @@
 
 **Tools**: Lighthouse, Chrome DevTools Performance tab, `web-vitals` npm package, PageSpeed Insights.
 
+> **Note on `web-vitals`**: This is a tiny library (1KB) by Google that measures metrics from **real users** (RUM). Lighthouse simulates performance (Lab data), but `web-vitals` captures what actual users experience in the wild.
+> ```js
+> import { onLCP, onINP, onCLS } from 'web-vitals';
+> onLCP(console.log); // Logs LCP metric to console
+> ```
+
 ---
 
 ### Q: How do you reduce bundle size in a React/Next.js app?
@@ -30,6 +36,7 @@
 3. **Analyze the bundle** — `@next/bundle-analyzer` or `webpack-bundle-analyzer`
 4. **Replace heavy libraries** — e.g. `date-fns` → native `Intl.DateTimeFormat`, `lodash/get` → optional chaining
 5. **Dynamic imports** for heavy components (charts, editors, maps)
+   > Just wrap it: `const Chart = dynamic(() => import('./Chart'), { ssr: false })`
 6. **Image optimization** — Next.js `<Image>`, WebP/AVIF format, lazy loading
 7. **Compression** — Gzip/Brotli at the CDN/server level
 
