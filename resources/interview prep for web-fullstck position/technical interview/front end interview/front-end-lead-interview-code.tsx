@@ -232,10 +232,8 @@ interface ErrorBoundaryState {
 }
 
 class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false, error: null };
-  }
+  // Class property for state (no constructor needed)
+  state: ErrorBoundaryState = { hasError: false, error: null };
 
   static getDerivedStateFromError(error: Error): ErrorBoundaryState {
     return { hasError: true, error };
@@ -293,6 +291,7 @@ function AnalyticsPage() {
       <button onClick={() => setShowChart(true)}>Show Chart</button>
 
       {showChart && (
+        {/* Suspense shows the 'fallback' while LazyChart is downloading */}
         <Suspense fallback={<div>Loading chart...</div>}>
           <LazyChart />
         </Suspense>
@@ -459,7 +458,10 @@ function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T | ((pre
 // ============================================
 
 // WHY: Sometimes CSS media queries aren't enough.
-// You need JS to conditionally render different components, not just style them.
+// CSS Media Query: Condition block in your CSS file.
+// Example: @media (max-width: 768px) { .sidebar { display: none; } }
+// Limitation: The element is still in the DOM, just hidden. React still renders it.
+// JS media queries let you NOT render the component at all (better performance).
 
 function useMediaQuery(query: string): boolean {
   const [matches, setMatches] = useState(false);
