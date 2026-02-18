@@ -50,11 +50,11 @@
 - Context value changes re-render all consumers
 
 **Fixes:**
-- `React.memo()` — skip re-render if props haven't changed
-- `useCallback` — stable function references
-- `useMemo` — memoize expensive computed values
-- Split Context — separate frequently/rarely changing values
-- `useRef` for values that don't need re-render (timers, previous values)
+- `React.memo(Component)` — HOC that checks `prevProps === nextProps`. If true, skips re-render.
+- `useCallback` — Keeps a function reference stable across renders. Crucial when passing functions to `React.memo` components.
+- `useMemo` — Caches the *result* of an expensive calculation (e.g., sorting 10k items).
+- Split Context — Don't put `user` and `theme` in one Context. If `theme` changes, `user` consumers shouldn't re-render.
+- `useRef` — Stores data that survives renders but *doesn't trigger* a re-render when changed (e.g., `timerId`, `scrollPosition`).
 
 **Profiling:** React DevTools Profiler → "Why did this render?" → fix the top offenders first.
 
