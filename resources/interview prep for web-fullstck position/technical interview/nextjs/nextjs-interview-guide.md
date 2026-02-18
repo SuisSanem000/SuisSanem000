@@ -227,6 +227,19 @@ Middleware runs **before a request is completed**. It sits between the user and 
 
 ❌ Don't confuse Pages Router with App Router—clarify which you're discussing
 
+> **Why this matters:** Pages Router and App Router are two fundamentally different architectures that coexist in Next.js. Mixing up their APIs in an interview signals you haven't actually worked with either one.
+>
+> | | Pages Router (`pages/`) | App Router (`app/`) |
+> |---|---|---|
+> | **Routing** | File = route (`pages/about.tsx`) | Folder + `page.tsx` (`app/about/page.tsx`) |
+> | **Data fetching** | `getServerSideProps`, `getStaticProps`, `getStaticPaths` | `async` Server Components, `fetch` with caching options |
+> | **Rendering model** | All components are Client Components by default | Server Components by default, opt-in `'use client'` |
+> | **Layouts** | Re-mount on every navigation (`_app.tsx`) | Persistent layouts that don't re-render (`layout.tsx`) |
+> | **API routes** | `pages/api/*.ts` exports `handler(req, res)` | `app/api/*/route.ts` exports `GET`, `POST`, etc. |
+> | **Streaming/Suspense** | Limited support | First-class (`loading.tsx`, `Suspense` boundaries) |
+>
+> **Safe interview answer:** "I'm working with the **App Router** — it uses Server Components by default, folder-based routing with `layout.tsx` and `page.tsx`, and `fetch` for data with built-in caching. I'm aware the Pages Router uses `getServerSideProps` / `getStaticProps` but the App Router is the recommended approach for new projects."
+
 ❌ Don't say "SSR is always better"—explain trade-offs
 
 ❌ Don't forget that Server Components can't use `useState`
