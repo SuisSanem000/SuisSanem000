@@ -14,7 +14,9 @@
 | **V8** | Compiles JS to machine code, manages heap & GC |
 | **libuv** | Provides the event loop, async I/O, thread pool (default 4 threads) |
 
-**Single-threaded but non-blocking** — one JS thread delegates I/O to libuv's thread pool and OS-level async APIs. The event loop picks up results via callbacks.
+**Single-threaded but non-blocking (for I/O)** — one JS thread handles your code.
+> - **I/O (Network, DB, File):** Handled by libuv/OS threads. Your JS **does not wait**; it gets a callback when done.
+> - **CPU (Loops, JSON.parse):** Executes on the single JS thread. **This IS blocking.** If you run a `while(true)` loop, the server freezes.
 
 **Why it matters in interviews:**
 - Explains why Node.js is great for I/O-bound tasks (APIs, file serving)
@@ -22,33 +24,44 @@
 
 ---
 
-## 2. Event Loop (6 Phases)
+## 2. Event Loop — Macrotasks vs Microtasks
+
+**Macrotasks** = the 6 phases of the loop (one task per tick):
 
 ```
-   ┌───────────────────────────┐
-┌─>│        timers              │ ← setTimeout, setInterval callbacks
-│  └──────────┬────────────────┘
-│  ┌──────────┴────────────────┐
-│  │     pending callbacks     │ ← deferred I/O callbacks
-│  └──────────┬────────────────┘
-│  ┌──────────┴────────────────┐
-│  │       idle, prepare       │ ← internal use
-│  └──────────┬────────────────┘
-│  ┌──────────┴────────────────┐
-│  │          poll             │ ← I/O events (most time spent here)
-│  └──────────┬────────────────┘
-│  ┌──────────┴────────────────┐
-│  │          check            │ ← setImmediate callbacks
-│  └──────────┬────────────────┘
-│  ┌──────────┴────────────────┐
-│  │     close callbacks       │ ← socket.on('close')
-│  └──────────┴────────────────┘
-└─────────────────────────────────
+   ┌───────────────────────────────────────────────────────┐
+┌─>│  MACROTASK QUEUE (one phase at a time)                │
+│  │                                                       │
+│  │  1. timers          ← setTimeout, setInterval        │
+│  │  2. pending I/O     ← deferred I/O callbacks         │
+│  │  3. idle, prepare   ← internal use                   │
+│  │  4. poll            ← I/O events (waits here mostly) │
+│  │  5. check           ← setImmediate callbacks         │
+│  │  6. close callbacks ← socket.on('close')             │
+│  └───────────────────────────────────────────────────────┘
+│
+│  ↕ After EVERY phase above, drain the MICROTASK QUEUE:
+│  ┌───────────────────────────────────────────────────────┐
+│  │  MICROTASK QUEUE (ALL run before next macrotask)      │
+│  │  1. process.nextTick()  ← highest priority           │
+│  │  2. Promise.then / await continuations               │
+│  └───────────────────────────────────────────────────────┘
+└──── (loop repeats)
 ```
 
-**Microtasks (run between EVERY phase):**
-1. `process.nextTick()` — highest priority, runs before any other microtask
-2. `Promise` callbacks (`.then`, `await` continuation)
+**Execution order example:**
+```js
+setTimeout(() => console.log('1 macrotask'), 0);
+Promise.resolve().then(() => console.log('2 microtask'));
+process.nextTick(() => console.log('3 nextTick'));
+console.log('4 sync');
+
+// Output order:
+// 4 sync         ← runs first (synchronous code, not in the loop)
+// 3 nextTick     ← microtask, highest priority
+// 2 microtask    ← microtask, Promise
+// 1 macrotask    ← macrotask, setTimeout
+```
 
 **Key interview point:** `process.nextTick()` can starve the event loop if called recursively. Prefer `setImmediate()` when deferring non-critical work.
 
