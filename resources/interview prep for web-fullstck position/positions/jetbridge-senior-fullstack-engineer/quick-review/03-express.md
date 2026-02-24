@@ -125,6 +125,12 @@ app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 })); // rate limit
 app.use(express.json({ limit: "10mb" }));  // body parser with size limit
 ```
 
+**Why you need them:**
+- **`helmet`**: Automatically sets secure HTTP headers (prevents XSS, hides `X-Powered-By: Express`).
+- **`cors`**: Allows your separated frontend (e.g. running on localhost:3000) to safely make API requests to your backend (e.g. localhost:8080).
+- **`morgan`**: Logs every incoming HTTP request to the console for debugging (`GET /api/users 200 15ms`).
+- **`express-rate-limit`**: Blocks IPs that make too many requests too fast (prevents brute-force/DoS attacks).
+
 ---
 
 ## Authentication Middleware Pattern
