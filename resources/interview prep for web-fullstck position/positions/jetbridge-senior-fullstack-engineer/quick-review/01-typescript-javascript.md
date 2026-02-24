@@ -57,6 +57,40 @@ counter.increment(); // 2
 
 **Interview use:** debounce, throttle, private variables, factory functions.
 
+```javascript
+// 1. Private variables
+function createWallet(initialAmount) {
+  let balance = initialAmount; // private
+  return {
+    add: (amount) => balance += amount,
+    getBalance: () => balance // only way to read it
+  };
+}
+
+// 2. Debounce (wait for pause before executing)
+function debounce(fn, delay) {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId); // reset timer on every call
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+}
+// Usage: const save = debounce(() => api.save(), 500);
+
+// 3. Throttle (execute exactly once per interval)
+function throttle(fn, limit) {
+  let inThrottle;
+  return (...args) => {
+    if (!inThrottle) {
+      fn(...args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  };
+}
+// Usage: window.addEventListener('scroll', throttle(checkScroll, 200));
+```
+
 ### `this` Binding (4 rules, in order)
 
 1. **`new`** → `this` = new object
