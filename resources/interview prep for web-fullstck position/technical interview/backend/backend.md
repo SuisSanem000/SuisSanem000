@@ -236,7 +236,64 @@ Request → Middleware1 → Middleware2 → ... → Route Handler → Response
 
 ---
 
-## 9. Message Queues & Async Processing
+## 9. Promise Concurrency — `all` vs `allSettled` vs `any` vs `race`
+
+| Method | Resolves when | Rejects when | Returns |
+|--------|--------------|-------------|---------|
+| **`Promise.all`** | **All** promises fulfill | **Any one** rejects (fail-fast) | Array of values |
+| **`Promise.allSettled`** | **All** promises settle (fulfill or reject) | **Never** rejects | Array of `{status, value/reason}` |
+| **`Promise.any`** | **Any one** fulfills | **All** reject (`AggregateError`) | First fulfilled value |
+| **`Promise.race`** | **Any one** settles (first to finish) | If first to settle rejects | Value of first settled |
+
+**When to use each:**
+
+```javascript
+// Promise.all — fetch multiple resources, need ALL of them
+const [users, orders, inventory] = await Promise.all([
+  fetchUsers(),
+  fetchOrders(),
+  fetchInventory(),
+]);
+// ⚠ If fetchOrders() fails, entire call rejects — users/inventory are lost
+
+// Promise.allSettled — partial failure is OK
+const results = await Promise.allSettled([
+  sendEmail(user1),
+  sendEmail(user2),
+  sendEmail(user3),
+]);
+const failed = results.filter(r => r.status === 'rejected');
+// ✅ Always get results for ALL — some may have failed
+
+// Promise.any — first success wins (fallback pattern)
+const data = await Promise.any([
+  fetchFromPrimaryDB(),
+  fetchFromReplicaDB(),
+  fetchFromCache(),
+]);
+// ✅ Returns fastest successful response, ignores failures
+// ⚠ Only rejects if ALL fail (AggregateError)
+
+// Promise.race — first to settle wins (timeout pattern)
+const result = await Promise.race([
+  fetchData(),
+  new Promise((_, reject) =>
+    setTimeout(() => reject(new Error('Timeout')), 5000)
+  ),
+]);
+// ✅ If fetchData takes > 5s, timeout error fires
+// ⚠ First to finish wins — even if it's a rejection
+```
+
+**Quick mental model:**
+- **all** = "I need everything" → one failure = total failure
+- **allSettled** = "Give me everything, failures included" → never throws
+- **any** = "Give me the first success" → ignores failures until all fail
+- **race** = "Give me the first result, good or bad" → fastest wins
+
+---
+
+## 10. Message Queues & Async Processing
 
 **Why:** Decouple services, handle spikes, ensure reliability
 
