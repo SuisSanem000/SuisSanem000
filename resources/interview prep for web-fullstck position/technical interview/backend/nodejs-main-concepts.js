@@ -139,31 +139,42 @@ process.on('uncaughtException', (error) => {
   process.exit(1);
 });
 
-// Express error middleware
-function errorHandler(err, req, res, next) {
-  console.error(err.stack);
-  
-  res.status(err.status || 500).json({
-    error: {
-      message: err.message,
-      ...(process.env.NODE_ENV === 'development' && {stack: err.stack})
-    }
-  });
+// Custom error classes (vanilla Node.js)
+class AppError extends Error {
+  constructor(message, statusCode) {
+    super(message);
+    this.statusCode = statusCode;
+    this.name = this.constructor.name;
+  }
 }
 
-// Async route wrapper to catch errors
-const asyncHandler = (fn) => (req, res, next) => {
-  Promise.resolve(fn(req, res, next)).catch(next);
-};
+// Vanilla Node.js HTTP server with error handling
+const http = require('http');
 
-// Usage
-app.get('/products/:id', asyncHandler(async (req, res) => {
-  const product = await db.findProduct(req.params.id);
-  if (!product) {
-    throw new Error('Product not found'); // Caught by asyncHandler
+const server = http.createServer(async (req, res) => {
+  try {
+    if (req.url.startsWith('/products/') && req.method === 'GET') {
+      const id = req.url.split('/')[2];
+      const product = await db.findProduct(id);
+      if (!product) {
+        throw new AppError('Product not found', 404);
+      }
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(product));
+    }
+  } catch (error) {
+    const statusCode = error.statusCode || 500;
+    res.writeHead(statusCode, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      error: {
+        message: error.message,
+        ...(process.env.NODE_ENV === 'development' && { stack: error.stack })
+      }
+    }));
   }
-  res.json(product);
-}));
+});
+
+// NOTE: Express/Fastify middleware patterns are covered in backend/expressjs-fastify/
 
 
 // ============================================
@@ -172,8 +183,8 @@ app.get('/products/:id', asyncHandler(async (req, res) => {
 
 // CommonJS (default in Node.js)
 // Synchronous, single export
-const express = require('express');
-const { Router } = require('express');
+// const http = require('http');
+// const { createServer } = require('http');
 
 function createProduct(data) {
   return { id: 1, ...data };

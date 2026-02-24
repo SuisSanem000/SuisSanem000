@@ -116,30 +116,24 @@ async function fetchProduct(id) {
   }
 }
 
-// 2. Express error middleware
-function errorMiddleware(err, req, res, next) {
-  console.error(err.stack);
-  
-  // Custom errors
-  if (err.name === 'ValidationError') {
-    return res.status(400).json({ error: err.message });
+// 2. Custom error classes for structured error handling
+class AppError extends Error {
+  constructor(message, statusCode) {
+    super(message);
+    this.statusCode = statusCode;
+    this.name = this.constructor.name;
   }
-  
-  if (err.name === 'NotFoundError') {
-    return res.status(404).json({ error: err.message });
-  }
-  
-  // Default
-  res.status(500).json({
-    error: 'Internal server error',
-    ...(process.env.NODE_ENV === 'development' && {
-      message: err.message,
-      stack: err.stack
-    })
-  });
 }
 
-// 3. Global handlers
+class NotFoundError extends AppError {
+  constructor(message) { super(message, 404); }
+}
+
+class ValidationError extends AppError {
+  constructor(message) { super(message, 400); }
+}
+
+// 3. Global handlers (Node.js built-in)
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise);
   console.error('Reason:', reason);
@@ -153,15 +147,25 @@ process.on('uncaughtException', (error) => {
   process.exit(1);
 });
 
-// 4. Async route wrapper
-const asyncHandler = (fn) => (req, res, next) => {
-  Promise.resolve(fn(req, res, next)).catch(next);
-};
+// 4. Vanilla Node.js HTTP server with error handling
+const http = require('http');
 
-app.get('/products/:id', asyncHandler(async (req, res) => {
-  const product = await fetchProduct(req.params.id);
-  res.json(product);
-}));
+const server = http.createServer(async (req, res) => {
+  try {
+    if (req.url.startsWith('/products/') && req.method === 'GET') {
+      const id = req.url.split('/')[2];
+      const product = await fetchProduct(id);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(product));
+    }
+  } catch (error) {
+    const statusCode = error.statusCode || 500;
+    res.writeHead(statusCode, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: error.message }));
+  }
+});
+
+// NOTE: Express/Fastify error middleware patterns are covered in backend/expressjs-fastify/
 
 
 // ============================================
@@ -210,6 +214,7 @@ export default class ProductService {}
 // 1. Use clustering to utilize all CPU cores
 const cluster = require('cluster');
 const os = require('os');
+const http = require('http');
 
 if (cluster.isMaster) {
   const numCPUs = os.cpus().length; // 4, 8, 16 cores
@@ -225,39 +230,33 @@ if (cluster.isMaster) {
     cluster.fork();
   });
 } else {
-  // Each worker runs the server
-  const app = require('express')();
-  
-  app.get('/products', async (req, res) => {
-    const products = await db.products.find();
-    res.json(products);
+  // Each worker runs the server (vanilla Node.js http)
+  const server = http.createServer(async (req, res) => {
+    if (req.url === '/products' && req.method === 'GET') {
+      const products = await db.products.find();
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(products));
+    }
   });
   
-  app.listen(3000);
+  server.listen(3000);
   console.log(`Worker ${process.pid} started`);
 }
 
-// 2. Use caching to reduce database load
-const NodeCache = require('node-cache');
-const cache = new NodeCache({ stdTTL: 300 }); // 5 min TTL
+// 2. Use caching to reduce database load (in-memory Map)
+const cache = new Map();
+const CACHE_TTL = 300_000; // 5 min in ms
 
-app.get('/products/:id', async (req, res) => {
-  const { id } = req.params;
-  
-  // Check cache first
-  const cached = cache.get(`product:${id}`);
-  if (cached) {
-    return res.json(cached);
+function getWithCache(key, fetchFn) {
+  const cached = cache.get(key);
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    return cached.data;
   }
   
-  // Fetch from DB
-  const product = await db.products.findById(id);
-  
-  // Cache result
-  cache.set(`product:${id}`, product);
-  
-  res.json(product);
-});
+  const data = fetchFn();
+  cache.set(key, { data, timestamp: Date.now() });
+  return data;
+}
 
 // 3. Use connection pooling
 const { Pool } = require('pg');
@@ -269,19 +268,16 @@ const pool = new Pool({
 // 4. Offload CPU-intensive tasks to worker threads
 const { Worker } = require('worker_threads');
 
-app.post('/process-data', async (req, res) => {
-  const worker = new Worker('./cpu-intensive.js', {
-    workerData: req.body
+function runWorker(workerData) {
+  return new Promise((resolve, reject) => {
+    const worker = new Worker('./cpu-intensive.js', { workerData });
+    worker.on('message', resolve);
+    worker.on('error', reject);
   });
-  
-  worker.on('message', (result) => {
-    res.json(result);
-  });
-  
-  worker.on('error', (error) => {
-    res.status(500).json({ error: error.message });
-  });
-});
+}
+
+// Usage in any http handler:
+// const result = await runWorker(requestBody);
 
 
 // ============================================
@@ -461,10 +457,13 @@ console.log('Memory usage:', {
 
 // Answer: Clean up resources before exiting
 
-const express = require('express');
-const app = express();
+const http = require('http');
 
-const server = app.listen(3000, () => {
+const server = http.createServer((req, res) => {
+  // ... request handling
+});
+
+server.listen(3000, () => {
   console.log('Server started on port 3000');
 });
 

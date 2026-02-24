@@ -134,3 +134,17 @@ Questions ordered by likelihood and importance for a CEO/CTO behavioral intervie
 **How to answer:** Be honest about gaps (testing, state management, observability), explain what you'd do differently now, and show that your later projects already reflect those learnings.
 
 **My answer:**
+
+---
+
+## 20. Tell me about your experience executing and troubleshooting automation workflows (e.g., Zapier, Make).
+**How to answer:** Describe a specific automation you set up — what triggered it, the steps involved, and how it connected different platforms. Highlight any troubleshooting you did (broken webhooks, data format mismatches, rate limits). Emphasize the time savings or error reduction it achieved. If you haven't used Zapier/Make specifically, draw parallels to CI/CD pipelines, GitHub Actions, or any event-driven automation you've built.
+
+**My answer:**
+
+---
+
+## 21. Tell me about your experience managing and configuring CRM platforms.
+**How to answer:** Describe which CRM you used and what you configured (custom fields, pipelines, automations, dashboards). If your experience is limited, talk about how you've integrated CRMs via APIs (e.g., Salesforce, HubSpot REST APIs), built admin panels, or managed user/customer data systems. Show that you understand the business purpose of CRMs (tracking leads, customer lifecycle, communication history) even if your role was primarily technical.
+
+**My answer:**

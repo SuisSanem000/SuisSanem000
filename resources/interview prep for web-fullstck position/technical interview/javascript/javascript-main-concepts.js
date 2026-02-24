@@ -83,7 +83,8 @@ async function fetchDataGood(url) {
   }
 }
 
-// Global error handlers
+// Global error handlers (Node.js-specific — not available in browser JS)
+// Browser equivalent: window.addEventListener('unhandledrejection', ...)
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
