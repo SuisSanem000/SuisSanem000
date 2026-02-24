@@ -109,3 +109,15 @@ proxy: {
 
 > "The root `package.json` uses `concurrently` so one `npm run dev` starts everything — 
 > this is the monorepo approach without the complexity of Lerna or Turborepo."
+
+---
+
+## What is Vite?
+**Vite** (pronounced "veet", French for "quick") is a modern and blazing-fast frontend build tool and development server. 
+
+Key reasons it's increasingly standard over older tools like Create React App (CRA):
+1. **Instant Server Start:** It serves source code over native ES modules (`<script type="module">`). The dev server starts instantly, no matter how huge your codebase is.
+2. **Lightning Fast Updates (HMR):** When you save a file, Hot Module Replacement (HMR) uses essentially instant updates rather than rebuilding your entire bundle.
+3. **Easy Full-Stack Integration:** Features like the built-in API proxy (configured in `vite.config.js`) make it perfect for seamlessly connecting to an Express backend.
+4. **Optimized Build:** For `npm run build`, it bundles your app using Rollup to produce highly optimized static HTML/CSS/JS files for production.
+
