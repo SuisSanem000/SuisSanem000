@@ -125,6 +125,17 @@ class Dog extends Animal {
 // Under the hood: Dog.prototype.__proto__ === Animal.prototype
 ```
 
+**`prototype` vs `__proto__`**
+- **`prototype`**: A property that only exists on **constructor functions** (and classes). It is the blueprint used to give properties to new instances.
+- **`__proto__`**: A property that exists on **every object**. It points to the actual `prototype` that was used to create this object. *(Modern JS prefers `Object.getPrototypeOf(obj)` instead of `__proto__`)*.
+
+```javascript
+const myDog = new Dog("Rex");
+
+myDog.__proto__ === Dog.prototype;      // ✅ true (myDog was built using Dog's blueprint)
+Dog.prototype.__proto__ === Animal.prototype; // ✅ true (Inheritance chain)
+```
+
 ### Promise Methods
 
 | Method | Resolves when | Rejects when |
