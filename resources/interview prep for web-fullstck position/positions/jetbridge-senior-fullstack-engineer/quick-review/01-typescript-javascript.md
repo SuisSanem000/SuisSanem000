@@ -100,6 +100,17 @@ function throttle(fn, limit) {
 
 ⚠ **Arrow functions** don't have their own `this` — they inherit from enclosing scope.
 
+```javascript
+const obj = {
+  name: "Alice",
+  greet() { console.log(this.name); },          // "Alice" (rule 3)
+  greetArrow: () => console.log(this.name),      // undefined (arrow inherits outer)
+};
+obj.greet();          // "Alice"
+obj.greet.call({ name: "Bob" }); // "Bob" (rule 2)
+new (function() { console.log(this); })(); // {} new object (rule 1)
+```
+
 ### Prototypes & Classes
 
 ```javascript
@@ -123,6 +134,17 @@ class Dog extends Animal {
 | `Promise.any` | First fulfills | All reject |
 | `Promise.race` | First settles | If first rejects |
 
+```javascript
+const fast = Promise.resolve("fast");
+const slow = new Promise(r => setTimeout(() => r("slow"), 100));
+const fail = Promise.reject("error");
+
+await Promise.all([fast, slow]);        // ["fast", "slow"] — waits for both
+await Promise.allSettled([fast, fail]); // [{status:"fulfilled",value:"fast"}, {status:"rejected",reason:"error"}]
+await Promise.any([fail, fast]);        // "fast" — first success
+await Promise.race([fast, slow]);       // "fast" — first to finish
+```
+
 ### Destructuring, Spread, Rest
 
 ```javascript
@@ -135,6 +157,13 @@ const merged = { ...defaults, ...options }; // spread merge
 
 - `===` strict (no type coercion) — **always use this**
 - `==` loose (coerces types: `"1" == 1` is true)
+
+```javascript
+"1" == 1      // true  (coerces string to number)
+"1" === 1     // false (different types)
+null == undefined  // true  (special case)
+null === undefined // false
+```
 
 ---
 
@@ -150,6 +179,17 @@ const merged = { ...defaults, ...options }; // spread merge
 | Primitives/tuples | ❌ no | ✅ yes |
 
 **Rule of thumb:** Use `interface` for object shapes, `type` for unions/primitives.
+
+```typescript
+// interface — object shape, can be extended
+interface User { id: number; name: string; }
+interface Admin extends User { role: "admin"; }
+
+// type — unions, primitives, tuples
+type ID = string | number;
+type Pair = [string, number];
+type AdminUser = User & { role: "admin" }; // intersection (same as extends)
+```
 
 ### Generics
 
@@ -182,6 +222,15 @@ Readonly<T>      // all props readonly
 ReturnType<F>    // return type of function F
 Parameters<F>    // parameter types as tuple
 NonNullable<T>   // exclude null/undefined
+```
+
+```typescript
+interface User { id: number; name: string; email: string; }
+
+type UpdateUser = Partial<User>;              // { id?: number; name?: string; email?: string }
+type UserPreview = Pick<User, "id" | "name">; // { id: number; name: string }
+type CreateUser = Omit<User, "id">;           // { name: string; email: string }
+type UserMap = Record<string, User>;          // { [key: string]: User }
 ```
 
 ### Type Guards & Narrowing
@@ -249,6 +298,18 @@ class UserService {
 }
 ```
 
-3. **Builder pattern** for complex configs
-4. **Factory functions** over classes when possible
-5. **Zod** for runtime validation + type inference
+3. **Factory functions** over classes when possible:
+```typescript
+function createUser(name: string, role: "admin" | "user" = "user") {
+  return { id: crypto.randomUUID(), name, role, createdAt: new Date() };
+}
+const user = createUser("Alice"); // no `new` keyword needed
+```
+
+4. **Zod** for runtime validation + type inference:
+```typescript
+import { z } from "zod";
+const UserSchema = z.object({ name: z.string().min(1), email: z.string().email() });
+type User = z.infer<typeof UserSchema>; // { name: string; email: string }
+const user = UserSchema.parse(req.body); // throws if invalid, returns typed User if valid
+```

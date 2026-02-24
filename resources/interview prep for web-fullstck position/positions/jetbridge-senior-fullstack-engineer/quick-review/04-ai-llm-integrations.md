@@ -198,12 +198,47 @@ async function withRetry<T>(fn: () => Promise<T>, maxRetries = 3): Promise<T> {
 - **Chunk large documents** — split into ~2000 token chunks with overlap
 - **Cost tracking** — log `usage.total_tokens` from every response
 
+```typescript
+// Simple text chunking (split by paragraphs, keep under token limit)
+function chunkText(text: string, maxChars = 4000): string[] {
+  const paragraphs = text.split("\n\n");
+  const chunks: string[] = [];
+  let current = "";
+  for (const para of paragraphs) {
+    if ((current + para).length > maxChars) {
+      chunks.push(current.trim());
+      current = para;
+    } else {
+      current += "\n\n" + para;
+    }
+  }
+  if (current.trim()) chunks.push(current.trim());
+  return chunks;
+}
+
+// Cost tracking
+const response = await openai.chat.completions.create({ ... });
+console.log(`Tokens used: ${response.usage?.total_tokens}, cost: $${(response.usage?.total_tokens ?? 0) * 0.0000025}`);
+```
+
 ### Prompt engineering tips
 
 1. **Be specific** — "Extract names as a JSON array" not "find the names"
 2. **Few-shot examples** — include 2-3 example input/output pairs
 3. **System message** — define role, format, constraints
 4. **Chain of thought** — "Think step by step before answering"
+
+```typescript
+// Few-shot prompting example
+const messages = [
+  { role: "system", content: "Classify the sentiment as positive, negative, or neutral." },
+  { role: "user", content: "I love this product!" },
+  { role: "assistant", content: "positive" },      // example 1
+  { role: "user", content: "Terrible experience." },
+  { role: "assistant", content: "negative" },       // example 2
+  { role: "user", content: actualReviewText },       // real input
+];
+```
 
 ---
 
