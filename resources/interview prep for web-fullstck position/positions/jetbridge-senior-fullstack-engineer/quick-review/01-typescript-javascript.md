@@ -16,6 +16,28 @@ Call Stack → Microtasks (Promise.then, queueMicrotask) → Macrotasks (setTime
 - `process.nextTick()` runs before Promise microtasks (Node.js only)
 - `async/await` is syntactic sugar over Promises — `await` yields to microtask queue
 
+**Classic Interview Question:** What is the output order?
+
+```javascript
+console.log("1");
+
+setTimeout(() => console.log("5 (Macrotask)"), 0);
+
+Promise.resolve().then(() => console.log("3 (Microtask - Promise)"));
+
+queueMicrotask(() => console.log("4 (Microtask - queueMicrotask)"));
+
+process.nextTick(() => console.log("2 (Microtask - nextTick)"));
+
+// Output:
+// 1
+// 2 (Microtask - nextTick)
+// 3 (Microtask - Promise)*
+// 4 (Microtask - queueMicrotask)*
+// 5 (Macrotask)
+// *Note: Promise.then and queueMicrotask share the same queue and run in order of registration
+```
+
 ### Closures
 
 A function that remembers variables from its outer scope, even after the outer function returns.
