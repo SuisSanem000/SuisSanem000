@@ -1,0 +1,12 @@
+{
+  "name": "minimal-node-server",
+  "version": "1.0.0",
+  "description": "Minimal Node.js HTTP server - no frameworks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["node", "http", "server"],
+  "license": "MIT"
+}
