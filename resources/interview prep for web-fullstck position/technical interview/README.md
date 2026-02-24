@@ -1,56 +1,33 @@
-# Full-Stack Engineer Interview Preparation
+# Full-Stack Engineer Technical Interview Preparation
 
-**Interview Date:** February 9, 2026  
-**Company:** Partao  
-**Role:** Full-Stack Engineer (JavaScript/TypeScript)  
-**Interview Length:** 45 minutes (technical focus on JS/Node.js)
+> Quick-reference study materials organized by topic.
 
 ---
 
-## 📁 Study Materials Organization
+## 📁 Folder Structure
 
-Each folder contains a study guide with topic checklists:
+### **Core Languages**
+- **[javascript/](./javascript/)** — JavaScript core concepts, closures, async, `this`, prototypes + TypeScript type system, generics, utility types, type guards
 
-### **Core Technologies**
-- **[typescript-nodejs-nestjs/](./typescript-nodejs-nestjs/)** - JavaScript, Node.js, TypeScript, NestJS
-- **[react-nextjs/](./react-nextjs/)** - React hooks, Next.js SSR/SSG
-- **[expressjs-fastify/](./expressjs-fastify/)** - Fastify, Express, RESTful APIs
+### **Backend**
+- **[backend/](./backend/)** — Node.js (event loop, streams, clustering, performance), Express/Fastify, NestJS, HTTP, REST APIs, caching, scaling
 
-### **Additional Topics**
-- **[databases/](./databases/)** - SQL, NoSQL, query optimization
-- **[testing/](./testing/)** - Jest, unit tests, integration tests  
-- **[architecture/](./architecture/)** - System design, scalability, modular architecture
-- **[problem-solving/](./problem-solving/)** - Algorithm design, optimization
+### **Frontend**
+- **[frontend/](./frontend/)** — React hooks, performance optimization, Next.js SSR/SSG, enterprise component patterns
 
----
-
-## 📋 Study Roadmap
-
-See **[interview-prep-plan.md](./interview-prep-plan.md)** for:
-- 10-hour preparation timeline
-- Key topics overview table
-- Day-by-day study schedule
-- Interview day checklist
-
----
-
-## 🎯 Priority Focus Areas
-
-Based on CTO's emphasis (50% of interview):
-1. **JavaScript fundamentals** - Event loop, closures, async/await
-2. **Node.js** - Event-driven architecture, error handling
-3. **TypeScript** - Generics, type system, strict mode
-4. **Problem-solving** - Efficient solutions, scalability mindset
+### **Infrastructure**
+- **[databases/](./databases/)** — SQL, NoSQL, query optimization, indexing, schema design
+- **[docker/](./docker/)** — Docker basics, commands, containerization
+- **[testing/](./testing/)** — Jest, unit testing, integration testing, testing patterns
 
 ---
 
 ## ✅ How to Use
 
-1. Start with **interview-prep-plan.md** for overall roadmap
-2. Review each folder's study guide (tasks in checkbox format)
-3. Check off topics as you study them
-4. Focus on understanding concepts, not memorizing code
-5. Practice explaining concepts verbally
+1. Start with **interview-prep-plan.md** (project root) for overall roadmap
+2. Review each folder's files — code files have comments explaining concepts
+3. Focus on understanding concepts, not memorizing code
+4. Practice explaining concepts verbally (think aloud during interviews)
 
 ---
 
