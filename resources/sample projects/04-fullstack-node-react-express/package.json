@@ -1,18 +1,1 @@
-{
-  "name": "fullstack-node-react-express",
-  "version": "1.0.0",
-  "description": "Full-stack project with Express backend and React frontend",
-  "scripts": {
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "cd server && npm run dev",
-    "dev:client": "cd client && npm run dev",
-    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm run build",
-    "start": "cd server && npm start"
-  },
-  "keywords": ["fullstack", "express", "react", "vite"],
-  "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^9.0.0"
-  }
-}
+{"name":"fullstack","version":"1.0.0","scripts":{"dev":"concurrently \"npm run dev:server\" \"npm run dev:client\"","dev:server":"cd server && npm run dev","dev:client":"cd client && npm run dev","install:all":"npm install && cd server && npm install && cd ../client && npm install"},"devDependencies":{"concurrently":"^9.0.0"}}

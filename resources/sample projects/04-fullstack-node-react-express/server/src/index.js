@@ -1,27 +1,22 @@
 const express = require('express');
 const cors = require('cors');
-const itemsRouter = require('./routes/items');
-const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
-
 const app = express();
-const PORT = process.env.PORT || 4000;
 
-// ─── MIDDLEWARE ────────────────────────────────────────
 app.use(cors());
 app.use(express.json());
 
-// ─── ROUTES ───────────────────────────────────────────
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+let items = [{ id: 1, name: 'Learn Express' }];
+let nextId = 2;
+
+app.get('/api/items', (req, res) => res.json(items));
+app.post('/api/items', (req, res) => {
+  const item = { id: nextId++, name: req.body.name };
+  items.push(item);
+  res.status(201).json(item);
+});
+app.delete('/api/items/:id', (req, res) => {
+  items = items.filter(i => i.id !== parseInt(req.params.id));
+  res.status(204).send();
 });
 
-app.use('/api/items', itemsRouter);
-
-// ─── ERROR HANDLING ───────────────────────────────────
-app.use(notFoundHandler);
-app.use(errorHandler);
-
-// ─── START ────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
-});
+app.listen(4000, () => console.log('API on http://localhost:4000'));

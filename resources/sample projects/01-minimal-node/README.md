@@ -1,50 +1,24 @@
-# 01 - Minimal Node.js HTTP Server
+# Minimal Node.js Server
 
-A bare-bones HTTP server using **only Node.js built-in modules** (no Express, no frameworks).
+**Zero dependencies.** Pure Node.js HTTP server.
 
-## How I Made This (step by step)
-
+## Build from scratch
 ```bash
-# 1. Create folder and init
-mkdir 01-minimal-node
-cd 01-minimal-node
+mkdir my-app && cd my-app
 npm init -y
-
-# 2. Create the server file
-# → index.js (see below)
-
-# 3. Run it
-npm start        # or: node index.js
-npm run dev       # with --watch (auto-restart on save, Node 18+)
 ```
 
-## What's Inside
+Then create `index.js`:
+```js
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ message: 'Hello!' }));
+});
+server.listen(3000, () => console.log('Running on :3000'));
+```
 
-| File          | Purpose                                  |
-|---------------|------------------------------------------|
-| `package.json`| Project config, scripts                  |
-| `index.js`    | HTTP server with GET/POST routes         |
-
-## Key Concepts Demonstrated
-
-- **`http.createServer()`** — the foundation of every Node.js web server
-- **Manual routing** — parsing `req.method` and `req.url`
-- **Reading POST body** — using `req.on('data')` and `req.on('end')`
-- **JSON responses** — `res.setHeader('Content-Type', 'application/json')`
-- **CORS headers** — `Access-Control-Allow-Origin`
-
-## Test It
-
+## Run
 ```bash
-# GET request
-curl http://localhost:3000/
-curl http://localhost:3000/api/items
-
-# POST request
-curl -X POST http://localhost:3000/api/items -H "Content-Type: application/json" -d "{\"name\": \"New Item\"}"
+node index.js
 ```
-
-## Interview Talking Points
-
-> "This shows I understand what Express abstracts away — I can build routing, 
-> parse bodies, and handle HTTP methods with just the `http` module."
