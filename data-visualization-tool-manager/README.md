@@ -1,178 +1,58 @@
 # Data Visualization Tool Manager
 
-A sophisticated TypeScript client manager for CSV and JSON data analytics and visualization, featuring advanced file management, query execution, and licensing systems.
+The client-side manager layer for a commercial desktop data visualization application (JSON, CSV, and XML viewer). This module is responsible for coordinating all application state — file lifecycle, multi-view management, SQL query execution, find/filter refiners, task tracking, settings, licensing, and auto-updates — via an event-driven architecture built around a typed `EventTarget` subclass.
 
 ## Tech Stack
 
-- **TypeScript** - Pure TypeScript implementation with advanced type system
-- **Custom Event System** - Event-driven architecture with typed events
-- **Local Storage API** - Client-side data persistence
-- **Complex State Management** - Multi-file, multi-view state orchestration
+TypeScript · IndexedDB (`idb`) · Custom Event System · LocalStorage · GUID-based identity
 
-## Purpose
+---
 
-This tool serves as the core client-side management layer for a data analytics and visualization application. It orchestrates file operations, data processing, query execution, user settings, and licensing for CSV/JSON datasets. The architecture demonstrates advanced TypeScript patterns and event-driven design.
+## Architecture
 
-## Main Features
+The core of this module is `TManager`, a class that extends the browser's native `EventTarget`. Rather than using a third-party state management library, the manager communicates with the rest of the application through a typed event map interface:
 
-- Multi-file CSV/JSON management with concurrent operations
-- SQL-like query execution engine with progress tracking
-- Asynchronous task orchestration system
-- Multi-tier licensing with file size restrictions
-- View management with refiners and filters
-- Find/replace across datasets
-- Export functionality with format conversion
-- Settings persistence and synchronization
-- URL-based file loading with authentication
-- Offline license activation support
-
-## Complex Features - Technical Details
-
-### 1. Event-Driven Architecture with Typed Custom Events
-Implements a sophisticated publish-subscribe system using custom typed events extending `EventTarget`.
-
-**Technical Implementation:**
 ```typescript
 export interface IManagerEventMap {
-    'updateView': CustomEvent<IViewUpdate>;
-    'updateStatus': CustomEvent<IStatusUpdate>;
-    'updateContent': CustomEvent<IContentUpdate>;
-    // ... more typed events
-}
-```
-- Type-safe event dispatching and subscription
-- Dual dispatch pattern: async (`updateView`) and sync (`updateViewSync`)
-- UI synchronization without tight coupling
-- Event payload interfaces ensure compile-time safety
-
-### 2. Asynchronous Task Pipeline with Progress Tracking
-Multi-phase task orchestration with real-time progress updates and cancellation support.
-
-**Technical Implementation:**
-- Task state machine: `Started → InProgress → Finished/Canceled`
-- Progress simulation with dynamic step generation based on file size
-- Partial task updates using selective object spreading
-- Interval-based progress polling with cleanup
-- Memory-efficient: only updates changed fields in task array
-
-**Algorithm:**
-```typescript
-// Dynamic progress step generation
-progressSteps = generateDynamicProgressSteps(rowCount, stepCount)
-for each step:
-    await delay(step.timeTaken)
-    generateData(step.rowsToGenerate)
-    updateTask({ progress: step.progress })
-    dispatchEvent('updateStatus', partialUpdate)
-```
-
-### 3. Multi-View State Management with Refiners
-Complex state tree managing multiple files, each with multiple views, each with multiple refiners.
-
-**Technical Implementation:**
-- Hierarchy: `Files[] → Views[] → Refiners[] + Editors`
-- Each view maintains independent: columns, filters, row counts, SQL editors
-- Refiner cloning for view duplication
-- Local storage persistence with selective serialization
-- Current file/view pointers for O(1) access
-
-**State Structure:**
-```typescript
-files: IFile[] {
-  views: IView[] {
-    refiners: IRefiner[]
-    editor: { refiner?, state, query }
-    columns: IColumn[]
-  }
+    'startupScreen':     CustomEvent<IStartupScreen>;
+    'updateLicense':     CustomEvent<ILicense>;
+    'updateView':        CustomEvent<IViewUpdate>;
+    'updateViewSync':    CustomEvent<IViewUpdate>;
+    'updateViews':       CustomEvent<IViewUpdates>;
+    'updateStatus':      CustomEvent<IStatusUpdate>;
+    'updateContent':     CustomEvent<IContentUpdate>;
+    'updateSettings':    CustomEvent<ISettings>;
+    'updateSettingsSync': CustomEvent<ISettings>;
+    'error':             CustomEvent<IError>;
+    'openURLResult':     CustomEvent<IOpenURLResult>;
+    'message':           CustomEvent<IMessage>;
 }
 ```
 
-### 4. License-Based Feature Gating
-Dynamic feature restriction based on license tier and file size.
+The `addEventListener` and `removeEventListener` overloads are typed to this map, so callers get full IDE autocomplete and compile-time safety when subscribing to events. The sync/async variants (`updateView` vs `updateViewSync`) handle cases where the UI needs to reflect state immediately vs. on the next tick.
 
-**Technical Implementation:**
-- Size limits array: `[5MB, 50MB, 500MB, Unlimited]`
-- Binary search to determine required license level
-- Runtime feature enablement/disablement
-- Banner generation for upgrade prompts
-- Redaction for oversized files on lower tiers
+All public methods are wrapped in `errorCatch` / `errorCatchAsync` helpers that capture the calling function name and report structured errors through the event system rather than throwing, keeping failure handling consistent across the entire surface area.
 
-## System Design Approach
+---
 
-**Event-Driven Manager Pattern**
-- Central `TManager` class extends `EventTarget`
-- Emits typed events for all state changes
-- UI components subscribe to specific event types
-- Decouples business logic from presentation layer
-- Single source of truth for application state
+## Key Features
 
-**State Machine Pattern**
-- Tasks follow explicit state transitions
-- File operations tracked through lifecycle states
-- Editor states (editing, executing query, idle)
-- License states (trial, active, expired, offline)
+**Multi-file, multi-view state.** Each open file maintains a list of independent views. Each view tracks its own column configuration, row count, filter mode, SQL editor state, active refiners, and find results. The state hierarchy (`IFile[] → IView[] → IRefiner[]`) is persisted to IndexedDB via the `idb` library, with view cloning support for duplicating complex configurations.
 
-**Repository Pattern with Local Storage**
-- `loadFromLocalStorage` / `saveToLocalStorage` abstraction
-- Automatic persistence on state changes
-- Files, settings, recent files tracked separately
-- GUID-based file identification for uniqueness
+**SQL query execution and refiners.** Views can operate in two filter modes: a UI-driven refiner mode and a direct SQL editor mode. Refiners support both Find and Filter types with highlight colour coding, inverse matching, and column scoping. The editor tracks syntax error state and reports it back to the UI through the event system.
 
-**Error Boundary Pattern**
-- `errorCatch` and `errorCatchAsync` wrappers
-- Every public method wrapped for error handling
-- Consistent error reporting via event system
-- Function name tracking for debugging
+**Task pipeline with progress tracking.** Long-running operations (file load, query, find, filter, export, download) are modelled as tasks with an explicit state machine: `Started → InProgress → Finished / Canceled / Error`. Progress is reported incrementally using dynamically generated step sequences based on row count, so the UI shows realistic progress rather than a binary start/done.
 
-## Algorithms & Data Structures
+**License enforcement.** File size limits are checked against the active license tier at load time. Oversized files trigger upgrade prompts with generated banner text; offline activation is supported via a separate code-based flow. License state is tracked as `Active` or `Expire` and reflected in the settings surface.
 
-**Data Structures:**
+**URL-based file loading with authentication.** Files can be loaded from remote URLs with Basic or Bearer auth. Credentials are stored per-URL or per-domain and managed through a dedicated `IURLCredential` interface. URL validation returns typed `EURLValidationResult` codes covering the full range of HTTP status codes plus custom network error cases.
 
-- **Nested Object Hierarchy** - File → View → Refiner tree structure
-- **Hash Map (Object)** - Settings and configuration with key-based lookup
-- **Array of Tasks** - Task queue with findIndex for O(n) updates
-- **2D Array** - Product data storage `products[row][column]`
-- **GUID Map** - File and refiner identification using generated UUIDs
-- **Stack (Implicit)** - Undo/redo for editor operations
-- **Queue** - Async task processing pipeline
+**Auto-update pipeline.** The manager tracks an update lifecycle (`NoUpdate → CheckingForUpdate → UpdateAvailableButNotDownloaded → Downloading → DownloadedReadyToInstall`) with download progress, latest version tracking, and release notes stored as a startup screen payload for display on next launch.
 
-**Algorithms:**
+---
 
-- **Binary Search** - License level determination from file size
-  ```typescript
-  for (let i = 0; i < SIZE_LIMITS.length; i++)
-      if (fileSize > SIZE_LIMITS[i]) levelBelow = i
-      else break
-  ```
+## Notable Implementation Details
 
-- **Incremental Array Update** - Efficient partial task updates
-  ```typescript
-  updateOrAddItemWithKey(tasks, { key, ...updates }, 'key')
-  ```
+The `errorCatch` / `errorCatchAsync` wrappers are applied to every public method, so errors are never silently swallowed. Each captures the calling function name as a string so the error log includes call context without relying on stack trace parsing.
 
-- **Range Intersection** - Find results within row/column ranges
-  ```typescript
-  isInSelectedSquare([row, col], selectedRange)
-  ```
-
-- **Progressive Data Generation** - Chunk-based data population
-  - Calculate chunks based on file size
-  - Generate data in batches to prevent blocking
-  - Update UI incrementally
-
-- **Delta Calculation** - For progress tracking
-  ```typescript
-  totalTimeTaken += step.timeTaken
-  progress = (currentRow / totalRows) * 100
-  ```
-
-- **Text Trimming Algorithm** - Middle ellipsis for long paths
-  ```typescript
-  trimStringMiddle(text, maxLength) 
-  // "very-long-filename.txt" → "very-lon...ame.txt"
-  ```
-
-- **Deep Clone with Refiners** - Recursive cloning of view structures
-  - Clones columns, refiners, editor state
-  - Generates new GUIDs for cloned items
-  - Preserves relationships in cloned structure
+The `TRange` type alias (`[number, number, number, number]`) encodes a rectangular cell selection as `[startRow, startCol, endRow, endCol]`, used consistently across find results, export scope, and content update events — keeping the coordinate system uniform across the entire module.

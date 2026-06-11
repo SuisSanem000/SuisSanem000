@@ -1,91 +1,27 @@
 # High-Performance Grid Component
 
-A highly performant React component for visualizing and interacting with large JSON and CSV datasets in both tree and grid views.
+A reusable React component for rendering and interacting with large JSON and CSV datasets, supporting both grid and tree view modes. Built to stay performant at scale — the virtual scrolling engine renders only the rows in the viewport regardless of total dataset size.
 
 ## Tech Stack
 
-- **React 18** - UI library
-- **Sass** - Advanced styling
-- **Create React App** - Development tooling
-- **JavaScript** - Core implementation
+React 18 · Sass · JavaScript
 
-## Purpose
+---
 
-This project provides a reusable, high-performance data grid component optimized for rendering and navigating large datasets. It's designed to handle JSON and CSV data efficiently, offering dual visualization modes (tree and grid) for maximum flexibility.
+## What it Does
 
-## Main Features
+The component presents tabular or hierarchical data in two modes: a flat grid and a nested tree view with multi-column support. It handles datasets that would bring a naïve rendering approach to a crawl by virtualising the row list, and it provides a full set of interaction primitives — column resizing, multi-cell selection, drag-and-drop reordering, sticky headers, context menus, filter rows, and summary rows.
 
-- Virtual scrolling for rendering only visible rows
-- Dynamic column resizing with mouse drag and auto-fit
-- Fixed columns and rows for sticky headers
-- Row selection and multi-cell selection
-- Custom cell rendering with React components
-- Filter rows and summary rows support
-- Context menu support for cells
-- Tree view with multi-column support
-- Drag-and-drop column reordering
-- Alternating row shading for readability
+---
 
-## Complex Features - Technical Details
+## Key Implementation Details
 
-### 1. Virtual Scrolling Engine
-Implements a custom virtualization system that renders only visible rows in viewport, dynamically calculating which rows to display based on scroll position. Uses `useCallback` memoization to prevent unnecessary re-renders of row components.
+**Virtual scrolling.** The engine calculates the visible row range from scroll position and viewport height (`Math.floor(scrollTop / rowHeight)`), maintains a render buffer for scroll smoothness, and only mounts ~20–30 row components at a time regardless of how large the dataset is. Scroll handlers are throttled and row components are memoised with `useCallback` to prevent cascade re-renders.
 
-**Technical Implementation:**
-- Calculates visible row range from scroll offset and viewport height
-- Maintains a render buffer for smooth scrolling
-- Updates DOM elements on scroll with throttled event handling
-- Memory-efficient: renders ~20-30 rows instead of thousands
+**Column resizing.** Uses the browser's pointer capture API so that mouse events aren't lost when the cursor moves faster than the resize handle. Width is tracked as a delta from the drag start position: `newWidth = lastWidth + (currentX - startX)`, with a 10px minimum to prevent column collapse. Double-clicking a column header triggers auto-fit: it measures the pixel width of each visible cell's text using a `CanvasRenderingContext2D` and sets the column to the widest value found.
 
-### 2. Dynamic Column Resizing
-Real-time column width adjustment using pointer capture API and delta calculations.
+**Sticky headers with fixed columns.** The DOM is split into `.stickyCellContainer` (fixed columns) and `.normalCellContainer` (scrollable columns). Fixed columns use CSS `position: sticky` with z-index layering; horizontal scroll is synchronised between the two containers. Each container calculates its own widths independently.
 
-**Technical Implementation:**
-- Pointer capture prevents losing mouse events during fast drags  
-- Delta-based calculation: `newWidth = lastWidth + (currentX - startX)`
-- Double-click auto-fit: iterates visible rows to find max text width
-- Minimum width constraint (10px) prevents column collapse
+**Multi-cell selection.** Selected cells are tracked as a rectangular range `[startRow, startCol, endRow, endCol]`. Containment checks run as `row >= startRow && row <= endRow && col >= startCol && col <= endCol` — O(1) per cell.
 
-### 3. Sticky Headers with Fixed Columns
-Separate rendering containers for fixed vs scrollable columns, synchronized scroll positions.
-
-**Technical Implementation:**
-- Split DOM structure: `.stickyCellContainer` + `.normalCellContainer`
-- CSS `position: sticky` for headers with z-index layering
-- Horizontal scroll synchronization between containers
-- Independent width calculations per container
-
-## System Design Approach
-
-**Provider Pattern with Render Props**
-- `VirtualGridProvider` component manages all grid state and logic
-- Parent components pass render functions for `Row`, `FilterRow`, `SummaryRow`
-- Enables customization without modifying core grid logic
-- Separation of concerns: provider handles virtualization, parent handles data
-
-**Component Composition Architecture**
-- Hierarchical structure: `Grid → Rows → Cells`
-- Each level memoized with `React.memo` and `useCallback`
-- Props drilling minimized through specialized render props
-- Event handlers passed down through provider props
-
-**Hook-Based State Management**
-- `useState` for reactive data and UI state
-- `useRef` for DOM references and imperative API
-- `useEffect` for synchronization (scroll, resize, data changes)
-- `useCallback` for optimized event handlers
-
-## Algorithms & Data Structures
-
-**Data Structures:**
-- **2D Array** - Primary data storage for grid cells `records[row][column]`
-- **Hash Map** - Column size storage for O(1) lookup `columnSizes[colIndex]`
-- **Set-like Structure** - Selected cell tracking for quick containment checks
-- **Array of Objects** - Row data with named fields for filtering
-
-**Algorithms:**
-- **Binary Range Calculation** - Determines visible row range: `Math.floor(scrollTop / rowHeight)`
-- **Text Width Measurement** - Uses canvas context to calculate text width for auto-fit
-- **Viewport Intersection** - Calculates which cells are in visible scroll area
-- **Selection Square Algorithm** - Checks if `[row, col]` falls within selected range bounds
-- **Delta Accumulation** - For smooth column resizing during drag operations
+**Provider/render-props architecture.** `VirtualGridProvider` owns all grid state and logic. Parent components pass render functions for `Row`, `FilterRow`, and `SummaryRow`, which means the grid can be customised extensively without forking the virtualization core. The component hierarchy (`Grid → Rows → Cells`) is fully memoised at every level.
