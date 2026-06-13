@@ -28,147 +28,7 @@ Backend Engineer and AI Integration Specialist with 6+ years across full-stack w
 
 ---
 
-## 1 · TreeScribe — LLM Integration
-
-> **Role:** Solo designer and implementer of the entire AI layer
-> **Stack:** Anthropic Claude · `@anthropic-ai/sdk` · mammoth.js · AJV · Meteor.js · MongoDB · TypeScript
-
-TreeScribe is a legal document automation platform built for law firms and compliance-heavy organizations. It models legal documents as decision trees: each document is composed of properties, topics, and definitions, each containing a branching graph of widgets (choice, blank, list) that users navigate to produce a final rendered document. The platform supports multi-party documents, conditional logic, organization-level templates, and real-time collaborative review.
-
-My contribution was entirely on the AI/LLM layer — designing and building the integration that lets the system read uploaded source documents (contracts, PDFs, policies) and use them to automatically answer decision-tree widgets using Claude.
-
-### What the LLM Layer Does
-
-A user uploads a source document, tells TreeScribe which legal template they need, and the AI reads the source, traverses the decision tree, and fills in every widget it has enough information for. Widgets it can't answer are left blank for manual handling. Every AI answer is stamped with the prompt, response, token usage, and decision phase.
-
-There are two separate pipelines:
-
-**SourceManager** — for interpreting uploaded documents (PDFs, Word docs, images) and extracting structured information from them.
-
-**AI Decision Maker** — for traversing a live document's decision tree and filling in widgets using those extracted sources.
-
-### SourceManager — Document Ingestion Pipeline
-
-`imports/api/SourceManager/`
-
-The first challenge was that Claude doesn't natively accept `.docx` files. I solved this with a pre-processing step using `mammoth.js` that converts Word documents to HTML in-memory before passing them to the LLM:
-
-```typescript
-export async function convertDocToHtmlInMemory(fileBuffer: Buffer): Promise<string> {
-    const result = await mammoth.convertToHtml({ buffer: fileBuffer }, getMammothOptions(true));
-    return result.value;
-}
-```
-
-In-memory rather than writing to a temp file — no filesystem cleanup, no race conditions under concurrent uploads. Images are stripped: base64-encoded images would bloat the context window with no value for document analysis. PDFs and images skip conversion entirely and go directly to Claude's multimodal API using `document` and `image` content types.
-
-**File type detection via magic numbers** — rather than trusting the browser-provided MIME type (which can be wrong or spoofed for `.docx` uploads arriving as `application/octet-stream`):
-
-```typescript
-function getMediaType(buffer: Buffer): { mediaType: string; isPdf: boolean } {
-    if (buffer.toString("ascii", 0, 4) === "%PDF")
-        return { mediaType: "application/pdf", isPdf: true };
-    if (buffer.toString("hex", 0, 4).toUpperCase().startsWith("FFD8FF"))
-        return { mediaType: "image/jpeg", isPdf: false };
-    if (buffer.toString("hex", 0, 4).toUpperCase().startsWith("89504E47"))
-        return { mediaType: "image/png", isPdf: false };
-    // GIF, WebP...
-}
-```
-
-**Anthropic LLM Adapter** (`anthropic-llm-adapter.ts`) — a standalone adapter around `@anthropic-ai/sdk` with:
-
-- **Singleton config with eager validation** — environment variables read once at class instantiation; missing required variables fail loudly at startup, not mid-request.
-- **SOCKS proxy support** — routes all Anthropic API calls through a SOCKS proxy by injecting a custom `fetch` implementation via `socks-proxy-agent`, for restricted deployment environments.
-- **Response strategy pattern** — Claude can return multiple text blocks; a `ResponseStrategy` enum handles this explicitly (`FIRST_TEXT_BLOCK` vs `EXTRACT_ALL_CONTENT`).
-- **Typed response** — all responses return `{ answer, model, inputTokens, outputTokens, timeTaken }` for billing and observability.
-
-Three Meteor server methods expose the pipeline: `SourceManager.processFile` (main entry point, routes by file type), `SourceManager.convertDocToHtml` (conversion only, for previews), `SourceManager.interpretText` (processes already-available text without a file upload).
-
-### LLM.service.ts — Decision-Making LLM Wrapper
-
-`imports/api/Tools/LLM.service.ts`
-
-A singleton service oriented around decision-making workflows. The key technique is **assistant prefill for reliable JSON output**:
-
-```typescript
-if (jsonResponse) {
-    messages.push({
-        role: "assistant",
-        content: [{ type: "text", text: "{" }]
-    });
-}
-```
-
-By seeding the assistant's turn with `{`, Claude completes a JSON object rather than wrapping the answer in prose or markdown. The opening brace is prepended to the response text before parsing. More reliable than prompt-only JSON instructions for structured decision output.
-
-Three calling patterns: `call()` (full messages array), `callWithTextInput()` (simple string prompt), `callWithFileInput()` (URL-based file access — PDFs/images via URL, DOCX by downloading and converting in-memory).
-
-### AI Decision Maker — Widget Tree Orchestration
-
-`imports/api/AI/meteor/server/aiAnswering/aiDecisionMaker.ts`
-
-Orchestrates batch AI answering for a document. Initialised per-request with a document ID and collection type, loads everything from MongoDB, then runs:
-
-1. Traverse the widget tree (using the `traverse` library), collect all unanswered widget paths
-2. Split into chunks of `BATCH_SIZE` (5)
-3. Build structured prompt from document context, source content, and org/user-level custom instructions
-4. Call Claude via `LLMService`
-5. Parse and validate the JSON response
-6. Apply valid answers into the tree via `AnswerWidgetProcess`
-7. Run observers (recompute dependent widgets)
-8. Repeat until complete or stopped
-
-Chunks in the same pass are processed in parallel, tracked via `runningChunksCount`.
-
-**Two-phase decision strategy:**
-
-- **Instruction phase** — asks Claude to answer based on the uploaded source document. Authoritative, grounded in actual content.
-- **Suggestion phase** — fallback for widgets that returned `false` or errored. Best-effort fill from context alone.
-
-Answers are tagged with their phase so users can distinguish document-derived answers from inference.
-
-**Multi-layer response validation** (`aiAnswerResponseParse.js`):
-
-1. JSON parse — with fallback to XML parser for responses that drift out of JSON format
-2. AJV schema validation — validates overall response structure
-3. Per-widget type validation — checks answers are appropriate for their widget type (string for blanks, array for lists, choices within `optionsOrder`)
-4. Input validation — runs the widget's own validation rules (regex patterns, etc.)
-5. Compulsory option handling — list widgets can have mandatory options always appended
-
-Failures go into `aiErrors` / `falseResults` rather than being silently dropped.
-
-**Full audit logging** — every session creates an `AiLog` with status tracking (`PROCESSING → DONE / DONE_WITH_ERRORS / STOPPED / ERROR`). Each batch appends a chunk record with prompt, response, model name, and token usage. Decision-level results stored in `DecisionLog`.
-
-### AI Testing Framework
-
-`imports/api/Tools/ToolsTest.service.ts`
-
-Three test types for validating LLM behaviour on real documents without manual intervention:
-
-- **`SourceToolTest`** — uploads a file with a given prompt, validates specific fields in the JSON response
-- **`DecisionToolTest`** — generates a full document from a template, runs `AiDecisionMaker` on specific widgets, checks answers match expected values
-- **`StepToolTest`** — validates programmatic document generation end-to-end
-
-All support `runQuantity` for multi-run consistency measurement. Results stored in MongoDB, viewable in an internal testing UI.
-
-### Key Design Decisions
-
-**Two adapters, not one.** The `SourceManager` adapter is oriented around document ingestion with performance metrics and proxy support. The `LLMService` is oriented around decision-making with JSON prefill. They solve different problems and were built at different times.
-
-**In-memory DOCX conversion.** No temp files, no cleanup, no disk I/O. The buffer goes from the HTTP request straight through mammoth and into the Claude API call.
-
-**Magic number file detection.** Browsers lie about MIME types. The real format check has to be on the bytes.
-
-**JSON prefill for structured output.** Seeding the assistant turn with `{` forces Claude into JSON completion mode without needing to strip markdown fences from the output.
-
-**Two-phase AI decisions.** Separating "what does the document say?" from "what would make sense?" keeps authoritative answers distinct from inferred ones — critical for legal documents where provenance matters.
-
-**Parallel batch processing.** Widgets are processed in chunks of 5 concurrently. Smaller batches reduce context window issues and make partial success easier to handle; parallelism keeps total processing time reasonable for large documents.
-
----
-
-## 2 · News Feed App — AI-Powered News Aggregation
+## 1 · News Feed App — AI-Powered News Aggregation
 
 > **Role:** Built solo, end-to-end
 > **Stack:** TypeScript · Node.js · PostgreSQL · SQLite · OpenAI API · Google Vertex AI · PNPM Workspaces · Vite · Axios
@@ -219,6 +79,26 @@ cleanedString = cleanedString.replace(/"(?:[^"\\]|\\.)*"/g, (match) => {
 ### Static Generation
 
 Pre-built JSON files materialise the article dataset at generation time rather than serving live DB queries. Article images are downloaded and cached locally. The client serves static files directly.
+
+---
+
+## 2 · TreeScribe — LLM Integration
+
+> **Role:** Implementing AI decision and testing only
+> **Stack:** TypeScript · Anthropic Claude · Meteor.js · MongoDB
+
+TreeScribe is a legal document automation platform built for law firms and compliance-heavy organizations. It models legal documents as decision trees: each document is composed of properties, topics, and definitions, each containing a branching graph of widgets (choice, blank, list) that users navigate to produce a final rendered document. The platform supports multi-party documents, conditional logic, organization-level templates, and real-time collaborative review.
+
+*Note: Due to a Non-Disclosure Agreement (NDA), specific implementation details, code architecture, file names, and proprietary algorithms cannot be disclosed.*
+
+### AI Decision & Orchestration Layer
+- Designed and built the integration using **Anthropic Claude** to traverse document decision trees and automatically answer variable widgets based on uploaded source materials.
+- Utilized advanced prompt engineering techniques, including assistant pre-filling, to secure reliable, structured JSON outputs directly from the model, validated against rigid schemas.
+- Developed error handling mechanisms and multi-phase strategies to distinguish between factual extractions and logical suggestions.
+
+### Automated Testing Framework
+- Developed an automated AI testing suite to validate LLM response consistency and accuracy across diverse document types.
+- Implemented multi-run test suites that tracked token consumption, model response drift, and structured data validation for document-generation workflows.
 
 ---
 
