@@ -6,7 +6,7 @@ Backend Engineer and AI Integration Specialist with 6+ years across full-stack w
 
 ## Skills at a Glance
 
-**Languages:** TypeScript, JavaScript (ES2022+), SQL
+**Languages:** TypeScript, JavaScript (ES2022+), Python, SQL
 
 **Backend:** Node.js, NestJS, Express.js, Meteor.js, TypeScript, REST APIs, GraphQL, WebSockets, Socket.IO, PNPM monorepos
 
