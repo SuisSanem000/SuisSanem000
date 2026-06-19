@@ -7,7 +7,7 @@ Backend Engineer and AI Integration Specialist with 6+ years across full-stack w
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="github" height="30" width="40" />
   </a>
   <a href="mailto:SayenCrusher@proton.me" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="email" height="30" width="40" />
+    <img align="center" src="https://cdn.simpleicons.org/protonmail/614B94" alt="email" height="30" width="40" />
   </a>
 </p>
 
