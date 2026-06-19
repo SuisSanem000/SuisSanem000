@@ -1,15 +1,6 @@
 <div align="center">
   <h1>Simin Shoeibi</h1>
-  <h3>Senior Full-Stack Engineer & AI Integration Specialist</h3>
-
-  <p align="center">
-    <a href="https://github.com/SuisSanem000" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/github/ffffff" alt="github" height="24" style="margin: 0 5px;" />
-    </a>
-    <a href="mailto:SayenCrusher@proton.me" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/protonmail/614B94" alt="email" height="24" style="margin: 0 5px;" />
-    </a>
-  </p>
+  <h3>Full-Stack Engineer & AI Integration Specialist</h3>
 
   <p>
     🚀 <b>6+ years of building production-grade web applications, advanced LLM integrations, and developer tooling.</b>
