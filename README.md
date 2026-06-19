@@ -1,15 +1,24 @@
-# Simin Shoeibi — Engineering Portfolio
+<div align="center">
+  <h1>Simin Shoeibi</h1>
+  <h3>Senior Full-Stack Engineer & AI Integration Specialist</h3>
 
-Backend Engineer and AI Integration Specialist with 6+ years across full-stack web development, LLM systems, and developer tooling. This document consolidates all projects and technical write-ups in one place.
+  <p align="center">
+    <a href="https://github.com/SuisSanem000" target="_blank" rel="noreferrer">
+      <img src="https://cdn.simpleicons.org/github/ffffff" alt="github" height="24" style="margin: 0 5px;" />
+    </a>
+    <a href="mailto:SayenCrusher@proton.me" target="_blank" rel="noreferrer">
+      <img src="https://cdn.simpleicons.org/protonmail/614B94" alt="email" height="24" style="margin: 0 5px;" />
+    </a>
+  </p>
 
-<p align="left">
-  <a href="https://github.com/SuisSanem000" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="github" height="30" width="40" />
-  </a>
-  <a href="mailto:SayenCrusher@proton.me" target="_blank">
-    <img align="center" src="https://cdn.simpleicons.org/protonmail/614B94" alt="email" height="30" width="40" />
-  </a>
-</p>
+  <p>
+    🚀 <b>6+ years of building production-grade web applications, advanced LLM integrations, and developer tooling.</b>
+  </p>
+
+  <p>
+    Expert in designing robust TypeScript/Node.js backend architectures, high-performance React virtualized components, and automated AI orchestration pipelines (Claude, OpenAI, Vertex AI). Creator of developer tools with over <b>520,000+ installs</b>.
+  </p>
+</div>
 
 <br />
 
