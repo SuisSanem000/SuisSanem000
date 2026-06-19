@@ -1,3 +1,102 @@
+<h2> Hi everyone 👋 </h2>
+
+<h3 align="left">I'm Simin Shoeibi, a Backend Engineer and AI Integration Specialist.</h3>
+<p>   ✅  6+ years of experience across full-stack web development, LLM systems, and developer tooling.</p>
+<p>   ✅  Expertise in TypeScript, Node.js, Python, PostgreSQL, and building AI/LLM integration pipelines.</p>
+
+<h4 align="left">Connect with me:</h4>
+<p align="left">
+  <a href="https://linkedin.com/in/simin-shoeibi" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" />
+  </a>
+  <a href="mailto:SayenCrusher@proton.me" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="email" height="30" width="40" />
+  </a>
+</p>
+
+<br />
+
+## Git History 🔥
+
+<div align="center">
+  <img width="800" height="220" src="https://streak-stats.demolab.com/?user=SuisSanem000&theme=dark&border_radius=40.5&card_width=800" alt="Git Activities">
+</div>
+
+<br />
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SuisSanem000&layout=compact&theme=dark" alt="Most Used Languages" />
+</div>
+
+<br />
+
+## Main Skills 🏆
+
+<p align="left">
+  <!-- TypeScript -->
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- JavaScript -->
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- Python -->
+  <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- Node.js -->
+  <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- NestJS -->
+  <a href="https://nestjs.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" alt="nestjs" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- React -->
+  <a href="https://react.dev/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- Next.js -->
+  <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- PostgreSQL -->
+  <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="postgresql" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- Redis -->
+  <a href="https://redis.io/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="redis" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- MongoDB -->
+  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongodb" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- Docker -->
+  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="50" height="50" style="margin: 10px;" />
+  </a>
+  <!-- Git -->
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="50" height="50" style="margin: 10px;" />
+  </a>
+</p>
+
+<br />
+
+## Contribution Art 🎮
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SuisSanem000/SuisSanem000/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SuisSanem000/SuisSanem000/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/SuisSanem000/SuisSanem000/output/github-snake.svg" />
+</picture>
+
+<br />
+<hr />
+<br />
+
 # Simin Shoeibi — Engineering Portfolio
 
 Backend Engineer and AI Integration Specialist with 6+ years across full-stack web development, LLM systems, and developer tooling. This document consolidates all projects and technical write-ups in one place.
