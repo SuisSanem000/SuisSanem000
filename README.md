@@ -1,13 +1,10 @@
-<h2> Hi everyone 👋 </h2>
+# Simin Shoeibi — Engineering Portfolio
 
-<h3 align="left">I'm Simin Shoeibi, a Backend Engineer and AI Integration Specialist.</h3>
-<p>   ✅  6+ years of experience across full-stack web development, LLM systems, and developer tooling.</p>
-<p>   ✅  Expertise in TypeScript, Node.js, Python, PostgreSQL, and building AI/LLM integration pipelines.</p>
+Backend Engineer and AI Integration Specialist with 6+ years across full-stack web development, LLM systems, and developer tooling. This document consolidates all projects and technical write-ups in one place.
 
-<h4 align="left">Connect with me:</h4>
 <p align="left">
-  <a href="https://linkedin.com/in/simin-shoeibi" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" />
+  <a href="https://github.com/SuisSanem000" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="github" height="30" width="40" />
   </a>
   <a href="mailto:SayenCrusher@proton.me" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="email" height="30" width="40" />
@@ -96,12 +93,6 @@
 <br />
 <hr />
 <br />
-
-# Simin Shoeibi — Engineering Portfolio
-
-Backend Engineer and AI Integration Specialist with 6+ years across full-stack web development, LLM systems, and developer tooling. This document consolidates all projects and technical write-ups in one place.
-
----
 
 ## Skills at a Glance
 
