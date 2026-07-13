@@ -7,7 +7,7 @@
   </p>
 
   <p>
-    Expert in designing robust TypeScript/Node.js backend architectures, high-performance React virtualized components, and automated AI orchestration pipelines (Claude, OpenAI, Vertex AI). Creator of developer tools with over <b>520,000+ installs</b>.
+    Expert in designing robust TypeScript/Node.js backend architectures, high-performance React virtualized components, and automated AI orchestration pipelines (Claude, OpenAI, Vertex AI). Creato[...]
   </p>
 </div>
 
@@ -22,7 +22,7 @@
 <br />
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SuisSanem000&layout=compact&theme=dark" alt="Most Used Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SuisSanem000&layout=donut&theme=dark&hide_border=true" alt="Most Used Languages" />
 </div>
 
 <br />
@@ -145,11 +145,11 @@
 
 **Databases:** PostgreSQL, Redis, MongoDB, SQLite, IndexedDB (`idb`)  ·  Prisma, TypeORM, Sequelize, Mongoose
 
-**AI / LLM:** Anthropic Claude (`@anthropic-ai/sdk`), OpenAI GPT-4o, Google Cloud Vertex AI  ·  Prompt engineering, structured JSON output (assistant prefill), multimodal document processing (PDF/DOCX/image), two-phase decision orchestration, AJV validation pipelines, tiktoken cost tracking
+**AI / LLM:** Anthropic Claude (`@anthropic-ai/sdk`), OpenAI GPT-4o, Google Cloud Vertex AI  ·  Prompt engineering, structured JSON output (assistant prefill), multimodal document processing (PD[...]
 
 **Developer Tooling:** VSCode Extension API, Webpack, npm/PNPM package publishing
 
-**Architecture Patterns:** Event-driven design (`EventTarget` with typed event maps), Singleton services, Repository pattern, Provider/render-props, batch processing pipelines with concurrency control, offline-first (IndexedDB), magic-number file type detection, SOCKS proxy injection
+**Architecture Patterns:** Event-driven design (`EventTarget` with typed event maps), Singleton services, Repository pattern, Provider/render-props, batch processing pipelines with concurrency co[...]
 
 **Engineering Practices:** Strict TypeScript, AJV schema validation, `errorCatch`/`errorCatchAsync` wrappers, virtual DOM rendering, pointer capture API, Cheerio HTML parsing, RSS feed parsing
 
@@ -164,7 +164,7 @@
 > **Role:** Built solo, end-to-end
 > **Stack:** TypeScript · Node.js · PostgreSQL · SQLite · OpenAI API · Google Vertex AI · PNPM Workspaces · Vite · Axios
 
-A full-stack tech news aggregation platform. The server crawls RSS feeds and custom scrapers for Hacker News, Lobsters, MongoDB, Splunk, Apache Cassandra, SQLite, and CockroachDB, stores articles in PostgreSQL, and runs them through an OpenAI enrichment pipeline. A separate sub-app benchmarked OpenAI against Google Vertex AI for the same classification task.
+A full-stack tech news aggregation platform. The server crawls RSS feeds and custom scrapers for Hacker News, Lobsters, MongoDB, Splunk, Apache Cassandra, SQLite, and CockroachDB, stores articles[...]
 
 ### Monorepo Structure
 
@@ -179,11 +179,11 @@ PNPM workspace with four apps:
 
 Two independently runnable operations:
 
-**Article enrichment** — prompt asks OpenAI to produce a concise title (≤70 chars), a 2–4 bullet-point summary (500–750 chars), an industry index, a content type index, and a viral tendency score 0–100. Industry and type indices reference JSON config files (`industries.json`, `types.json`) so categories update without touching prompt logic.
+**Article enrichment** — prompt asks OpenAI to produce a concise title (≤70 chars), a 2–4 bullet-point summary (500–750 chars), an industry index, a content type index, and a viral tenden[...]
 
 **Relativity scoring** — scores each article's relevance to target job titles (`jobTitles.json`) on a −100 to +100 scale with a reason string.
 
-Both use an **informing call pattern**: a context-priming prompt is sent once per batch session to establish category definitions in the model's session, keeping per-article prompts short and reducing token costs.
+Both use an **informing call pattern**: a context-priming prompt is sent once per batch session to establish category definitions in the model's session, keeping per-article prompts short and red[...]
 
 ```typescript
 let prompt = `InformingCallForCategorization: remember the following "Industries", 
@@ -195,7 +195,7 @@ Job Titles: ${jobTitlesNames}`;
 
 ### Response Parsing Robustness
 
-LLM responses don't always arrive as clean JSON. The parser handles both direct JSON objects and responses wrapped in markdown code fences. Before parsing, it strips embedded newlines inside JSON string values using a regex targeting only content within quotes:
+LLM responses don't always arrive as clean JSON. The parser handles both direct JSON objects and responses wrapped in markdown code fences. Before parsing, it strips embedded newlines inside JSON[...]
 
 ```typescript
 cleanedString = cleanedString.replace(/"(?:[^"\\]|\\.)*"/g, (match) => {
@@ -205,11 +205,11 @@ cleanedString = cleanedString.replace(/"(?:[^"\\]|\\.)*"/g, (match) => {
 
 ### Token Cost Tracking
 
-`EyeAI` uses `@dqbd/tiktoken` to count tokens on both input and output of every API call, then calculates per-call cost in dollars against a model pricing config — making it practical to compare cost across models and prompt strategies during the OpenAI / Vertex AI benchmarking work.
+`EyeAI` uses `@dqbd/tiktoken` to count tokens on both input and output of every API call, then calculates per-call cost in dollars against a model pricing config — making it practical to compar[...]
 
 ### Static Generation
 
-Pre-built JSON files materialise the article dataset at generation time rather than serving live DB queries. Article images are downloaded and cached locally. The client serves static files directly.
+Pre-built JSON files materialise the article dataset at generation time rather than serving live DB queries. Article images are downloaded and cached locally. The client serves static files direc[...]
 
 ---
 
@@ -218,7 +218,7 @@ Pre-built JSON files materialise the article dataset at generation time rather t
 > **Role:** Implementing AI decision and testing only
 > **Stack:** TypeScript · Anthropic Claude · Meteor.js · MongoDB
 
-TreeScribe is a legal document automation platform built for law firms and compliance-heavy organizations. It models legal documents as decision trees: each document is composed of properties, topics, and definitions, each containing a branching graph of widgets (choice, blank, list) that users navigate to produce a final rendered document. The platform supports multi-party documents, conditional logic, organization-level templates, and real-time collaborative review.
+TreeScribe is a legal document automation platform built for law firms and compliance-heavy organizations. It models legal documents as decision trees: each document is composed of properties, to[...]
 
 *Note: Due to a Non-Disclosure Agreement (NDA), specific implementation details, code architecture, file names, and proprietary algorithms cannot be disclosed.*
 
@@ -237,7 +237,7 @@ TreeScribe is a legal document automation platform built for law firms and compl
 
 > **Stack:** TypeScript · IndexedDB (`idb`) · Custom Typed Event System
 
-The client-side manager layer for a commercial desktop data visualization application (JSON/CSV/XML viewer). The `TManager` class extends the browser's native `EventTarget` with a fully typed custom event map:
+The client-side manager layer for a commercial desktop data visualization application (JSON/CSV/XML viewer). The `TManager` class extends the browser's native `EventTarget` with a fully typed cus[...]
 
 ```typescript
 export interface IManagerEventMap {
@@ -254,18 +254,18 @@ export interface IManagerEventMap {
 }
 ```
 
-`addEventListener` and `removeEventListener` overloads are typed to this map — callers get full IDE autocomplete and compile-time safety on event subscriptions. Sync/async variants (`updateView` vs `updateViewSync`) handle cases where the UI needs immediate vs. next-tick state reflection.
+`addEventListener` and `removeEventListener` overloads are typed to this map — callers get full IDE autocomplete and compile-time safety on event subscriptions. Sync/async variants (`updateView[...]
 
 **Key features:**
 
-- **Multi-file, multi-view state** — each file maintains independent views, each view its own column config, row count, filter mode, SQL editor state, active refiners, and find results. Persisted to IndexedDB via the `idb` library, with view cloning support.
-- **SQL query execution and refiners** — two filter modes: UI-driven refiner mode and direct SQL editor mode. Refiners support Find and Filter types with highlight colour coding, inverse matching, and column scoping.
-- **Task pipeline** — long operations (file load, query, find, filter, export, download) are modelled as tasks with an explicit state machine: `Started → InProgress → Finished / Canceled / Error`. Progress reported incrementally using dynamically generated step sequences based on row count.
+- **Multi-file, multi-view state** — each file maintains independent views, each view its own column config, row count, filter mode, SQL editor state, active refiners, and find results. Persist[...]
+- **SQL query execution and refiners** — two filter modes: UI-driven refiner mode and direct SQL editor mode. Refiners support Find and Filter types with highlight colour coding, inverse matchi[...]
+- **Task pipeline** — long operations (file load, query, find, filter, export, download) are modelled as tasks with an explicit state machine: `Started → InProgress → Finished / Canceled / [...]
 - **License enforcement** — file size limits checked against active license tier at load time; offline activation supported via a separate code-based flow.
 - **URL-based file loading with auth** — Basic or Bearer auth, credentials stored per-URL or per-domain via `IURLCredential`.
 - **Auto-update pipeline** — full download lifecycle (`NoUpdate → CheckingForUpdate → Downloading → DownloadedReadyToInstall`) with release notes as a startup screen payload.
 
-All public methods are wrapped in `errorCatch` / `errorCatchAsync` helpers that capture the calling function name so errors are never silently swallowed and the error log always includes call context.
+All public methods are wrapped in `errorCatch` / `errorCatchAsync` helpers that capture the calling function name so errors are never silently swallowed and the error log always includes call con[...]
 
 ---
 
@@ -275,15 +275,15 @@ All public methods are wrapped in `errorCatch` / `errorCatchAsync` helpers that 
 
 A reusable React grid/tree component that stays performant at scale. Renders large JSON and CSV datasets in both grid and tree view modes without degrading as dataset size grows.
 
-**Virtual scrolling** — calculates the visible row range from scroll position and viewport height (`Math.floor(scrollTop / rowHeight)`), maintains a render buffer, mounts ~20–30 row components regardless of total rows. Scroll handlers throttled, row components memoised with `useCallback`.
+**Virtual scrolling** — calculates the visible row range from scroll position and viewport height (`Math.floor(scrollTop / rowHeight)`), maintains a render buffer, mounts ~20–30 row component[...]
 
-**Column resizing** — uses the browser's pointer capture API so mouse events aren't lost during fast drags. Width tracked as a delta: `newWidth = lastWidth + (currentX - startX)`, minimum 10px. Double-click auto-fit measures cell text pixel widths using `CanvasRenderingContext2D` and sets the column to the widest found.
+**Column resizing** — uses the browser's pointer capture API so mouse events aren't lost during fast drags. Width tracked as a delta: `newWidth = lastWidth + (currentX - startX)`, minimum 10px.[...]
 
-**Sticky headers with fixed columns** — DOM split into `.stickyCellContainer` (fixed) and `.normalCellContainer` (scrollable). Fixed columns use CSS `position: sticky` with z-index layering; horizontal scroll synchronised between containers.
+**Sticky headers with fixed columns** — DOM split into `.stickyCellContainer` (fixed) and `.normalCellContainer` (scrollable). Fixed columns use CSS `position: sticky` with z-index layering; ho[...]
 
 **Multi-cell selection** — selected cells tracked as `[startRow, startCol, endRow, endCol]`. Containment check is O(1) per cell.
 
-**Provider/render-props architecture** — `VirtualGridProvider` owns all state and logic. Parent components pass render functions for `Row`, `FilterRow`, and `SummaryRow`, enabling customisation without forking the virtualisation core. Full component hierarchy memoised at every level.
+**Provider/render-props architecture** — `VirtualGridProvider` owns all state and logic. Parent components pass render functions for `Row`, `FilterRow`, and `SummaryRow`, enabling customisation[...]
 
 ---
 
@@ -293,10 +293,10 @@ A reusable React grid/tree component that stays performant at scale. Renders lar
 
 A VSCode extension and companion npm package for generating nested sample JSON data from custom templates. Published to the VSCode Marketplace and npm registry. 520K+ installs.
 
-Developers write a template using a `{{pattern}}` syntax; the generator recursively walks the structure, matching placeholders against a registry of generator functions (UUIDs, names, numbers with ranges, arrays with configurable lengths, nested objects). The template stays within valid JSON so editors provide syntax highlighting out of the box.
+Developers write a template using a `{{pattern}}` syntax; the generator recursively walks the structure, matching placeholders against a registry of generator functions (UUIDs, names, numbers wit[...]
 
 **Monorepo:**
-- `json-generator-vscode-extension/` — registers a command in the command palette, reads the active editor's template, writes generated output to a new document pane. Bundled with Webpack and distributed as a VSIX via `vsce`.
+- `json-generator-vscode-extension/` — registers a command in the command palette, reads the active editor's template, writes generated output to a new document pane. Bundled with Webpack and d[...]
 - `generator-packages/npm/` — exposes the same generation logic as a programmatic API and CLI.
 
 ---
@@ -305,15 +305,15 @@ Developers write a template using a `{{pattern}}` syntax; the generator recursiv
 
 > **Stack:** React · Next.js · JavaScript · Axios
 
-The marketing, authentication, and licensing platform for a commercial desktop JSON Viewer product. Handles the full commercial web surface: user registration with email verification, login with device-aware sessions, password reset, account deletion, multi-seat license management with per-device allocation, billing portal integration, invoice requests, and a technical blog.
+The marketing, authentication, and licensing platform for a commercial desktop JSON Viewer product. Handles the full commercial web surface: user registration with email verification, login with [...]
 
-**Multi-seat license management** — `apiRequestSeat`, `apiRevokeSeat`, `apiDownloadSeat`, `apiLicenseUpgrade`. Device ID tracked per seat; license files downloaded as binary blobs (`responseType: "blob"`).
+**Multi-seat license management** — `apiRequestSeat`, `apiRevokeSeat`, `apiDownloadSeat`, `apiLicenseUpgrade`. Device ID tracked per seat; license files downloaded as binary blobs (`responseTyp[...]
 
-**Centralised API layer** — a single `api.js` module exports named functions for every operation. Each serialises arguments to `FormData` via a shared `JSONToFormData` helper (stripping nulls/undefineds), attaches the access token from localStorage automatically.
+**Centralised API layer** — a single `api.js` module exports named functions for every operation. Each serialises arguments to `FormData` via a shared `JSONToFormData` helper (stripping nulls/u[...]
 
-**Programmatic JSON-LD schema generation** — `generateArticleSchema` parses markdown content for embedded images using a regex, constructs a full Article schema with `ImageObject` entries (including `license`, `creditText`, `author`, `acquireLicensePage`), and writes a JSON file to `public/schema/`. The `getSchema` helper injects this into the page's `<head>` as a `<script type="application/ld+json">` tag — server-side only, guarded by `typeof window === "undefined"`.
+**Programmatic JSON-LD schema generation** — `generateArticleSchema` parses markdown content for embedded images using a regex, constructs a full Article schema with `ImageObject` entries (incl[...]
 
-**Anonymous analytics** — a persistent anonymous UID generated once via `crypto.randomUUID()` and stored in localStorage. All event log calls attach this UID for usage correlation without requiring a logged-in user.
+**Anonymous analytics** — a persistent anonymous UID generated once via `crypto.randomUUID()` and stored in localStorage. All event log calls attach this UID for usage correlation without requi[...]
 
 ---
 
