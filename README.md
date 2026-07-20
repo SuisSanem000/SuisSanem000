@@ -497,8 +497,8 @@ https://github.com/SuisSanem000/SuisSanem000/actions
 ## Contact & Professional Links
 
 - **GitHub:** [github.com/SuisSanem000](https://github.com/SuisSanem000)
-- **LinkedIn:** Connect for QA collaboration and testing methodology discussions
-- **Email:** Available upon request
+- **LinkedIn:** https://www.linkedin.com/in/simin-shoaibi/
+- **Email:** simin.shoaibi@proton.me
 
 ---
 
