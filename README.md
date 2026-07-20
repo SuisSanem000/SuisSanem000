@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🔬 Simin Shoeibi – QA Engineering Lead</h1>
+  <h1>🔬 Simin Shoeibi – QA Engineering</h1>
   <h3>API Testing | Functional QA | Performance Validation | Defect Tracking</h3>
 
   <p>
