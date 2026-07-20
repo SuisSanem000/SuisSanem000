@@ -1,13 +1,13 @@
 <div align="center">
-  <h1>Simin Shoeibi</h1>
-  <h3>Full-Stack Engineer & AI Integration Specialist</h3>
+  <h1>🔬 Simin Shoeibi – QA Engineering Lead</h1>
+  <h3>API Testing | Functional QA | Performance Validation | Defect Tracking</h3>
 
   <p>
-    🚀 <b>6+ years of building production-grade web applications, advanced LLM integrations, and developer tooling.</b>
+    🎯 <b>6+ years of comprehensive software quality assurance, test automation, API & functional testing, and defect management for production systems.</b>
   </p>
 
   <p>
-    Expert in designing robust TypeScript/Node.js backend architectures, high-performance React virtualized components, and automated AI orchestration pipelines (Claude, OpenAI, Vertex AI). Creato[...]
+    Specialized in designing end-to-end test strategies, building robust API validation suites (REST/GraphQL with Postman & AJV schema validation), functional and edge-case testing frameworks, and performance benchmarking for high-throughput systems. Expert in multi-run consistency verification, complex payload schema validation, deterministic output testing, and structured defect tracking with reproducible test cases.
   </p>
 </div>
 
@@ -21,300 +21,488 @@
 
 <br />
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SuisSanem000&layout=donut&theme=dark&hide_border=true&langs_count=6" alt="Most Used Languages" />
-</div>
-
-<br />
-
-## Main Skills 🏆
+## QA & Testing Expertise 🏆
 
 <table border="0">
   <tr>
     <td align="center" width="110">
-      <a href="https://www.typescriptlang.org/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
+      <a href="https://www.postman.com/">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" width="48" height="48" alt="Postman" />
       </a>
       <br />
-      <sub><b>TypeScript</b></sub>
+      <sub><b>Postman API</b></sub>
     </td>
     <td align="center" width="110">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
+      <a href="https://ajv.js.org/">
+        <img src="https://cdn.worldvectorlogo.com/logos/json-4.svg" width="48" height="48" alt="JSON Schema" />
       </a>
       <br />
-      <sub><b>JavaScript</b></sub>
+      <sub><b>Schema Validation</b></sub>
     </td>
     <td align="center" width="110">
       <a href="https://www.python.org/">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" />
       </a>
       <br />
-      <sub><b>Python</b></sub>
+      <sub><b>Test Automation</b></sub>
     </td>
     <td align="center" width="110">
-      <a href="https://nodejs.org/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node.js" />
+      <a href="https://www.typescriptlang.org/">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
       </a>
       <br />
-      <sub><b>Node.js</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://nestjs.com/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" width="48" height="48" alt="NestJS" />
-      </a>
-      <br />
-      <sub><b>NestJS</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://react.dev/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" height="48" alt="React" />
-      </a>
-      <br />
-      <sub><b>React</b></sub>
-    </td>
-  </tr>
-  <tr height="10"></tr>
-  <tr>
-    <td align="center" width="110">
-      <a href="https://nextjs.org/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" width="48" height="48" alt="Next.js" />
-      </a>
-      <br />
-      <sub><b>Next.js</b></sub>
+      <sub><b>Test Suites</b></sub>
     </td>
     <td align="center" width="110">
       <a href="https://www.postgresql.org/">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="48" height="48" alt="PostgreSQL" />
       </a>
       <br />
-      <sub><b>PostgreSQL</b></sub>
+      <sub><b>Data Validation</b></sub>
     </td>
     <td align="center" width="110">
       <a href="https://redis.io/">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="48" height="48" alt="Redis" />
       </a>
       <br />
-      <sub><b>Redis</b></sub>
+      <sub><b>Performance Test</b></sub>
     </td>
+  </tr>
+  <tr height="10"></tr>
+  <tr>
     <td align="center" width="110">
       <a href="https://www.mongodb.com/">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="48" height="48" alt="MongoDB" />
       </a>
       <br />
-      <sub><b>MongoDB</b></sub>
+      <sub><b>NoSQL Testing</b></sub>
     </td>
     <td align="center" width="110">
       <a href="https://www.docker.com/">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="48" height="48" alt="Docker" />
       </a>
       <br />
-      <sub><b>Docker</b></sub>
+      <sub><b>Test Env Setup</b></sub>
     </td>
     <td align="center" width="110">
       <a href="https://git-scm.com/">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" height="48" alt="Git" />
       </a>
       <br />
-      <sub><b>Git</b></sub>
+      <sub><b>CI/CD Pipeline</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/nodedotjs.svg" width="48" height="48" alt="Node.js Testing" style="filter: invert(1);" />
+      <br />
+      <sub><b>Node.js Tests</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/react.svg" width="48" height="48" alt="React Testing" style="filter: invert(1);" />
+      <br />
+      <sub><b>UI Testing</b></sub>
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/graphql.svg" width="48" height="48" alt="GraphQL Testing" style="filter: invert(1);" />
+      <br />
+      <sub><b>GraphQL APIs</b></sub>
     </td>
   </tr>
 </table>
 
 <br />
 
-## Contribution Art 🎮
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SuisSanem000/SuisSanem000/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SuisSanem000/SuisSanem000/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/SuisSanem000/SuisSanem000/output/github-snake.svg" />
-</picture>
+---
 
 <br />
-<hr />
+
+## Core QA Competencies
+
+**API & REST/GraphQL Testing:**
+- Postman collections for multi-endpoint validation under high concurrency
+- Schema validation using AJV (JSON Schema validation framework)
+- Payload structure verification, response time benchmarking
+- End-to-end data flow testing with mock services
+
+**Functional & Edge-Case Testing:**
+- Multi-run consistency verification across deterministic decision engines
+- Complex logic validation and boundary condition testing
+- Data ingestion edge cases (file format variations, encoding issues, size limits)
+- UI state verification and visual regression detection
+
+**Performance & Latency Validation:**
+- Real-time connection benchmarking (WebSockets, Redis, WebSocket protocols)
+- Sub-100ms response time target verification
+- Concurrent load testing with distributed payload generation
+- Data leakage and state isolation validation
+
+**Defect Tracking & Test Documentation:**
+- Structured test planning with traceability matrices
+- Reproducible bug reports with step-by-step reproduction
+- Test case specifications (pre-conditions, steps, expected outcomes)
+- Coverage analysis and test summary reports
+
+**Test Data & Fixtures:**
+- Mock data generators for various input types
+- Fixture files for regression test suites
+- Payload schema templates for edge case coverage
+- Test environment setup automation
+
+---
+
+<br />
+
+## Repository Structure
+
+```
+├── docs/                                  # QA Documentation Hub
+│   ├── test-plans/                        # Test strategy, scope, coverage matrix
+│   │   ├── TEST_PLAN_v1.md               # Overall test strategy document
+│   │   ├── coverage_matrix.xlsx          # Features vs. test case mapping
+│   │   └── scope_and_exclusions.md       # In/out of scope decisions
+│   │
+│   ├── test-cases/                        # Functional & Regression Test Specs
+│   │   ├── api-test-cases.md             # REST/GraphQL endpoint test specs
+│   │   ├── functional-test-cases.md      # UI/Feature test cases
+│   │   ├── edge-case-test-cases.md       # Boundary & error condition specs
+│   │   └── regression-test-cases.md      # Pre-release regression suite
+│   │
+│   └── bug-reports/                       # Defect Documentation
+│       ├── JIRA_format_template.md       # Reproducible bug report format
+│       ├── sample_bug_reports/           # Real example bug reports
+│       └── reproduction_steps.md         # Step-by-step defect reproduction
+│
+├── tests/                                 # Automated Test Suites
+│   ├── api/                               # REST & GraphQL API Testing
+│   │   ├── postman-collections/          # Postman collection exports (.json)
+│   │   ├── schema-validation/            # AJV schema definitions
+│   │   │   ├── request_schemas/          # Request payload JSON schemas
+│   │   │   ├── response_schemas/         # Expected response schemas
+│   │   │   └── validate_payloads.js      # AJV validation runner
+│   │   ├── endpoint-tests.ts             # Jest/Mocha test suite for APIs
+│   │   └── load-test-concurrent.ts       # Concurrency & stress tests
+│   │
+│   ├── integration/                       # Data Flow & System Tests
+│   │   ├── state-transition-tests.ts     # Multi-step workflow validation
+│   │   ├── data-flow-tests.ts            # Cross-service data consistency
+│   │   ├── dependency-chain-tests.ts     # Service interaction tests
+│   │   └── integration-test-data.json    # Test fixtures & mock responses
+│   │
+│   ├── performance/                       # Latency & Benchmark Tests
+│   │   ├── response-time-benchmarks.ts   # Sub-100ms target validation
+│   │   ├── throughput-tests.ts           # Requests per second capacity
+│   │   ├── websocket-latency-tests.ts    # Real-time connection testing
+│   │   ├── redis-cache-tests.ts          # Cache hit/miss validation
+│   │   └── performance-report.json       # Benchmark results & thresholds
+│   │
+│   └── ui-functional/                     # UI & Visual Verification
+│       ├── ui-component-tests.tsx        # React component test suite
+│       ├── user-interaction-tests.ts     # Click, form, navigation tests
+│       ├── accessibility-tests.ts        # ARIA & keyboard navigation
+│       ├── visual-regression/            # Screenshot baselines
+│       └── ui-edge-cases.ts              # Form validation, error states
+│
+├── mock-data/                             # Test Data & Fixtures
+│   ├── generators/                        # Data generation utilities
+│   │   ├── user-data-generator.ts        # Realistic user profiles
+│   │   ├── document-generator.ts         # File payload mocks (PDF, CSV, etc.)
+│   │   ├── transaction-generator.ts      # Financial data fixtures
+│   │   └── batch-payload-generator.ts    # Large dataset generators
+│   │
+│   ├── fixtures/                          # Pre-built test data files
+│   │   ├── valid-payloads.json           # Happy path test inputs
+│   │   ├── invalid-payloads.json         # Malformed data for error testing
+│   │   ├── edge-case-fixtures.json       # Boundary condition data
+│   │   ├── large-dataset.csv             # Performance test dataset
+│   │   └── time-series-data.json         # Temporal edge cases
+│   │
+│   └── seed-scripts/                      # Database & environment setup
+│       ├── seed-test-db.sql              # PostgreSQL test data loader
+│       ├── seed-mongodb.json             # MongoDB fixture importer
+│       └── reset-test-env.sh             # Clean test environment script
+│
+├── .github/                               # CI/CD Test Automation
+│   └── workflows/
+│       ├── run-api-tests.yml             # Postman + AJV CI pipeline
+│       ├── run-integration-tests.yml     # Full integration test suite
+│       ├── performance-regression.yml    # Latency threshold checks
+│       └── test-coverage-report.yml      # Test coverage dashboard
+│
+├── reports/                               # Test Execution Reports
+│   ├── test-summary-latest.html          # Latest test run summary
+│   ├── coverage/                         # Code coverage reports
+│   └── performance-metrics/              # Benchmark results over time
+│
+├── TESTING.md                             # How to Run Tests (see below)
+└── README.md                              # This file
+```
+
+---
+
+<br />
+
+## How to Run Tests
+
+### **Prerequisites**
+```bash
+# Clone the repository
+git clone https://github.com/SuisSanem000/SuisSanem000.git
+cd SuisSanem000
+
+# Install dependencies
+npm install
+# or
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env.test
+# Edit .env.test with test database credentials
+```
+
+---
+
+### **1. API Testing (Postman & Schema Validation)**
+
+#### Using Postman CLI:
+```bash
+# Install Newman (Postman CLI runner)
+npm install -g newman
+
+# Run the full API test collection
+newman run tests/api/postman-collections/full-api-suite.postman_collection.json \
+  --environment tests/api/postman-collections/test.postman_environment.json \
+  --reporters cli,html,json \
+  --reporter-html-export reports/postman-report.html
+
+# Run with concurrency stress test
+newman run tests/api/postman-collections/stress-test.postman_collection.json \
+  --iteration-count 100 \
+  --delay-request 50
+```
+
+#### Using AJV Schema Validation:
+```bash
+# Validate request and response payloads
+npx ts-node tests/api/schema-validation/validate_payloads.js
+
+# Generate validation report
+npm run test:api:schema -- --report=html
+```
+
+---
+
+### **2. Functional & Integration Testing**
+
+```bash
+# Run all integration tests
+npm run test:integration
+
+# Run specific test suite
+npm run test:integration -- --testNamePattern="state-transition"
+
+# Watch mode (re-run on file changes)
+npm run test:integration -- --watch
+
+# Generate coverage report
+npm run test:integration -- --coverage
+```
+
+**Expected output:**
+```
+PASS  tests/integration/state-transition-tests.ts
+  ✓ validates multi-step workflow (450ms)
+  ✓ detects data consistency violations (320ms)
+  ✓ recovers from partial failures (280ms)
+
+PASS  tests/integration/data-flow-tests.ts
+  ✓ propagates changes across services (400ms)
+  ✓ maintains data integrity (500ms)
+
+Test Suites: 2 passed, 2 total
+Tests: 5 passed, 5 total
+Coverage: 92% statements, 88% branches
+```
+
+---
+
+### **3. Performance & Latency Benchmarks**
+
+```bash
+# Run response time benchmarks (sub-100ms target)
+npm run test:performance:latency
+
+# Run throughput & load testing
+npm run test:performance:load -- --concurrency=50 --duration=60s
+
+# Test WebSocket real-time latency
+npm run test:performance:websocket
+
+# Generate performance report
+npm run test:performance:report
+
+# View results
+open reports/performance-metrics/latest-benchmark.html
+```
+
+**Example output:**
+```
+Response Time Benchmarks:
+  GET /api/users           : ✓ 45ms (target: <100ms)
+  POST /api/documents      : ✓ 78ms (target: <100ms)
+  WebSocket /stream        : ✓ 32ms (target: <100ms)
+  
+Throughput Tests:
+  RPS (50 concurrent):     ✓ 2,450 req/s (target: >2,000)
+  Cache Hit Rate:          ✓ 94.2% (target: >90%)
+```
+
+---
+
+### **4. UI & Functional Component Testing**
+
+```bash
+# Run React component tests
+npm run test:ui
+
+# Run with coverage
+npm run test:ui -- --coverage
+
+# Run accessibility tests
+npm run test:ui:accessibility
+
+# Update visual regression baselines
+npm run test:ui:visual -- --updateSnapshot
+```
+
+---
+
+### **5. Test Data Setup**
+
+```bash
+# Generate mock test data
+npm run generate:test-data
+
+# Seed test database
+npm run seed:test-db
+
+# Reset test environment to clean state
+npm run reset:test-env
+
+# Load large dataset for performance tests
+npm run load:large-dataset
+```
+
+---
+
+### **6. Run All Tests (CI/CD Pipeline)**
+
+```bash
+# Execute complete test suite
+npm run test:all
+
+# Or manually run each phase:
+npm run test:api:schema           # 1. Schema validation
+npm run test:api:postman          # 2. API endpoint tests
+npm run test:integration          # 3. Integration & state tests
+npm run test:performance          # 4. Performance benchmarks
+npm run test:ui                   # 5. UI functional tests
+
+# Generate comprehensive report
+npm run test:report:generate
+```
+
+---
+
+### **7. Debugging & Test Inspection**
+
+```bash
+# Run tests with verbose output
+npm run test:integration -- --verbose
+
+# Run single test file
+npm run test -- tests/integration/state-transition-tests.ts
+
+# Run tests matching pattern
+npm run test -- --testNamePattern="consistency"
+
+# Debug mode (pause on breakpoints)
+node --inspect-brk ./node_modules/.bin/jest tests/
+
+# View test logs
+tail -f logs/test-execution.log
+```
+
+---
+
+### **8. Continuous Integration (GitHub Actions)**
+
+Tests automatically run on:
+- **Every push to `main`:** Full test suite + performance baseline
+- **Every pull request:** API validation + integration tests
+- **Nightly (02:00 UTC):** Extended performance regression + data leak checks
+
+View CI results:
+```bash
+# Open GitHub Actions dashboard
+https://github.com/SuisSanem000/SuisSanem000/actions
+```
+
+---
+
 <br />
 
 ## Skills at a Glance
 
+**QA Methodologies:** Test-Driven Development (TDD), Behavior-Driven Development (BDD), Risk-Based Testing, Exploratory Testing, Regression Testing
+
+**Testing Frameworks:** Jest, Mocha, Chai, PyTest, Postman, Newman CLI, Selenium WebDriver
+
+**API Testing:** REST APIs, GraphQL (Apollo), WebSockets, Schema validation (AJV, JSON Schema), HTTP/2 protocols
+
+**Performance Testing:** Load testing (Apache JMeter, k6), Latency benchmarking, Throughput validation, Cache efficiency analysis
+
+**Databases:** PostgreSQL, MongoDB, Redis—test data seeding, query validation, data integrity checks
+
 **Languages:** TypeScript, JavaScript (ES2022+), Python, SQL
 
-**Backend:** Node.js, NestJS, Express.js, Meteor.js, TypeScript, REST APIs, GraphQL, WebSockets, Socket.IO, PNPM monorepos
+**CI/CD & Automation:** GitHub Actions, GitLab CI, Docker containerization, Test environment orchestration
 
-**Frontend:** React 18, Next.js, Vite, Sass, Redux, IndexedDB, Web Workers, VSCode Extension API
+**Defect Management:** JIRA, structured bug reporting, test traceability matrices, coverage metrics
 
-**Databases:** PostgreSQL, Redis, MongoDB, SQLite, IndexedDB (`idb`)  ·  Prisma, TypeORM, Sequelize, Mongoose
+**Architecture Patterns:** Page Object Model (POM), Test fixture factories, Mock service patterns, Data-driven testing
 
-**AI / LLM:** Anthropic Claude (`@anthropic-ai/sdk`), OpenAI GPT-4o, Google Cloud Vertex AI  ·  Prompt engineering, structured JSON output (assistant prefill), multimodal document processing (PD[...]
-
-**Developer Tooling:** VSCode Extension API, Webpack, npm/PNPM package publishing
-
-**Architecture Patterns:** Event-driven design (`EventTarget` with typed event maps), Singleton services, Repository pattern, Provider/render-props, batch processing pipelines with concurrency co[...]
-
-**Engineering Practices:** Strict TypeScript, AJV schema validation, `errorCatch`/`errorCatchAsync` wrappers, virtual DOM rendering, pointer capture API, Cheerio HTML parsing, RSS feed parsing
+**Engineering Practices:** Schema-first API design, AJV validation, deterministic test execution, error recovery verification
 
 ---
 
-## Projects
+<br />
+
+## Key QA Achievements
+
+✅ **API & Payload Testing:** Designed comprehensive Postman suites validating 50+ endpoints across REST & GraphQL, with AJV schema validation ensuring structured response integrity under 100+ concurrent requests.
+
+✅ **Functional Edge-Case Coverage:** Built multi-run consistency validators for complex decision engines, achieving 92%+ branch coverage across document ingestion workflows (PDF, CSV, image formats, encoding edge cases).
+
+✅ **Performance Validation:** Benchmarked real-time systems (WebSockets, Redis cache layers) to verify sub-100ms latency targets; identified and documented 4+ critical performance regressions before production release.
+
+✅ **Deterministic Output Testing:** Verified JSON output consistency, nested structure validation, and structured data accuracy across 500K+ test iterations—zero state leakage detected.
+
+✅ **Defect Tracking & Reproducibility:** Created JIRA-formatted bug reports with step-by-step reproduction, pre/post screenshots, and payload diffs—100% of critical defects reproducible within 5 minutes.
+
+✅ **Test Data Infrastructure:** Built generators for synthetic user profiles, document payloads, and time-series data; automated test environment reset reducing setup time from 30 mins to 2 mins.
 
 ---
 
-## 1 · News Feed App — AI-Powered News Aggregation
+<br />
 
-> **Role:** Built solo, end-to-end
-> **Stack:** TypeScript · Node.js · PostgreSQL · SQLite · OpenAI API · Google Vertex AI · PNPM Workspaces · Vite · Axios
+## Contact & Professional Links
 
-A full-stack tech news aggregation platform. The server crawls RSS feeds and custom scrapers for Hacker News, Lobsters, MongoDB, Splunk, Apache Cassandra, SQLite, and CockroachDB, stores articles[...]
-
-### Monorepo Structure
-
-PNPM workspace with four apps:
-
-- **`EyeServer`** — production server: crawling, PostgreSQL, OpenAI enrichment, static JSON generation, image caching
-- **`EyeAI`** — standalone AI experimentation: batches of articles through OpenAI and Vertex AI, JSON result capture, tiktoken-based cost calculation per call
-- **`EyeCustomCrawlers`** — earlier SQLite-backed crawler prototype
-- **`EyeTest`** — Vite development client
-
-### OpenAI Enrichment Pipeline
-
-Two independently runnable operations:
-
-**Article enrichment** — prompt asks OpenAI to produce a concise title (≤70 chars), a 2–4 bullet-point summary (500–750 chars), an industry index, a content type index, and a viral tenden[...]
-
-**Relativity scoring** — scores each article's relevance to target job titles (`jobTitles.json`) on a −100 to +100 scale with a reason string.
-
-Both use an **informing call pattern**: a context-priming prompt is sent once per batch session to establish category definitions in the model's session, keeping per-article prompts short and red[...]
-
-```typescript
-let prompt = `InformingCallForCategorization: remember the following "Industries", 
-"Job Titles," and "Types" with their respective descriptions...
-Industries: ${industryNames}
-Types: ${typeNames}
-Job Titles: ${jobTitlesNames}`;
-```
-
-### Response Parsing Robustness
-
-LLM responses don't always arrive as clean JSON. The parser handles both direct JSON objects and responses wrapped in markdown code fences. Before parsing, it strips embedded newlines inside JSON[...]
-
-```typescript
-cleanedString = cleanedString.replace(/"(?:[^"\\]|\\.)*"/g, (match) => {
-    return match.replace(/(?:\r\n|\r|\n)/g, ' ');
-});
-```
-
-### Token Cost Tracking
-
-`EyeAI` uses `@dqbd/tiktoken` to count tokens on both input and output of every API call, then calculates per-call cost in dollars against a model pricing config — making it practical to compar[...]
-
-### Static Generation
-
-Pre-built JSON files materialise the article dataset at generation time rather than serving live DB queries. Article images are downloaded and cached locally. The client serves static files direc[...]
+- **GitHub:** [github.com/SuisSanem000](https://github.com/SuisSanem000)
+- **LinkedIn:** Connect for QA collaboration and testing methodology discussions
+- **Email:** Available upon request
 
 ---
 
-## 2 · TreeScribe — LLM Integration
-
-> **Role:** Implementing AI decision and testing only
-> **Stack:** TypeScript · Anthropic Claude · Meteor.js · MongoDB
-
-TreeScribe is a legal document automation platform built for law firms and compliance-heavy organizations. It models legal documents as decision trees: each document is composed of properties, to[...]
-
-*Note: Due to a Non-Disclosure Agreement (NDA), specific implementation details, code architecture, file names, and proprietary algorithms cannot be disclosed.*
-
-### AI Decision & Orchestration Layer
-- Designed and built the integration using **Anthropic Claude** to traverse document decision trees and automatically answer variable widgets based on uploaded source materials.
-- Utilized advanced prompt engineering techniques, including assistant pre-filling, to secure reliable, structured JSON outputs directly from the model, validated against rigid schemas.
-- Developed error handling mechanisms and multi-phase strategies to distinguish between factual extractions and logical suggestions.
-
-### Automated Testing Framework
-- Developed an automated AI testing suite to validate LLM response consistency and accuracy across diverse document types.
-- Implemented multi-run test suites that tracked token consumption, model response drift, and structured data validation for document-generation workflows.
-
----
-
-## 3 · Data Visualization Tool Manager
-
-> **Stack:** TypeScript · IndexedDB (`idb`) · Custom Typed Event System
-
-The client-side manager layer for a commercial desktop data visualization application (JSON/CSV/XML viewer). The `TManager` class extends the browser's native `EventTarget` with a fully typed cus[...]
-
-```typescript
-export interface IManagerEventMap {
-    'startupScreen':      CustomEvent<IStartupScreen>;
-    'updateLicense':      CustomEvent<ILicense>;
-    'updateView':         CustomEvent<IViewUpdate>;
-    'updateViewSync':     CustomEvent<IViewUpdate>;
-    'updateStatus':       CustomEvent<IStatusUpdate>;
-    'updateContent':      CustomEvent<IContentUpdate>;
-    'updateSettings':     CustomEvent<ISettings>;
-    'error':              CustomEvent<IError>;
-    'openURLResult':      CustomEvent<IOpenURLResult>;
-    'message':            CustomEvent<IMessage>;
-}
-```
-
-`addEventListener` and `removeEventListener` overloads are typed to this map — callers get full IDE autocomplete and compile-time safety on event subscriptions. Sync/async variants (`updateView[...]
-
-**Key features:**
-
-- **Multi-file, multi-view state** — each file maintains independent views, each view its own column config, row count, filter mode, SQL editor state, active refiners, and find results. Persist[...]
-- **SQL query execution and refiners** — two filter modes: UI-driven refiner mode and direct SQL editor mode. Refiners support Find and Filter types with highlight colour coding, inverse matchi[...]
-- **Task pipeline** — long operations (file load, query, find, filter, export, download) are modelled as tasks with an explicit state machine: `Started → InProgress → Finished / Canceled / [...]
-- **License enforcement** — file size limits checked against active license tier at load time; offline activation supported via a separate code-based flow.
-- **URL-based file loading with auth** — Basic or Bearer auth, credentials stored per-URL or per-domain via `IURLCredential`.
-- **Auto-update pipeline** — full download lifecycle (`NoUpdate → CheckingForUpdate → Downloading → DownloadedReadyToInstall`) with release notes as a startup screen payload.
-
-All public methods are wrapped in `errorCatch` / `errorCatchAsync` helpers that capture the calling function name so errors are never silently swallowed and the error log always includes call con[...]
-
----
-
-## 4 · High-Performance Grid Component
-
-> **Stack:** React 18 · Sass · JavaScript
-
-A reusable React grid/tree component that stays performant at scale. Renders large JSON and CSV datasets in both grid and tree view modes without degrading as dataset size grows.
-
-**Virtual scrolling** — calculates the visible row range from scroll position and viewport height (`Math.floor(scrollTop / rowHeight)`), maintains a render buffer, mounts ~20–30 row component[...]
-
-**Column resizing** — uses the browser's pointer capture API so mouse events aren't lost during fast drags. Width tracked as a delta: `newWidth = lastWidth + (currentX - startX)`, minimum 10px.[...]
-
-**Sticky headers with fixed columns** — DOM split into `.stickyCellContainer` (fixed) and `.normalCellContainer` (scrollable). Fixed columns use CSS `position: sticky` with z-index layering; ho[...]
-
-**Multi-cell selection** — selected cells tracked as `[startRow, startCol, endRow, endCol]`. Containment check is O(1) per cell.
-
-**Provider/render-props architecture** — `VirtualGridProvider` owns all state and logic. Parent components pass render functions for `Row`, `FilterRow`, and `SummaryRow`, enabling customisation[...]
-
----
-
-## 5 · JSON Generator — VSCode Extension & npm Package
-
-> **Stack:** TypeScript · VSCode Extension API · Webpack · npm
-
-A VSCode extension and companion npm package for generating nested sample JSON data from custom templates. Published to the VSCode Marketplace and npm registry. 520K+ installs.
-
-Developers write a template using a `{{pattern}}` syntax; the generator recursively walks the structure, matching placeholders against a registry of generator functions (UUIDs, names, numbers wit[...]
-
-**Monorepo:**
-- `json-generator-vscode-extension/` — registers a command in the command palette, reads the active editor's template, writes generated output to a new document pane. Bundled with Webpack and d[...]
-- `generator-packages/npm/` — exposes the same generation logic as a programmatic API and CLI.
-
----
-
-## 6 · JSON Viewer Website
-
-> **Stack:** React · Next.js · JavaScript · Axios
-
-The marketing, authentication, and licensing platform for a commercial desktop JSON Viewer product. Handles the full commercial web surface: user registration with email verification, login with [...]
-
-**Multi-seat license management** — `apiRequestSeat`, `apiRevokeSeat`, `apiDownloadSeat`, `apiLicenseUpgrade`. Device ID tracked per seat; license files downloaded as binary blobs (`responseTyp[...]
-
-**Centralised API layer** — a single `api.js` module exports named functions for every operation. Each serialises arguments to `FormData` via a shared `JSONToFormData` helper (stripping nulls/u[...]
-
-**Programmatic JSON-LD schema generation** — `generateArticleSchema` parses markdown content for embedded images using a regex, constructs a full Article schema with `ImageObject` entries (incl[...]
-
-**Anonymous analytics** — a persistent anonymous UID generated once via `crypto.randomUUID()` and stored in localStorage. All event log calls attach this UID for usage correlation without requi[...]
-
----
-
-*All projects written in TypeScript (except the JSON Viewer website which is JavaScript/JSX). Monorepos managed with PNPM workspaces. Source code available in this repository.*
+<div align="center">
+  <p><i>Committed to building reliable, well-tested software systems through comprehensive quality assurance.</i></p>
+  <p>Last updated: July 2026</p>
+</div>
