@@ -124,7 +124,7 @@ Reach me at simin.shoaibi@proton.me or explore my work at github.com/SuisSanem00
 
 **4. JSON Generator — Standalone npm Package**
 - **Description:** The core engine of the JSON Generator extracted and published as a standalone npm package. Exposes the template-driven JSON generation logic with a programmatic API and a CLI interface for use in scripts and CI pipelines.
-- **Link:** [Add your npm link here]
+- **Link:** https://www.npmjs.com/package/@dadroit/json-generator
 
 **5. Dadroit JSON Viewer (Desktop App)**
 - **Description:** A high-performance cross-platform desktop application (Delphi, Free Pascal) capable of opening and searching multi-GB JSON files instantly. Handled memory-constrained environments via virtual scrolling engines. Adopted by 60K+ users globally.

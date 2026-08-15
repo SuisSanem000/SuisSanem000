@@ -37,7 +37,7 @@
 > *Open Source / Developer Tooling — 630K+ Installs*
 
 **Impact:** Created a top-10 VS Code marketplace extension adopted massively by the open-source community, driving huge developer efficiency for test-fixture generation. 
-**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a VS Code extension and a standalone npm package** (exposing programmatic API & CLI). Drove **540% organic growth** through technical content marketing and SEO.
+**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Dadroit.dadroit-json-generator) and a standalone [npm package](https://www.npmjs.com/package/@dadroit/json-generator)** (exposing programmatic API & CLI). Drove **540% organic growth** through technical content marketing and SEO.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![VSCode API](https://img.shields.io/badge/VSCode_Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
