@@ -58,8 +58,10 @@
 
 ---
 
-### 🤖 [Legal Automation Tool — Web Platform & AI Engine](https://github.com/SuisSanem000/SuisSanem000/tree/main/previous%20projects/legal-automation-tool)
+### 🤖 Legal Automation Tool — Web Platform & AI Engine
 > *TreeScribe / QueryLaw — Legal-tech platform for European jurisdictions*
+> 
+> 🔒 *Due to NDA, I cannot share the source code publicly, but I am happy to discuss technical details and architecture during interviews.*
 
 **Impact:** Engineered a full-stack platform transforming complex statutes into automated decision systems with highly reliable AI integration.
 **What I built:** Designed modern React/TypeScript UI/UX for human-in-the-loop expert review and complex legal workflows. Built robust backend telemetry and data pipelines. **AI Feature:** Engineered an AI integration layer for legal reasoning using Claude Opus/Sonnet, achieving 95%+ accuracy through advanced prompt engineering, dynamic context windows, and strict output validation via multi-layer JSON Schema (AJV). 
@@ -83,7 +85,7 @@
 
 ---
 
-### 📝 Technical Writing & Developer Advocacy
+### 📝 [Technical Writing & Developer Advocacy](https://dadroit.com/blog/)
 > *Authored 12 Articles — 120K+ Developer Reach*
 
 **Impact:** Drove a 540% increase in organic user growth and visibility for developer tools (like the JSON Viewer and VS Code extensions).
