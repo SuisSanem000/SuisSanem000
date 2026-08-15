@@ -1,0 +1,26 @@
+{
+  "name": "eye-ai",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "openAITest": "ts-node src/openAITest.ts > output-openAITest.log 2>&1",
+    "vertexAITest": "ts-node src/vertexAITest.ts > output-vertexAITest.log 2>&1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.13",
+    "@google-cloud/aiplatform": "^3.14.0",
+    "@google-cloud/vertexai": "^0.5.0",
+    "axios": "^1.6.7",
+    "fs": "0.0.1-security",
+    "google-auth-library": "^9.6.3",
+    "openai": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,36 @@
+# Compiled source
+/dist
+/out
+/build
+/.idea
+
+# Dependencies
+/node_modules
+
+# Testing
+/.nyc_output
+/coverage
+
+# Environment
+.env
+.env.local
+
+# Debug
+/.vscode
+
+# User-specific
+*.code-workspace
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore yarn logs
+yarn-debug.log*
+yarn-error.log*
+
+
+# Ignore exe files in the cli folder
+/cli/*.exe
+
+# Ignore vsix files in the project root
+/*.vsix

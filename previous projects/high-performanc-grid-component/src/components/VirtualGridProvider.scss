@@ -1,0 +1,431 @@
+@import "./../assets/font-awesome/css/all.min.css";
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.headerBlock {
+  display: flex;
+  flex-grow: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border: solid #000000 1px;
+  width: max-content;
+  height: 32px;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 2;
+}
+
+.headerCell {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+
+  //Size
+  width: 150px;
+  height: 32px;
+  box-sizing: border-box;
+
+  //Look
+  background: #000000;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: Arial, serif;
+  font-size: 18px;
+  text-align: left;
+
+  //functionality
+  user-select: none;
+
+  .resizeHandle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+
+    &:hover {
+      cursor: ew-resize;
+    }
+  }
+}
+
+.rowsContainer {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: max-content;
+  height: 100vh;
+  z-index: 1;
+}
+
+.stickyRowsContainer {
+  width: max-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.stickyRowContainer {
+  width: max-content;
+  background: rgb(255, 255, 255);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+.stickyRowsContainerFooter {
+  width: 100vw;
+  position: -webkit-sticky;
+  bottom: 0;
+  position:sticky;
+  z-index: 4;
+}
+
+.normalRowContainer {
+  width: max-content;
+  top: 0;
+}
+
+.rowBlock {
+  display: flex;
+  flex-grow: 0;
+  overflow-x: visible;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  //width: max-content;
+  height: 32px;
+}
+
+.stickyCellContainer {
+  display: flex;
+  flex-grow: 0;
+  overflow-x: visible;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 32px;
+
+  background: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 3;
+}
+
+.normalCellContainer {
+  display: flex;
+  flex-grow: 0;
+  overflow-x: visible;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 32px;
+  left: 0;
+}
+
+.cell {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  //Size
+  overflow: hidden;
+  width: 150px;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 8px;
+
+  //Look
+  //background: #ffffff;
+  color: #000000;
+  border: solid 1px #c0bfbf;
+  line-height: 32px;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+  //functionality
+  user-select: none;
+}
+
+.cellSelected {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+
+  //Size
+  width: 150px;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 8px;
+
+  //Look
+  //background: #e5e5e5;
+  background: #2475ff;
+  color: #ffffff;
+  border: solid 1px #000000;
+  line-height: 32px;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+
+  //functionality
+  user-select: none;
+}
+
+//This was for debug purposes
+////Query based on attribute
+//[contenteditable="true"]:hover {
+//  border: solid 1px #e81111;
+//}
+
+//[contenteditable="true"]:focus {
+//  border: solid 1px #3644e8;
+//  overflow-x: hidden;
+//}
+
+.filterRowBlock {
+  display: flex;
+  flex-grow: 0;
+  flex-flow: row nowrap;
+  position: -webkit-sticky;
+  box-sizing: border-box;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  flex-shrink: 0;
+  align-items: flex-start;
+  width: 100vw;
+  height: 32px;
+  top: 0;
+  justify-content: flex-start;
+  align-self: flex-start;
+  //Looks
+  background: #dcd6d6;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: Arial, serif;
+  font-size: 18px;
+  text-align: left;
+  //functionality
+  user-select: none;
+}
+
+.cellTree {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  //Size
+  overflow: hidden;
+  width: 100vw;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 8px;
+
+  //Look
+  //background: #ffffff;
+  color: #000000;
+  border: solid 1px #c0bfbf;
+  line-height: 32px;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+  //functionality
+  user-select: none;
+}
+
+.cellTreeCheckBox {
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.headerCellSingle {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+
+  //Size
+  width: 100vw;
+  height: 32px;
+  box-sizing: border-box;
+
+  //Look
+  background: #000000;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: Arial, serif;
+  font-size: 18px;
+  text-align: left;
+
+  //functionality
+  user-select: none;
+
+  .resizeHandle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+
+    &:hover {
+      cursor: ew-resize;
+    }
+  }
+}
+
+.cellTreeSelected {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+
+  //Size
+  width:100vw;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 8px;
+
+  //Look
+  //background: #e5e5e5;
+  background: #2475ff;
+  color: #ffffff;
+  border: solid 1px #000000;
+  line-height: 32px;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+
+  //functionality
+  user-select: none;
+}
+
+.cellTreeMultiColumn {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  //Size
+  overflow: hidden;
+  width: 70vw;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 8px;
+
+  //Look
+  //background: #ffffff;
+  color: #000000;
+  border: solid 1px #c0bfbf;
+  line-height: 32px;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+  //functionality
+  user-select: none;
+}
+
+.cellTreeMultiColumnSelected {
+  //Flex
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+
+  //Size
+  width:70vw;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 8px;
+
+  //Look
+  //background: #e5e5e5;
+  background: #2475ff;
+  color: #ffffff;
+  border: solid 1px #000000;
+  line-height: 32px;
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+
+  //functionality
+  user-select: none;
+}

@@ -1,0 +1,77 @@
+{
+  "name": "json-generator",
+  "displayName": "JSON Generator",
+  "description": "Generate nested sample JSON data using custom templates.",
+  "version": "1.2.2",
+  "icon": "images/icon.png",
+  "publisher": "JSONGenerator",
+  "preview": false,
+  "keywords": [
+    "JSON",
+    "random",
+    "generator",
+    "sample",
+    "mock data",
+    "template",
+    "make"
+  ],
+  "galleryBanner": {
+    "color": "#FFBB00",
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JSONGenerator/JSONGeneratorExtension.git"
+  },
+  "author": "JSON Generator Team",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Testing",
+    "Programming Languages"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/JSONGenerator/JSONGeneratorExtension/issues"
+  },
+  "homepage": "https://github.com/JSONGenerator/JSONGeneratorExtension.git",
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "Generate JSON Sample",
+        "title": "Generate JSON Sample",
+        "category": "JSON Generator"
+      },
+      {
+        "command": "Generate JSON",
+        "title": "Generate JSON",
+        "category": "JSON Generator"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "vsce package",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.82.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "vsce": "^2.15.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

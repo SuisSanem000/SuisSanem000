@@ -1,0 +1,8 @@
+{
+  "name": "eye",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "build": "pnpm --filter eye-server run build && pnpm --filter eye-test run build"
+  }
+}
