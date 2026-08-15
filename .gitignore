@@ -38,6 +38,7 @@ bower_components
 build/Release
 
 # Dependency directories (recursive for nested projects)
+**/TreeScribe/
 **/node_modules/
 **/jspm_packages/
 **/web_modules/
