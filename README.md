@@ -33,7 +33,7 @@
 
 ## 🚀 Featured Work & Impact
 
-### 🔧 Top-10 VS Code Extension & Standalone npm Package
+### 🔧 [Top-10 VS Code Extension & Standalone npm Package](./previous%20projects/json-generator)
 > *Open Source / Developer Tooling — 630K+ Installs*
 
 **Impact:** Created a top-10 VS Code marketplace extension adopted massively by the open-source community, driving huge developer efficiency for test-fixture generation. 
@@ -45,7 +45,7 @@
 
 ---
 
-### 📰 High-Load Semantic News Feed Platform
+### 📰 [High-Load Semantic News Feed Platform](./previous%20projects/news-feed-app)
 > *Parsaiane — Scaled to 60K+ Daily Active Users*
 
 **Impact:** Built a highly scalable PERN-stack application that successfully handles 60K+ DAU with real-time React/Socket.IO dashboards.
@@ -58,7 +58,7 @@
 
 ---
 
-### 🤖 Legal Automation Tool — Web Platform & AI Engine
+### 🤖 [Legal Automation Tool — Web Platform & AI Engine](./previous%20projects/legal-automation-tool)
 > *TreeScribe / QueryLaw — Legal-tech platform for European jurisdictions*
 
 **Impact:** Engineered a full-stack platform transforming complex statutes into automated decision systems with highly reliable AI integration.
@@ -71,7 +71,7 @@
 
 ---
 
-### 📊 Dadroit JSON Viewer
+### 📊 [Dadroit JSON Viewer](./previous%20projects/data-visualization-tool-manager)
 > *Commercial Desktop Data Application — 60K+ Users*
 
 **Impact:** Engineered a high-performance desktop JSON Viewer capable of handling multi-GB datasets with syntax highlighting and tree views.
