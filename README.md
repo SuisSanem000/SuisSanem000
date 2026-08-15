@@ -1,210 +1,174 @@
 <div align="center">
-  <h1>🔬 Simin Shoeibi – QA Engineer</h1>
-  <h3>API Testing | Functional QA | Performance Validation | Defect Tracking</h3>
+  <h1>⚡ Simin Shoeibi</h1>
+  <h3>Full-Stack Web Developer</h3>
 
   <p>
-    🎯 <b>6+ years of comprehensive software quality assurance, test automation, API & functional testing, and defect management for production systems.</b>
+    💻 <b>Building scalable web platforms, high-performance UIs, and robust developer tools.</b><br/>
+    React · Next.js · Node.js · TypeScript · PostgreSQL · MongoDB
   </p>
 
   <p>
-    Specialized in designing end-to-end test strategies, building robust API validation suites (REST/GraphQL with Postman & AJV schema validation), functional and edge-case testing frameworks, and performance benchmarking for high-throughput systems. Expert in multi-run consistency verification, complex payload schema validation, deterministic output testing, and structured defect tracking with reproducible test cases.
+    9+ years shipping end-to-end products: from scaling PERN/MERN architectures for 60K+ concurrent users<br/>
+    and authoring a top-10 VS Code extension (630K+ installs) to building reliable AI integrations for production systems.
+  </p>
+
+  <p>
+    <a href="https://www.linkedin.com/in/simin-shoaibi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+    &nbsp;
+    <a href="mailto:simin.shoaibi@proton.me"><img src="https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a>
   </p>
 </div>
 
-<br />
+<br/>
 
-## Git History 🔥
+## Git Activity 🔥
 
 <div align="center">
   <img width="800" height="220" src="https://streak-stats.demolab.com/?user=SuisSanem000&theme=dark&border_radius=40.5&card_width=800" alt="Git Activities">
 </div>
 
-<br />
+<br/>
 
-## QA & Testing Expertise 🏆
+---
 
-<table border="0">
-  <tr>
-    <td align="center" width="110">
-      <a href="https://www.postman.com/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" width="48" height="48" alt="Postman" />
-      </a>
-      <br />
-      <sub><b>Postman API</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://ajv.js.org/">
-        <img src="https://cdn.worldvectorlogo.com/logos/json-4.svg" width="48" height="48" alt="JSON Schema" />
-      </a>
-      <br />
-      <sub><b>Schema Validation</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://www.python.org/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" />
-      </a>
-      <br />
-      <sub><b>Test Automation</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://www.typescriptlang.org/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
-      </a>
-      <br />
-      <sub><b>Test Suites</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://www.postgresql.org/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="48" height="48" alt="PostgreSQL" />
-      </a>
-      <br />
-      <sub><b>Data Validation</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://redis.io/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="48" height="48" alt="Redis" />
-      </a>
-      <br />
-      <sub><b>Performance Test</b></sub>
-    </td>
-  </tr>
-  <tr height="10"></tr>
-  <tr>
-    <td align="center" width="110">
-      <a href="https://www.mongodb.com/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="48" height="48" alt="MongoDB" />
-      </a>
-      <br />
-      <sub><b>NoSQL Testing</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://www.docker.com/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="48" height="48" alt="Docker" />
-      </a>
-      <br />
-      <sub><b>Test Env Setup</b></sub>
-    </td>
-    <td align="center" width="110">
-      <a href="https://git-scm.com/">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" height="48" alt="Git" />
-      </a>
-      <br />
-      <sub><b>CI/CD Pipeline</b></sub>
-    </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/nodedotjs.svg" width="48" height="48" alt="Node.js Testing" style="filter: invert(1);" />
-      <br />
-      <sub><b>Node.js Tests</b></sub>
-    </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/react.svg" width="48" height="48" alt="React Testing" style="filter: invert(1);" />
-      <br />
-      <sub><b>UI Testing</b></sub>
-    </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/graphql.svg" width="48" height="48" alt="GraphQL Testing" style="filter: invert(1);" />
-      <br />
-      <sub><b>GraphQL APIs</b></sub>
-    </td>
-  </tr>
+## 🚀 Featured Work & Impact
+
+### 🔧 Top-10 VS Code Extension & Standalone npm Package
+> *Open Source / Developer Tooling — 630K+ Installs*
+
+**Impact:** Created a top-10 VS Code marketplace extension adopted massively by the open-source community, driving huge developer efficiency for test-fixture generation. 
+**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a VS Code extension and a standalone npm package** (exposing programmatic API & CLI). Drove **540% organic growth** through technical content marketing and SEO.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![VSCode API](https://img.shields.io/badge/VSCode_Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
+
+---
+
+### 📰 High-Load Semantic News Feed Platform
+> *Parsaiane — Scaled to 60K+ Daily Active Users*
+
+**Impact:** Built a highly scalable PERN-stack application that successfully handles 60K+ DAU with real-time React/Socket.IO dashboards.
+**What I built:** A production web platform that continuously crawls developer-focused sources. Optimized high-load RESTful and GraphQL APIs using Node.js/NestJS/Fastify, achieving 35-40% latency reduction and 99.9% uptime. Established Kubernetes/Docker CI/CD pipelines to reduce bugs by 40%. **AI Feature:** Integrated OpenAI LLMs into the data pipeline for automated content scoring, summarization, and personalization.
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+---
+
+### 🤖 Legal Automation Tool — Web Platform & AI Engine
+> *TreeScribe / QueryLaw — Legal-tech platform for European jurisdictions*
+
+**Impact:** Engineered a full-stack platform transforming complex statutes into automated decision systems with highly reliable AI integration.
+**What I built:** Designed modern React/TypeScript UI/UX for human-in-the-loop expert review and complex legal workflows. Built robust backend telemetry and data pipelines. **AI Feature:** Engineered an AI integration layer for legal reasoning using Claude Opus/Sonnet, achieving 95%+ accuracy through advanced prompt engineering, dynamic context windows, and strict output validation via multi-layer JSON Schema (AJV). 
+
+![React](https://img.shields.io/badge/React_TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Anthropic Claude](https://img.shields.io/badge/Anthropic_Claude-CC785C?style=flat-square&logoColor=white)
+
+---
+
+### 📊 Dadroit JSON Viewer
+> *Commercial Desktop Data Application — 60K+ Users*
+
+**Impact:** Engineered a high-performance desktop JSON Viewer capable of handling multi-GB datasets with syntax highlighting and tree views.
+**What I built:** Cross-platform desktop apps (Delphi, Free Pascal) and a high-performance frontend data grid. Handled memory-constrained environments via virtual scrolling engines, Canvas API cell measurement, and a custom typed EventTarget state management layer. Built a custom 2D vector and typography rendering engine (Skia/Free Pascal) for internal design tools.
+
+![TypeScript](https://img.shields.io/badge/TypeScript_React-3178C6?style=flat-square&logo=react&logoColor=white)
+![Canvas API](https://img.shields.io/badge/Canvas_API-E34F26?style=flat-square&logoColor=white)
+![Delphi](https://img.shields.io/badge/Delphi_Pascal-EE2737?style=flat-square&logoColor=white)
+
+---
+
+### 📝 Technical Writing & Developer Advocacy
+> *Authored 12 Articles — 120K+ Developer Reach*
+
+**Impact:** Drove a 540% increase in organic user growth and visibility for developer tools (like the JSON Viewer and VS Code extensions).
+**What I built:** Authored and published a series of 12 highly successful technical engineering articles covering JSON data structures, SEO, and developer tooling. Additionally, authored comprehensive internal documentation for software architectures, APIs, and team workflows to streamline developer onboarding.
+
+![Technical Writing](https://img.shields.io/badge/Technical_Writing-000000?style=flat-square&logo=markdown&logoColor=white)
+![SEO](https://img.shields.io/badge/SEO-0A0A0A?style=flat-square&logoColor=white)
+
+---
+
+## 🛠 Tech Stack
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+**Frontend & UI**
+- React.js / Next.js 14
+- TypeScript (Strict mode)
+- JavaScript (ES6+)
+- Redux / Zustand / tRPC
+- Tailwind CSS / MUI / Sass
+- HTML5 / CSS3 / PWA
+
+</td>
+<td valign="top" width="33%">
+
+**Backend & Microservices**
+- Node.js / NestJS / Fastify / Express
+- RESTful APIs / GraphQL / tRPC
+- WebSockets / Socket.IO / WebRTC
+- High-load system design
+- PostgreSQL / MongoDB / Redis
+- Prisma / TypeORM / Sequelize
+
+</td>
+<td valign="top" width="33%">
+
+**DevOps & Cloud**
+- Docker / Kubernetes
+- GitHub Actions / GitLab CI
+- AWS / GCP / Vercel
+- RabbitMQ / Kafka
+- Infrastructure as Code
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**AI Integration Features**
+- LLM Integration (Claude, OpenAI)
+- Structured Outputs Validation (AJV)
+- Prompt Engineering 
+- Explainable AI (XAI)
+- Automated validation pipelines
+
+</td>
+<td valign="top">
+
+**Testing & Monitoring**
+- Jest / Mocha / Chai
+- React Testing Library / Supertest
+- ELK Stack monitoring
+- TDD
+
+</td>
+<td valign="top">
+
+**Core Ecosystems**
+- Delphi / Free Pascal
+- Security (JWT, OAuth, Auth0)
+- Domain-Driven Design
+- SEO & Technical Marketing
+
+</td>
+</tr>
 </table>
 
-<br />
-
 ---
 
-<br />
+## 📬 Connect
 
-## Core QA Competencies
-
-**API & REST/GraphQL Testing:**
-- Postman collections for multi-endpoint validation under high concurrency
-- Schema validation using AJV (JSON Schema validation framework)
-- Payload structure verification, response time benchmarking
-- End-to-end data flow testing with mock services
-
-**Functional & Edge-Case Testing:**
-- Multi-run consistency verification across deterministic decision engines
-- Complex logic validation and boundary condition testing
-- Data ingestion edge cases (file format variations, encoding issues, size limits)
-- UI state verification and visual regression detection
-
-**Performance & Latency Validation:**
-- Real-time connection benchmarking (WebSockets, Redis, WebSocket protocols)
-- Sub-100ms response time target verification
-- Concurrent load testing with distributed payload generation
-- Data leakage and state isolation validation
-
-**Defect Tracking & Test Documentation:**
-- Structured test planning with traceability matrices
-- Reproducible bug reports with step-by-step reproduction
-- Test case specifications (pre-conditions, steps, expected outcomes)
-- Coverage analysis and test summary reports
-
-**Test Data & Fixtures:**
-- Mock data generators for various input types
-- Fixture files for regression test suites
-- Payload schema templates for edge case coverage
-- Test environment setup automation
-
----
-
-<br />
-
-
-## Skills at a Glance
-
-**QA Methodologies:** Test-Driven Development (TDD), Behavior-Driven Development (BDD), Risk-Based Testing, Exploratory Testing, Regression Testing
-
-**Testing Frameworks:** Jest, Mocha, Chai, PyTest, Postman, Newman CLI, Selenium WebDriver
-
-**API Testing:** REST APIs, GraphQL (Apollo), WebSockets, Schema validation (AJV, JSON Schema), HTTP/2 protocols
-
-**Performance Testing:** Load testing (Apache JMeter, k6), Latency benchmarking, Throughput validation, Cache efficiency analysis
-
-**Databases:** PostgreSQL, MongoDB, Redis—test data seeding, query validation, data integrity checks
-
-**Languages:** TypeScript, JavaScript (ES2022+), Python, SQL
-
-**CI/CD & Automation:** GitHub Actions, GitLab CI, Docker containerization, Test environment orchestration
-
-**Defect Management:** JIRA, structured bug reporting, test traceability matrices, coverage metrics
-
-**Architecture Patterns:** Page Object Model (POM), Test fixture factories, Mock service patterns, Data-driven testing
-
-**Engineering Practices:** Schema-first API design, AJV validation, deterministic test execution, error recovery verification
-
----
-
-<br />
-
-## Key QA Achievements
-
-✅ **API & Payload Testing:** Designed comprehensive Postman suites validating 50+ endpoints across REST & GraphQL, with AJV schema validation ensuring structured response integrity under 100+ concurrent requests.
-
-✅ **Functional Edge-Case Coverage:** Built multi-run consistency validators for complex decision engines, achieving 92%+ branch coverage across document ingestion workflows (PDF, CSV, image formats, encoding edge cases).
-
-✅ **Performance Validation:** Benchmarked real-time systems (WebSockets, Redis cache layers) to verify sub-100ms latency targets; identified and documented 4+ critical performance regressions before production release.
-
-✅ **Deterministic Output Testing:** Verified JSON output consistency, nested structure validation, and structured data accuracy across 500K+ test iterations—zero state leakage detected.
-
-✅ **Defect Tracking & Reproducibility:** Created JIRA-formatted bug reports with step-by-step reproduction, pre/post screenshots, and payload diffs—100% of critical defects reproducible within 5 minutes.
-
-✅ **Test Data Infrastructure:** Built generators for synthetic user profiles, document payloads, and time-series data; automated test environment reset reducing setup time from 30 mins to 2 mins.
-
----
-
-<br />
-
-## Contact & Professional Links
-
-- **GitHub:** [github.com/SuisSanem000](https://github.com/SuisSanem000)
-- **LinkedIn:** https://www.linkedin.com/in/simin-shoaibi/
-- **Email:** simin.shoaibi@proton.me
-
----
-
-<div align="center">
-  <p><i>Committed to building reliable, well-tested software systems through comprehensive quality assurance.</i></p>
-  <p>Last updated: July 2026</p>
-</div>
+| | |
+|---|---|
+| 💼 LinkedIn | [linkedin.com/in/simin-shoaibi](https://www.linkedin.com/in/simin-shoaibi/) |
+| 📧 Email | [simin.shoaibi@proton.me](mailto:simin.shoaibi@proton.me) |
+| 🐙 GitHub | [github.com/SuisSanem000](https://github.com/SuisSanem000) |

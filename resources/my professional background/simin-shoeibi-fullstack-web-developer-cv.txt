@@ -1,0 +1,64 @@
+Simin Shoeibi 
+Full-Stack & AI Systems Engineer 
+simin.shoaibi@proton.me | Yerevan, Armenia | +37494595114  
+https://www.linkedin.com/in/simin-shoaibi/  | https://github.com/SuisSanem000
+Summary 
+I am a full-stack web developer with 9+ years of experience working at different startups and across various fields and projects. I have worked on scaling real-time platforms for 60K+ concurrent users. I've built and shipped high-traffic PERN  and MERN stack systems. I am the creator of a top-10 VS Code extension(630K+ installs). I drove 540% organic growth via SEO, blogging, and 12 technical articles I wrote, reaching 120K+ readers. Recently, I owned the full stack for an AI legal automation platform at QueryLaw, based in Australia, integrating Claude Opus/Sonnet for 95%+ accuracy through prompt engineering, dynamic context, structured outputs, validation pipelines, and manual tests. At Parsaiane (2019-2025), I worked with the CTO on large-scale data handling and tool development; designed, implemented, and optimized backend workflows and APIs; embedded LLMs into news feeds for 60K+ DAU; set up CI/CD; and mentored juniors. Earlier (2016-2019),  I worked on designing and optimizing various database systems using MySQL, PostgreSQL, SQLite, SQL Server, and MongoDB. I developed desktop apps in Delphi/Free Pascal, using DevExpress, including a JSON Viewer for 60K+ users and custom rendering engines. I have expertise in AI decisions, dev tools, analytics, high-load backends, databases, and more. 
+Key Achievements 
+● Contributed to a high-performance JSON Viewer desktop application adopted by 60K+ users worldwide 
+● Created a top-10 VS Code extension(630K+ installs) to contribute to the open-source community and have an impact. 
+● Authored 12 technical articles read by 120K+ developers, increasing user growth by up to 540%. 
+● Developed a 2D rendering engine for graphic tools. 
+● Engineered financial systems with automated reporting/transaction processing. 
+● Designed databases/backends for mobile apps like Hijri calendar and health platforms. 
+Professional Experience 
+Full-Stack & AI Systems Engineer  
+TreeScribe / QueryLaw — AI legal-tech platform for European jurisdictions	          		     Australia | Feb 2025 – June 2026
+A next-generation AI-powered legal-tech platform transforming complex European laws into automated, machine-readable decision systems. ( https://querylaw.com ) 
+● Architected an antifragile AI decision system with failure feedback, guardrails, and stress-informed learning for reliable legal reasoning under edge cases. 
+● Designed next-generation Legal AI interfaces (UI/UX) using React/TypeScript, praised for clarity and usability in expert-AI interactions. 
+● Modeled complex statutes and case law into machine-readable decision graphs with provenance,  explainability, and audit trails. 
+● Built backend telemetry for large-scale AI validation, including real-time monitoring and feedback to detect brittle logic. 
+● Led human-centered AI tooling for traceable reviews, side-by-side comparisons, and failure reproduction. ● Collaborated with legal and AI specialists to ensure interpretable outputs and reviewer workflows across jurisdictions.
+Full-stack web developer  
+Parsaiane 									                Tehran, Iran | Jan 2019 – Jan 2025 
+Advanced data analytics and data science tooling ( dadroit.com ) 
+● Led full-stack architecture for PERN-based platforms serving 60K+ concurrent users with real-time  React/TypeScript/Socket.IO dashboards. 
+● Implemented and optimized high-load RESTful/GraphQL APIs using Node.js, Express.js, NestJS, Fastify,  achieving 35-40% latency reduction and 99.9% uptime. 
+● Developed a semantic news feed platform integrating OpenAI LLM for content scoring, summarization,  personalization, and automation for 60K+ DAU. 
+● Created top-10 VS Code extension (480K+ installs) and boosted JSON Viewer visibility via SEO and blogging,  driving 540% organic growth. 
+● Established scalable CI/CD pipelines with Docker, Kubernetes, GitHub Actions, GitLab CI, reducing bugs by  40%. 
+● Implemented and optimized relational (PostgreSQL) and NoSQL (Redis, MongoDB) databases for high scalability and efficiency. 
+● Mentored 4+ junior engineers, promoting best practices and collaborative culture. 
+Full-stack desktop developer  
+Parsaiane 									      Tehran, Iran | Jan 2016 – Dec 2018 
+Software company specializing in desktop & enterprise automation solutions. 
+● Built cross-platform desktop apps (Windows, macOS, Linux) using Delphi, Free Pascal, and DevExpress for medical, financial, and fleet management. 
+● Developed high-performance JSON Viewer for multi-GB datasets with syntax highlighting, tree views, search;  adopted by 60K+ users worldwide. 
+● Engineered custom 2D vector/typography rendering engine using Skia/Free Pascal for internal design tools. ● Delivered automation systems including real-time vehicle tracking with GPS/SQLServer, finance suites with transaction processing/reconciliation, and medical management with offline databases. 
+● Applied OOP, SOLID principles, and performance profiling for responsive UIs in constrained environments.
+Technical Skills
+Core Languages: TypeScript, JavaScript (ES6+), SQL, Delphi/Free Pascal
+Frontend: React.js, Next.js 14 (App Router, Server Components, SSR/SSG), Redux/Zustand, tRPC, Tailwind CSS, MUI,  SASS, PWA, HTML5/CSS3 
+Backend: Node.js, NestJS, Fastify, Express, Microservices, REST APIs, GraphQL, tRPC, WebSockets, Socket.IO, WebRTC, gRPC, High-load system design, Real-time applications 
+AI & LLM Engineering: Claude Opus/Sonnet, OpenAI GPT-4/GPT-4o, Grok, DeepSeek, Vertex AI; Prompt engineering,  Dynamic context windows, Structured outputs, Token optimization, Hallucination mitigation (<3%), Antifragile AI design,  Automated validation/testing, Explainable AI (XAI), Knowledge graphs/decision modeling 
+Databases & Storage: PostgreSQL, MySQL, MongoDB, Redis, Prisma, TypeORM, Sequelize, Mongoose; Performance  tuning, Indexing, Schema design for high concurrency 
+DevOps & Cloud: Docker, Kubernetes, GitHub Actions, GitLab CI/CD, Jenkins, Vercel, AWS, GCP; Container  orchestration, Automated pipelines, Infrastructure as Code 
+Messaging & Streaming: RabbitMQ, Kafka 
+Testing & Quality: Jest, Supertest, React Testing Library, Mocha/Chai, TDD, Automated validation, ELK Stack monitoring
+Security & Tools: JWT, OAuth, Auth0, Passport.js, Bcrypt, Swagger/OpenAPI, Postman, Insomnia. Methodologies: Agile, DevOps, SOLID, OOP, Domain-Driven Design, Performance optimization for 60K+ users 
+Domain Expertise
+AI-Powered Legal Automation: Expertise in modeling complex European statutes and case law into machine-readable decision graphs, achieving high accuracy with provenance, audit trails, and collaboration with legal specialists to ensure interpretable outputs across jurisdictions. 
+Technical Content Marketing & SEO: Boosted developer tool visibility through blogging, technical writing, and SEO  strategies, driving 540% organic growth for VS Code extensions and JSON Viewer. 
+Data Analytics & Semantic Platforms: Integrated LLMs for content scoring, summarization, and personalization in news feeds serving 60K+ daily active users. 
+Financial Systems Automation: Engineered transaction processing, reconciliation, and reporting suites with GPS  integration for real-time vehicle tracking in fleet management. 
+Medical & Health Platforms: Developed management systems with offline databases and backends for health apps,  including Hijri calendar integrations. 
+Mentoring & Team Leadership: Cultivated learning-driven cultures by mentoring juniors, promoting best practices, and facilitating knowledge transfer through pair programming and documentation. 
+Education 
+Master of Software Engineering, Islamic Azad University Ahvaz, Iran 					        2020 – 2023
+Relevant Coursework: Software Architecture, Design Patterns, Database Systems, Machine Learning, Distributed  Systems, Software Testing, Software Project Management. 
+
+Bachelor of Software Engineering, Shahid Chamran University, Ahvaz, Iran 				                      2012 – 2016
+Relevant Coursework: Programming Fundamentals and Data Structures, Object-Oriented Programming, Database  Management Systems, Operating Systems and Computer Networks, Software Engineering Principles, Web and Mobile  Application Development. 
+Languages 
+English: Full professional proficiency | Persian: Native 
