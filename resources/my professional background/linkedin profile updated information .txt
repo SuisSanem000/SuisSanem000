@@ -1,0 +1,61 @@
+Contact 
+0037494595114 (Mobile) 
+simin.shoaibi@proton.me 
+www.linkedin.com/in/simin-shoaibi (LinkedIn) 
+Top Skills 
+High-Performance UI 
+SQLite 
+Object-Oriented Programming (OOP) 
+Languages 
+Persian (Native or Bilingual) English (Native or Bilingual) Spanish (Elementary) 
+Certifications 
+120-Hour International TEFL / TESOL Certificate 
+Certificate of Completion: Al Fluency Framework & Foundations 
+Certificate of completion: Claude code 101 
+Freelancer Conduct Guidelines 
+TOEFL iBT (Score: 110/120 - CEFR C1) 
+Simin Shoeibi 
+Full-Stack Web Developer | Scaling Platforms for 60K+ Users & Creator of Top-10 VS Code Extension (630K+ Installs) | React · Node.js · TypeScript · AI Integration 
+Yerevan, Armenia 
+Summary 
+I am a Full-Stack Web Developer with 9+ years of experience building, scaling, and optimizing production platforms. I specialize in the JavaScript/TypeScript ecosystem (React, Node.js, MERN/ PERN), and I've shipped everything from real-time dashboards that handle 60K+ concurrent users to a top-10 VS Code extension with over 630 K installs and a companion npm package.My expertise lies in building resilient web architectures. I design high-performance React/TypeScript frontends and low-latency Node.js/NestJS backends, supported by scalable CI/CD pipelines using Docker and Kubernetes. Alongside my core full-stack skills, I have strong, practical experience integrating modern AI (OpenAI, Anthropic Claude) into complex platforms—such as building reliable decision pipelines for legal-tech and automated content scoring for news feeds with 60K+ DAU. Beyond coding, I am an experienced technical writer who has authored internal documentation and 12 technical articles that have reached 120K+ readers.I thrive on solving complex engineering challenges, optimizing databases, and delivering real impact to users. Let's connect! simin.shoaibi@proton.me https:// github.com/SuisSanem000 
+Experience 
+TreeScribe / QueryLaw 
+Full-Stack Web Developer and AI systems engineer 
+January 2025 - June 2026 (1 year 6 months) 
+Australia 
+- Engineered the full-stack architecture for a next-generation legal-tech platform, designing modern React/TypeScript interfaces for complex legal workflows and expert-AI interactions. 
+Page 1 of 3
+
+- Modeled complex statutes and case law into machine-readable decision graphs with provenance and audit trails, while building backend telemetry for real-time monitoring and failure reproduction. 
+- Built a robust AI integration layer for legal reasoning, driving **95%+ accuracy** through advanced prompt engineering, dynamic context windows, and structured output parsing validated via multi-layer AJV schemas. 
+- Developed human-centered tooling for traceable reviews and side-by-side comparisons, collaborating with legal specialists to ensure interpretable and reliable outputs across European jurisdictions. 
+Dadroit 
+6 years 
+Technical Writer (Concurrent Role) 
+January 2022 - December 2024 (3 years) 
+Netherlands 
+- Authored comprehensive internal documentation for software architectures, APIs, and team workflows to streamline developer onboarding and knowledge sharing. 
+- Wrote and published 12 highly successful technical articles focusing on software development and tooling, reaching an audience of over 120K+ developers. 
+- Drove a 540% increase in organic user growth and visibility for developer tools (including the JSON Viewer and VS Code extensions) through strategic SEO and content marketing. 
+Full-Stack Web Developer 
+January 2019 - December 2024 (6 years) 
+Netherlands 
+- Led full-stack architecture for PERN-based platforms serving **60K+ concurrent users**, building real-time dashboards with React, TypeScript, and Socket.IO. 
+- Optimized high-load RESTful and GraphQL APIs, achieving a **35-40% latency reduction** and 99.9% uptime via strategic indexing and schema design in PostgreSQL and MongoDB. 
+Page 2 of 3
+- Created and launched a **top-10 VS Code extension (630K+ installs)** and drove 540% organic growth for a JSON Viewer product through SEO and 12 authored technical articles reaching 120K+ readers. 
+- Developed a semantic news feed platform by integrating **OpenAI LLMs** for content scoring, summarization, and personalization, automating curation for 60K+ daily active users. 
+- Established scalable CI/CD pipelines (Docker, Kubernetes, GitHub Actions), reducing deployment bugs by 40%, while mentoring 4+ junior engineers to promote coding best practices. 
+Parsaiane 
+Full-stack Desktop Developer and Database Engineer 
+January 2017 - December 2018 (2 years) 
+Tehran Province, Iran 
+- Developed a high-performance "JSON Viewer desktop application" capable of handling multi-GB datasets with syntax highlighting and tree views, adopted by 60K+ users globally. 
+- Engineered a custom "2D vector and typography rendering engine" using Skia and Free Pascal for internal design and graphic tools. 
+- Built cross-platform enterprise automation systems (Windows, macOS, Linux) including real-time vehicle tracking with GPS/SQLServer and finance suites for automated transaction processing. 
+Education 
+Islamic Azad University 
+Master of Engineering - MEng, Computer Software Engineering · (January 2018 - December 2020) 
+Shahid Chamran University of Ahvaz (Jundi Shapur) Bachelor's degree, Computer Software Engineering · (January 2014 - December 2018) 
+Page 3 of 3
