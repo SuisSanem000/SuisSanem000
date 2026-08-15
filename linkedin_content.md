@@ -83,6 +83,7 @@ Reach me at simin.shoaibi@proton.me or explore my work at github.com/SuisSanem00
 - Modeled complex statutes and case law into machine-readable decision graphs with provenance and audit trails, while building backend telemetry for real-time monitoring and failure reproduction.
 - Built a robust AI integration layer for legal reasoning, driving **95%+ accuracy** through advanced prompt engineering, dynamic context windows, and structured output parsing validated via multi-layer AJV schemas.
 - Developed human-centered tooling for traceable reviews and side-by-side comparisons, collaborating with legal specialists to ensure interpretable and reliable outputs across European jurisdictions.
+- **Top Skills to Tag:** React.js, TypeScript, Large Language Models (LLM), Node.js, MongoDB, JSON Schema (AJV), System Architecture
 
 ### Full-Stack Web Developer | Parsaiane (Dadroit / Semantic Platforms)
 *(Jan 2019 – Jan 2025)*
@@ -92,6 +93,7 @@ Reach me at simin.shoaibi@proton.me or explore my work at github.com/SuisSanem00
 - Created and launched a **top-10 VS Code extension (630K+ installs)** and drove 540% organic growth for a JSON Viewer product through SEO and 12 authored technical articles reaching 120K+ readers.
 - Developed a semantic news feed platform by integrating **OpenAI LLMs** for content scoring, summarization, and personalization, automating curation for 60K+ daily active users.
 - Established scalable CI/CD pipelines (Docker, Kubernetes, GitHub Actions), reducing deployment bugs by 40%, while mentoring 4+ junior engineers to promote coding best practices.
+- **Top Skills to Tag:** Node.js, NestJS, PostgreSQL, Microservices, Socket.IO, Docker & Kubernetes, OpenAI API
 
 ### Technical Writer (Concurrent Role)
 *(2022 – 2024)*
@@ -99,6 +101,7 @@ Reach me at simin.shoaibi@proton.me or explore my work at github.com/SuisSanem00
 - Authored comprehensive internal documentation for software architectures, APIs, and team workflows to streamline developer onboarding and knowledge sharing.
 - Wrote and published 12 highly successful technical articles focusing on software development and tooling, reaching an audience of over 120K+ developers.
 - Drove a 540% increase in organic user growth and visibility for developer tools (including the JSON Viewer and VS Code extensions) through strategic SEO and content marketing.
+- **Top Skills to Tag:** Technical Writing, Content Marketing, Search Engine Optimization (SEO), Documentation
 
 ### Full-Stack Desktop Developer | Parsaiane
 *(Jan 2016 – Dec 2018)*
@@ -106,6 +109,7 @@ Reach me at simin.shoaibi@proton.me or explore my work at github.com/SuisSanem00
 - Developed a high-performance **JSON Viewer desktop application** capable of handling multi-GB datasets with syntax highlighting and tree views, adopted by 60K+ users globally.
 - Engineered a custom **2D vector and typography rendering engine** using Skia and Free Pascal for internal design and graphic tools.
 - Built cross-platform enterprise automation systems (Windows, macOS, Linux) including real-time vehicle tracking with GPS/SQLServer and finance suites for automated transaction processing.
+- **Top Skills to Tag:** Delphi / Free Pascal, High-Performance UI, SQLite, Cross-Platform Development, OOP
 
 ---
 
