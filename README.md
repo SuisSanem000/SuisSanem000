@@ -1,6 +1,6 @@
 <div align="center">
   <h1>⚡ Simin Shoeibi</h1>
-  <h3>Full-Stack Web Developer</h3>
+  <h3>Full-Stack Web Developer & AI Systems Engineer</h3>
 
   <p>
     💻 <b>Building scalable web platforms, high-performance UIs, and robust developer tools.</b><br/>
