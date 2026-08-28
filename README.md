@@ -35,7 +35,7 @@
 
 ## 🚀 Featured Work & Impact
 
-### 🔧 [Top-10 VS Code Extension & Standalone npm Package]
+### 🔧 Top-10 VS Code Extension & Standalone npm Package
 > *Open Source / Developer Tooling — 630K+ Installs*
 
 **Impact:** Created a top-10 VS Code marketplace extension adopted massively by the open-source community, driving huge developer efficiency for test-fixture generation. 
