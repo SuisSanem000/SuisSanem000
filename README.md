@@ -13,6 +13,8 @@
   </p>
 
   <p>
+    <a href="https://linktr.ee/Suissimin"><img src="https://img.shields.io/badge/Linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white" alt="Linktree"/></a>
+    &nbsp;
     <a href="https://www.linkedin.com/in/simin-shoaibi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
     &nbsp;
     <a href="mailto:simin.shoaibi@proton.me"><img src="https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a>
@@ -37,7 +39,7 @@
 > *Open Source / Developer Tooling — 630K+ Installs*
 
 **Impact:** Created a top-10 VS Code marketplace extension adopted massively by the open-source community, driving huge developer efficiency for test-fixture generation. 
-**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Dadroit.dadroit-json-generator) and a standalone [npm package](https://www.npmjs.com/package/@dadroit/json-generator)** (exposing programmatic API & CLI). Drove **540% organic growth** through technical content marketing and SEO.
+**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a [VS Code extension](htt[...]
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![VSCode API](https://img.shields.io/badge/VSCode_Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
@@ -49,7 +51,7 @@
 > *Parsaiane — Scaled to 60K+ Daily Active Users*
 
 **Impact:** Built a highly scalable PERN-stack application that successfully handles 60K+ DAU with real-time React/Socket.IO dashboards.
-**What I built:** A production web platform that continuously crawls developer-focused sources. Optimized high-load RESTful and GraphQL APIs using Node.js/NestJS/Fastify, achieving 35-40% latency reduction and 99.9% uptime. Established Kubernetes/Docker CI/CD pipelines to reduce bugs by 40%. **AI Feature:** Integrated OpenAI LLMs into the data pipeline for automated content scoring, summarization, and personalization.
+**What I built:** A production web platform that continuously crawls developer-focused sources. Optimized high-load RESTful and GraphQL APIs using Node.js/NestJS/Fastify, achieving 35-40% latency redu[...]
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
@@ -64,7 +66,7 @@
 > 🔒 *Due to NDA, I cannot share the source code publicly, but I am happy to discuss technical details and architecture during interviews.*
 
 **Impact:** Engineered a full-stack platform transforming complex statutes into automated decision systems with highly reliable AI integration.
-**What I built:** Designed modern React/TypeScript UI/UX for human-in-the-loop expert review and complex legal workflows. Built robust backend telemetry and data pipelines. **AI Feature:** Engineered an AI integration layer for legal reasoning using Claude Opus/Sonnet, achieving 95%+ accuracy through advanced prompt engineering, dynamic context windows, and strict output validation via multi-layer JSON Schema (AJV). 
+**What I built:** Designed modern React/TypeScript UI/UX for human-in-the-loop expert review and complex legal workflows. Built robust backend telemetry and data pipelines. **AI Feature:** Engineered [...]
 
 ![React](https://img.shields.io/badge/React_TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
@@ -77,7 +79,7 @@
 > *Commercial Desktop Data Application — 60K+ Users*
 
 **Impact:** Engineered a high-performance desktop JSON Viewer capable of handling multi-GB datasets with syntax highlighting and tree views.
-**What I built:** Cross-platform desktop apps (Delphi, Free Pascal) and a high-performance frontend data grid. Handled memory-constrained environments via virtual scrolling engines, Canvas API cell measurement, and a custom typed EventTarget state management layer. Built a custom 2D vector and typography rendering engine (Skia/Free Pascal) for internal design tools.
+**What I built:** Cross-platform desktop apps (Delphi, Free Pascal) and a high-performance frontend data grid. Handled memory-constrained environments via virtual scrolling engines, Canvas API cell me[...]
 
 ![TypeScript](https://img.shields.io/badge/TypeScript_React-3178C6?style=flat-square&logo=react&logoColor=white)
 ![Canvas API](https://img.shields.io/badge/Canvas_API-E34F26?style=flat-square&logoColor=white)
@@ -89,7 +91,7 @@
 > *Authored 12 Articles — 120K+ Developer Reach*
 
 **Impact:** Drove a 540% increase in organic user growth and visibility for developer tools (like the JSON Viewer and VS Code extensions).
-**What I built:** Authored and published a series of 12 highly successful technical engineering articles covering JSON data structures, SEO, and developer tooling. Additionally, authored comprehensive internal documentation for software architectures, APIs, and team workflows to streamline developer onboarding.
+**What I built:** Authored and published a series of 12 highly successful technical engineering articles covering JSON data structures, SEO, and developer tooling. Additionally, authored comprehensive[...]
 
 ![Technical Writing](https://img.shields.io/badge/Technical_Writing-000000?style=flat-square&logo=markdown&logoColor=white)
 ![SEO](https://img.shields.io/badge/SEO-0A0A0A?style=flat-square&logoColor=white)
@@ -171,6 +173,7 @@
 
 | | |
 |---|---|
+| 🔗 Linktree | [linktr.ee/Suissimin](https://linktr.ee/Suissimin) |
 | 💼 LinkedIn | [linkedin.com/in/simin-shoaibi](https://www.linkedin.com/in/simin-shoaibi/) |
 | 📧 Email | [simin.shoaibi@proton.me](mailto:simin.shoaibi@proton.me) |
 | 🐙 GitHub | [github.com/SuisSanem000](https://github.com/SuisSanem000) |
