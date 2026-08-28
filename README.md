@@ -35,11 +35,11 @@
 
 ## 🚀 Featured Work & Impact
 
-### 🔧 [Top-10 VS Code Extension & Standalone npm Package](https://github.com/SuisSanem000/SuisSanem000/tree/main/previous%20projects/json-generator)
+### 🔧 [Top-10 VS Code Extension & Standalone npm Package](https://github.com/SuisSanem000/tool-json-generator)
 > *Open Source / Developer Tooling — 630K+ Installs*
 
 **Impact:** Created a top-10 VS Code marketplace extension adopted massively by the open-source community, driving huge developer efficiency for test-fixture generation. 
-**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a [VS Code extension](htt[...]
+**What I built:** A fast, recursive engine for generating nested JSON data from `{{pattern}}` templates (supporting UUIDs, configurable arrays, ranges). Shipped as **both a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Dadroit.dadroit-json-generator) and a standalone [npm package](https://www.npmjs.com/package/@dadroit/json-generator)** (exposing programmatic API & CLI). Drove **540% organic growth** through technical content marketing and SEO.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![VSCode API](https://img.shields.io/badge/VSCode_Extension-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
@@ -47,11 +47,11 @@
 
 ---
 
-### 📰 [High-Load Semantic News Feed Platform](https://github.com/SuisSanem000/SuisSanem000/tree/main/previous%20projects/news-feed-app)
+### 📰 [High-Load Semantic News Feed Platform](https://github.com/SuisSanem000/tool-news-feed-app)
 > *Parsaiane — Scaled to 60K+ Daily Active Users*
 
 **Impact:** Built a highly scalable PERN-stack application that successfully handles 60K+ DAU with real-time React/Socket.IO dashboards.
-**What I built:** A production web platform that continuously crawls developer-focused sources. Optimized high-load RESTful and GraphQL APIs using Node.js/NestJS/Fastify, achieving 35-40% latency redu[...]
+**What I built:** A production web platform that continuously crawls developer-focused sources. Optimized high-load RESTful and GraphQL APIs using Node.js/NestJS/Fastify, achieving 35-40% latency reduction and 99.9% uptime. Established Kubernetes/Docker CI/CD pipelines to reduce bugs by 40%. **AI Feature:** Integrated OpenAI LLMs into the data pipeline for automated content scoring, summarization, and personalization.
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
@@ -66,7 +66,7 @@
 > 🔒 *Due to NDA, I cannot share the source code publicly, but I am happy to discuss technical details and architecture during interviews.*
 
 **Impact:** Engineered a full-stack platform transforming complex statutes into automated decision systems with highly reliable AI integration.
-**What I built:** Designed modern React/TypeScript UI/UX for human-in-the-loop expert review and complex legal workflows. Built robust backend telemetry and data pipelines. **AI Feature:** Engineered [...]
+**What I built:** Designed modern React/TypeScript UI/UX for human-in-the-loop expert review and complex legal workflows. Built robust backend telemetry and data pipelines. **AI Feature:** Engineered an AI integration layer for legal reasoning using Claude Opus/Sonnet, achieving 95%+ accuracy through advanced prompt engineering, dynamic context windows, and strict output validation via multi-layer JSON Schema (AJV). 
 
 ![React](https://img.shields.io/badge/React_TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
@@ -75,11 +75,11 @@
 
 ---
 
-### 📊 [Dadroit JSON Viewer](https://github.com/SuisSanem000/SuisSanem000/tree/main/previous%20projects/data-visualization-tool-manager)
+### 📊 [Dadroit JSON Viewer](https://dadroit.com/)
 > *Commercial Desktop Data Application — 60K+ Users*
 
 **Impact:** Engineered a high-performance desktop JSON Viewer capable of handling multi-GB datasets with syntax highlighting and tree views.
-**What I built:** Cross-platform desktop apps (Delphi, Free Pascal) and a high-performance frontend data grid. Handled memory-constrained environments via virtual scrolling engines, Canvas API cell me[...]
+**What I built:** Cross-platform desktop apps (Delphi, Free Pascal) and a high-performance frontend data grid. Handled memory-constrained environments via virtual scrolling engines, Canvas API cell measurement, and a custom typed EventTarget state management layer. Built a custom 2D vector and typography rendering engine (Skia/Free Pascal) for internal design tools.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript_React-3178C6?style=flat-square&logo=react&logoColor=white)
 ![Canvas API](https://img.shields.io/badge/Canvas_API-E34F26?style=flat-square&logoColor=white)
@@ -87,11 +87,68 @@
 
 ---
 
+### ⚡ [High-Performance Grid Component](https://github.com/SuisSanem000/tool-high-performanc-grid-component)
+> *Frontend Architecture / Virtualized Data Grid*
+
+**Impact:** Built an ultra-fast virtualized data table capable of rendering 100K+ rows with 60 FPS scrolling and zero frame drops.
+**What I built:** Custom virtual scrolling engine, dynamic row heights, draggable columns, multi-column tree view support, and Canvas API cell measurement for maximum frontend rendering efficiency.
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![CSS3](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
+
+---
+
+### 📈 [Data Visualization Tool Manager](https://github.com/SuisSanem000/tool-data-visualization-tool-manager)
+> *Data Analytics & Interactive Visualization Suite*
+
+**Impact:** Created a management tool for interactive data visualization workflows and complex dataset inspections.
+**What I built:** Centralized controller and visualization workspace supporting multiple data formats, real-time charts, schema inspection, and seamless dataset management.
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black)
+
+---
+
+### 🔍 [JSON Viewer Utility Tool](https://github.com/SuisSanem000/tool-json-viewer-tool)
+> *Web Application & Developer Utility*
+
+**Impact:** Provides instant JSON formatting, syntax validation, tree navigation, and schema analysis for web developers.
+**What I built:** Lightweight, responsive web utility for analyzing, formatting, and querying complex nested JSON datasets with real-time schema validation.
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![JSON Schema](https://img.shields.io/badge/JSON_Schema-000000?style=flat-square&logo=json&logoColor=white)
+
+---
+
+### 💾 [Save Content Chrome Extension](https://github.com/SuisSanem000/tool-save-content-google-chrome-extension)
+> *Browser Productivity Extension*
+
+**Impact:** Streamlined web research and content curation directly within Google Chrome.
+**What I built:** A browser extension for capturing, organizing, and managing web snippets, articles, and bookmarks with instant offline access and tagging.
+
+![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=google-chrome&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+---
+
+### 👓 [JSON Viewer Chrome Extension](https://github.com/SuisSanem000/tool-json-viewer-google-chrome-extension)
+> *Developer Browser Extension*
+
+**Impact:** Instant in-browser JSON inspection, collapsible nodes, and syntax highlighting for API debugging.
+**What I built:** Fast Chrome extension that formats raw JSON responses with syntax colors, clickable URLs, search filtering, and clean tree views.
+
+![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=google-chrome&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+---
+
 ### 📝 [Technical Writing & Developer Advocacy](https://dadroit.com/blog/)
 > *Authored 12 Articles — 120K+ Developer Reach*
 
 **Impact:** Drove a 540% increase in organic user growth and visibility for developer tools (like the JSON Viewer and VS Code extensions).
-**What I built:** Authored and published a series of 12 highly successful technical engineering articles covering JSON data structures, SEO, and developer tooling. Additionally, authored comprehensive[...]
+**What I built:** Authored and published a series of 12 highly successful technical engineering articles covering JSON data structures, SEO, and developer tooling. Additionally, authored comprehensive internal documentation for software architectures, APIs, and team workflows to streamline developer onboarding.
 
 ![Technical Writing](https://img.shields.io/badge/Technical_Writing-000000?style=flat-square&logo=markdown&logoColor=white)
 ![SEO](https://img.shields.io/badge/SEO-0A0A0A?style=flat-square&logoColor=white)
