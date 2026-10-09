@@ -72,12 +72,12 @@ interview_pipeline_state:
 ## 4. Key Reference Files Map
 
 Whenever this harness is invoked, use the following modular documentation files stored in this directory:
-- [01_COMPANY_ROLE_AND_CEO_PROFILE.md](file:///h:/Programming/dev/projects/personal%20projects/SuisSanem000/resources/interview-prep-backend-engineer-python/01_COMPANY_ROLE_AND_CEO_PROFILE.md): Detailed dossier on ruit, Luis Grau, Lanzadera ecosystem, and role scope.
-- [02_PROJECT_DEEP_DIVE_NEWS_FEED_APP.md](file:///h:/Programming/dev/projects/personal%20projects/SuisSanem000/resources/interview-prep-backend-engineer-python/02_PROJECT_DEEP_DIVE_NEWS_FEED_APP.md): Architecture, crawling engine, edge cases, and ruit parallels for the 150+ source crawler.
-- [03_PROJECT_DEEP_DIVE_JSON_GENERATOR.md](file:///h:/Programming/dev/projects/personal%20projects/SuisSanem000/resources/interview-prep-backend-engineer-python/03_PROJECT_DEEP_DIVE_JSON_GENERATOR.md): 3-day build story, binary cross-platform distribution, VS Code API, npm, Homebrew, and IPC wrappers.
-- [04_BEHAVIORAL_FIT_AND_CANDIDATE_STORY.md](file:///h:/Programming/dev/projects/personal%20projects/SuisSanem000/resources/interview-prep-backend-engineer-python/04_BEHAVIORAL_FIT_AND_CANDIDATE_STORY.md): Simin's narrative, AI agent workflow story, cultural fit, questions to ask Luis.
-- [05_ROUND_1_MOCK_INTERVIEW_CHEAT_SHEET.md](file:///h:/Programming/dev/projects/personal%20projects/SuisSanem000/resources/interview-prep-backend-engineer-python/05_ROUND_1_MOCK_INTERVIEW_CHEAT_SHEET.md): Rapid-fire talking points, elevator pitches, and emergency answer cheat sheet for today's call.
-- [06_FUTURE_ROUNDS_ROADMAP.md](file:///h:/Programming/dev/projects/personal%20projects/SuisSanem000/resources/interview-prep-backend-engineer-python/06_FUTURE_ROUNDS_ROADMAP.md): Preparation roadmap for Round 2 (Technical) and Round 3 (Lanzadera Whiteboard).
+- [01_company.md](./01_company.md): Detailed dossier on ruit, Luis Grau, Lanzadera ecosystem, and role scope.
+- [02_news-feed.md](./02_news-feed.md): Architecture, crawling engine, edge cases, and ruit parallels for the 150+ source crawler.
+- [03_json-gen.md](./03_json-gen.md): 3-day build story, binary cross-platform distribution, VS Code API, npm, Homebrew, and IPC wrappers.
+- [04_behavioral.md](./04_behavioral.md): Simin's narrative, AI agent workflow story, cultural fit, questions to ask Luis.
+- [05_cheat-sheet.md](./05_cheat-sheet.md): Rapid-fire talking points, elevator pitches, and emergency answer cheat sheet for today's call.
+- [06_roadmap.md](./06_roadmap.md): Preparation roadmap for Round 2 (Technical) and Round 3 (Lanzadera Whiteboard).
 
 ---
 
@@ -87,7 +87,7 @@ Copy and paste any of these prompts into a future chat session to pick up immedi
 
 ```markdown
 "I am Simin Shoeibi preparing for my interview process at ruit (Senior Backend Engineer, Integrations).
-Please load the context from 00_AI_STATE_HARNESS.md and the associated markdown files in this folder.
+Please load the context from 00_harness.md and the associated markdown files in this folder.
 Today we are focusing on: [Round 1 CEO Call / Round 2 Technical Video / Round 3 Lanzadera Whiteboard].
 Please adopt the persona of Luis Grau / Technical Interviewer and let's run a drill on [Topic]."
 ```
