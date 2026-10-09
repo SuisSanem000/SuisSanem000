@@ -8,6 +8,7 @@ Welcome to the structured interview preparation workspace for **Simin Shoeibi** 
 
 | File | Description | Purpose / When to Open |
 |---|---|---|
+| [summary-before-interview.md](./summary-before-interview.md) | **⚡ 60-Second Interview Cheat Sheet** | **OPEN RIGHT NOW.** Word-for-word scripts, project highlights, and AI agent talking points. |
 | [00_harness.md](./00_harness.md) | **AI State & System Harness** | Persistent AI context file. Load into any LLM session to instantly resume mock interviews and stage tracking. |
 | [01_company.md](./01_company.md) | **Company, Role & Luis Grau Dossier** | Comprehensive profile of ruit, mission, Lanzadera ecosystem, and CEO interview philosophy. |
 | [02_news-feed.md](./02_news-feed.md) | **News Feed App (150+ Crawler) Deep Dive** | Architecture, Cheerio/Readability pipeline, PostgreSQL retry queues, Vertex AI vs OpenAI benchmark, and direct 1:1 ruit parallels. |
