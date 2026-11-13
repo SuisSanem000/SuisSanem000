@@ -1,12 +1,12 @@
-# 01 — My 3 Signature Stories, Team Lunch & Strategic Questions
+# 01 — My 3 Signature Stories, Team Culture & Strategic Questions
 
-> **Interview 2 Focus (14:00 Lunch + 15:00 Architecture):** Culture fit, values, storytelling (STAR format), and high-signal technical questions for Luis and the team.
+> **Interview Focus:** Culture fit, collaborative values, storytelling (STAR format), and high-signal technical questions for engineering teams and leadership.
 
 ---
 
 ## 1. Story 1: Building Multi-Tenant SaaS Backend from Scratch (`b2b-api` at Visual Meta)
 
-- **Situation:** Visual Meta’s German marketplaces (`ladenzeile.de`, `shopping.de`) needed a new B2B portal for thousands of merchants to manage product feeds, campaigns, and reports.
+- **Situation:** Visual Meta’s marketplaces (`ladenzeile.de`, `shopping.de`) needed a new B2B portal for thousands of merchants to manage product feeds, campaigns, and reports.
 - **Task:** Take full ownership of designing and implementing the backend (`b2b-api`) from scratch with 4 user roles (`admin`, `manager`, `partner`, `user`).
 - **Action (Architecture Decisions):** Built with Node.js, TypeScript, Express, MySQL, and Redis. Implemented strict multi-tenant tenant-isolation filters, Redis caching (15-min TTL) for heavy aggregation queries, and transactional updates for role assignments. Containerized with Docker and Jenkins CI/CD.
 - **What Went Wrong & Fix:** Large merchants with 50K+ products caused high memory spikes during dashboard exports. Fixed by replacing full in-memory queries with cursor pagination, composite indexes on `(partner_id, created_at)`, and Redis caching.
@@ -35,18 +35,17 @@
 
 ---
 
-## 4. Team Lunch Etiquette & High-Signal Questions for Luis and the Team
+## 4. Team Culture, Collaborative Etiquette & High-Signal Questions
 
-- **Lunch Vibe (14:00 at Lanzadera, on Ruit):**
-  - Relax and be yourself. Luis noted: *"This is the most important part."* They are evaluating: *Do we enjoy working and solving problems with this person every day?*
-  - Be warm, curious, and collaborative. Ask teammates about living in Valencia, their Lanzadera experience, and what they enjoy building.
-- **Questions for the Engineering Team:**
-  - *"Which marketplace gives you the biggest headache right now with anti-bot walls or schema changes?"*
-  - *"How do you currently split responsibilities between the Chrome Extension and backend Celery workers?"*
-  - *"For your 1-photo AI listing flow, what was the hardest part to get right—category mapping, brand detection, or price estimation?"*
-  - *"What does your daily AI-assisted workflow look like across the team? Do you share `CLAUDE.md` rules or custom skills?"*
-- **Questions for Luis Grau (CEO):**
-  - *"How has your journey inside Lanzadera been so far, and what is Ruit's biggest milestone over the next 6 months?"*
-  - *"Beyond Vinted, Wallapop, and eBay, which new marketplaces or European countries are most requested by your sellers?"*
-  - *"What does a great first 30 days look like for someone joining as Senior Integrations Engineer?"*
-
+- **Team Collaboration & Culture Fit:**
+  - Be authentic, curious, and collaborative. Technical interviews assess not just competence, but: *Do we enjoy solving hard problems with this person every day?*
+  - Actively listen, validate team perspectives, and frame trade-offs openly rather than being dogmatic.
+- **High-Signal Questions for the Engineering Team:**
+  - *"Which external integration or third-party service gives you the biggest headache right now with anti-bot walls or schema changes?"*
+  - *"How do you currently split responsibilities between client-side execution (e.g., browser extensions) and backend workers?"*
+  - *"What does your daily AI-assisted engineering workflow look like across the team? Do you share repository rules, skills, or custom harnesses?"*
+  - *"How do you handle schema drift and proactive breakage detection before downstream customers notice?"*
+- **High-Signal Questions for Founders / Engineering Leadership:**
+  - *"What is the engineering team's single biggest technical milestone over the next 6 months?"*
+  - *"What does a great first 30–60 days look like for someone joining this role?"*
+  - *"How do you cultivate an environment where engineers can ship quickly while maintaining system invariants and high test standards?"*

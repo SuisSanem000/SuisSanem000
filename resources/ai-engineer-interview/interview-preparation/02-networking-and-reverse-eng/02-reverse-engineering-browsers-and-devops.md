@@ -23,7 +23,7 @@
 - **Chrome Extension (The Secret Weapon):**
   - Runs in the seller's real browser using their **residential home IP, cookies, and genuine browser fingerprint**. Bypasses anti-bot walls naturally for free.
   - **Content Script:** Interacts with the marketplace DOM directly.
-  - **Background Service Worker:** Coordinates with Ruit's backend server via WebSocket / HTTPS.
+  - **Background Service Worker:** Coordinates with the backend server via WebSocket / HTTPS.
 - **Headless Browsers (Playwright):**
   - Use when private APIs cannot be called directly.
   - **Optimizations:** Block heavy media (`images`, `fonts`, `stylesheets`) to reduce bandwidth, and reuse browser contexts.

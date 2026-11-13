@@ -1,17 +1,17 @@
 # Part 1 — Step-by-Step: How to Show Your Laptop Setup (First 5 Minutes)
 
-> **Goal:** When Luis says *"Fire up your laptop and show us your setup"*, do not just open an empty chat window. Walk them through these **4 steps** to prove you practice **Harness Engineering**—controlling AI with memory files, rules, skills, and independent verification.
+> **Goal:** When interviewers ask *"Fire up your laptop and show us your setup"*, do not just open an empty chat window. Walk them through these **4 steps** to prove you practice **Harness Engineering**—controlling AI with memory files, rules, skills, and independent verification.
 
 ---
 
-## Step 1: Show Your Project Memory & Rules File (`ai-state.md` / `CLAUDE.md`)
+## Step 1: Show Your Project Memory & Rules File (`CLAUDE.md` / `AGENTS.md`)
 
 - **What You Do on Screen:**
-  - Open your IDE and click on your state/rules file (`ai-state.md` or `CLAUDE.md`).
+  - Open your IDE and click on your state/rules file (`CLAUDE.md` or `AGENTS.md`).
 - **Why Interviewers Love This:**
   - Amateur developers repeat context in every prompt. Senior engineers persist project context, architectural rules, and forbidden actions on disk so every new agent session starts with full memory.
 - **What to Say:**
-  - *"Before I ask an agent to write anything, I maintain a living state and rules file in the repository. It defines the architecture, folder boundaries, strict constraints, and test commands. Whenever I start a fresh session or compact the context window, the agent reads this file first so it never loses track of our engineering standards."*
+  - *"Before I ask an agent to write anything, I maintain a living rules file in the repository. It defines the architecture, folder boundaries, strict constraints, and test commands. Whenever I start a fresh session or compact the context window, the agent reads this file first so it never loses track of our engineering standards."*
 
 ---
 
@@ -31,9 +31,9 @@
 - **What You Do on Screen:**
   - Point to your skills directory (`SKILL.md` files) and explain how subagents keep your main context clean.
 - **Why Interviewers Love This:**
-  - Luis specifically asked about **agents, skills, and plugins**. Explaining *why* you don't dump everything into one giant prompt shows you understand context window degradation ("lost in the middle").
+  - Technical teams care deeply about context window hygiene. Explaining *why* you don't dump everything into one giant prompt shows you understand context window degradation ("lost in the middle").
 - **What to Say:**
-  - *"I keep my main agent's context window as small and sharp as possible. Global rules stay tiny. For specialized tasks—like reverse-engineering a marketplace API or scaffolding a connector—I use on-demand Skills that only load into memory when triggered. And if I need to inspect a massive log or network capture, I delegate that to a read-only Research Subagent so the raw noise never pollutes my main coding agent's context."*
+  - *"I keep my main agent's context window as small and sharp as possible. Global rules stay tiny. For specialized tasks—like reverse-engineering an external API or scaffolding an adapter—I use on-demand Skills that only load into memory when triggered. And if I need to inspect a massive log or network capture, I delegate that to a read-only Research Subagent so the raw noise never pollutes my main coding agent's context."*
 
 ---
 
@@ -42,7 +42,6 @@
 - **What You Do on Screen:**
   - Show the terminal panel where the agent runs tests/linters automatically, and point to the Git source-control diff view where **GitHub Copilot Code Review** runs.
 - **Why Interviewers Love This:**
-  - It answers the #1 fear founders have about AI coding: *"How do you know the AI didn't write broken or insecure logic?"*
+  - It answers the #1 fear engineering teams have about AI coding: *"How do you know the AI didn't write broken or insecure logic?"*
 - **What to Say:**
   - *"I never trust an LLM's first output blindly. My setup forces the agent to run the test suite and static type checker in the terminal and fix its own errors before reporting back. Finally, before I commit, I open the Git diff and run GitHub Copilot Code Review as a second, independent model to catch blind spots like missing timeouts, race conditions, or unhandled nulls."*
-

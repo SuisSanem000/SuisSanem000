@@ -1,6 +1,6 @@
 # 02 — Error Handling Philosophy: Python vs. Go vs. Rust
 
-> **Why This Question:** Founding Engineer Alonso Veliz Garcia works with Python and **Rust**. Understanding how different languages handle errors demonstrates backend engineering maturity.
+> **Why This Matters:** Understanding how different programming paradigms handle errors demonstrates backend engineering maturity and architectural discipline.
 
 ---
 
@@ -15,16 +15,16 @@
 
 ---
 
-## 2. Best Practice in Marketplace Integrations Architecture
+## 2. Best Practice in Integration Architecture
 
-Because unhandled exceptions in integration workers can cause silent job loss, structure integration errors explicitly:
+Because unhandled exceptions in background workers can cause silent job loss, structure integration errors explicitly:
 
 1. **Custom Error Classification Hierarchy:**
    - Define a base integration error class and derive specific categories:
-     - **`RetryableError`**: Transient network timeouts, `429` rate limits, `503` service unavailable. $\rightarrow$ Retry with exponential backoff.
-     - **`AuthExpiredError`**: `401` Unauthorized $\rightarrow$ Abort retries, refresh token, or notify seller to reconnect account.
-     - **`SchemaDriftError`**: Marketplace altered response fields $\rightarrow$ Log scrubbed payload diff, alert engineers to update connector.
+     - **`RetryableError`**: Transient network timeouts, `429` rate limits, `503` service unavailable $\rightarrow$ Retry with exponential backoff.
+     - **`AuthExpiredError`**: `401` Unauthorized $\rightarrow$ Abort retries, refresh token, or notify user to reconnect account.
+     - **`SchemaDriftError`**: Upstream service altered response fields $\rightarrow$ Log scrubbed payload diff, alert engineers to update connector.
 2. **Explicit Result Pattern (Rust/Go-Style in Integrations):**
-   - For batch synchronization across 5 marketplaces, returning an explicit `Result(success=True/False, error_code=...)` avoids crashing the entire batch when one marketplace fails.
+   - For batch synchronization across multiple external services, returning an explicit `Result(success=True/False, error_code=...)` avoids crashing the entire batch when one external call fails.
 3. **Never Swallow Errors Silently:**
-   - Never use bare catch-all error suppression. Always log contextual metadata (seller ID, item ID, marketplace) and handle or re-raise properly.
+   - Never use bare catch-all error suppression. Always log contextual metadata (tenant ID, item ID, provider) and handle or re-raise properly.
