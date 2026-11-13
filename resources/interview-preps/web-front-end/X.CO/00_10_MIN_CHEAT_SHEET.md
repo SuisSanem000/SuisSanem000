@@ -81,3 +81,4 @@
 * Keep **calm, concise, structured** answers (lead with the conclusion, give 1 crisp metric/project, stop talking and let them engage).
 * Never invent PixiJS/gambling-law experience—bridge confidently from **Skia 2D + AJV/financial compliance + 60K+ concurrent TS apps + shared tooling**.
 * Close warmly and confirm FT/PT logistics clearly if Jeremie brings it up. **You've got this!**
+
