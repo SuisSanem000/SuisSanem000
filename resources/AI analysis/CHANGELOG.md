@@ -4,6 +4,16 @@ All updates, actions, and structural changes performed in this repository are re
 
 ---
 
+## [2026-11-13] — Added 10-Minute X.CO Pre-Interview Cheat Sheet
+
+### Added
+- **`resources/interview-preps/web-front-end/X.CO/00_10_MIN_CHEAT_SHEET.md`**: Consolidated all EXCO Game Studio intelligence, 30-second pitch, verified metrics/GitHub highlights, 10 rapid-fire Q&As (screening, Serhii technical, Jeremie CFO/ROI), and closing questions into a single 10-minute last-minute cheat sheet.
+
+### Updated
+- Updated `PROJECT_STATE.md` and `CHANGELOG.md` and pushed to `origin/main`.
+
+---
+
 ## [2026-11-13] — Reinforce Auto-Commit/Push Rule & Sync X.CO File Formatting
 
 ### Updated

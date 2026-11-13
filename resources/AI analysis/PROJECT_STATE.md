@@ -49,6 +49,7 @@ SuisSanem000/
         ├── web-backend/
         ├── web-front-end/
         │   ├── X.CO/                               # EXCO Game Studio prep (Front End Game Developer)
+        │   │   ├── 00_10_MIN_CHEAT_SHEET.md        # Ultra-concise 10-min pre-interview summary
         │   │   ├── 01_company_analysis.md
         │   │   ├── 02_role_breakdown.md
         │   │   ├── 03_candidate_profile.md
@@ -63,5 +64,5 @@ SuisSanem000/
 ## 4. Current State & Last Completed Task
 - **Status:** Completed X.CO (EXCO Game Studio) screening interview preparation suite and reinforced strict post-task commit, push, and clean-tree verification workflow. Ready for follow-up or next-round prep.
 - **Last Completed Task:** 
-  - Committed trailing-newline formatting diffs and relocation of `X.CO/` to `resources/interview-preps/web-front-end/X.CO/`, reinforced Rule 4 in `PROJECT_STATE.md` (mandatory `git add -A` + `git commit` + `git push origin main` + final `git status` clean-tree check), updated directory structure in `PROJECT_STATE.md` and `CHANGELOG.md`, and pushed to `origin/main`.
-  - Previously completed: Analyzed local EXCO briefing (`resources/interview-preps/web-front-end/resources/info-about-EXCO-Game-Studio.md`), candidate CV/LinkedIn markdowns, GitHub profile (`github.com/SuisSanem000`), and online intelligence on EXCO Game Studio, and generated `01_company_analysis.md` through `04_interview_qa_playbook.md` (now at `resources/interview-preps/web-front-end/X.CO/`).
+  - Created `resources/interview-preps/web-front-end/X.CO/00_10_MIN_CHEAT_SHEET.md` — a 10-minute pre-interview one-pager synthesizing all studio intelligence, 30-second pitch, 4 verified proof pillars/metrics, rapid-fire Serhii/Jeremie Q&A, and closing questions.
+  - Previously completed: Generated `01_company_analysis.md` through `04_interview_qa_playbook.md` in `resources/interview-preps/web-front-end/X.CO/` and reinforced Rule 4 (`git add -A` + `git commit` + `git push origin main` + final `git status` clean check).
