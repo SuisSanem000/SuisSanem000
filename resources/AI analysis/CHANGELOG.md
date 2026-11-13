@@ -4,6 +4,19 @@ All updates, actions, and structural changes performed in this repository are re
 
 ---
 
+## [2026-11-13] — EXCO Game Studio (X.CO) Screening Interview Prep Created
+
+### Added
+- **`resources/interview/X.CO/01_company_analysis.md`**: Studio & market intelligence on EXCO Game Studio (`exco.gg`), Tequity RGS, SOFTSWISS distribution, GAMEX mechanics, and CFO strategic angles for Jeremie.
+- **`resources/interview/X.CO/02_role_breakdown.md`**: Front End Game Developer breakdown, Serhii/Jeremie screening focus, and honest gap analysis.
+- **`resources/interview/X.CO/03_candidate_profile.md`**: Tailored 9+ year narrative and verified GitHub portfolio (`github.com/SuisSanem000`) mapped to HTML5 slot client and shared tooling needs.
+- **`resources/interview/X.CO/04_interview_qa_playbook.md`**: 30-second pitch, 14 customized Q&As (screening, technical RGS/rendering/state, CFO ROI/velocity), and 5 targeted questions to ask Jeremie and Serhii.
+
+### Updated
+- Updated `PROJECT_STATE.md` and `CHANGELOG.md` reflecting current directory structure and completed interview preparation deliverables.
+
+---
+
 ## [2026-11-13] — Policy Update: No Symlinks / Folder Shortcuts
 
 ### Added
