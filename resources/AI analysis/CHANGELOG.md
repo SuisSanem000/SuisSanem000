@@ -8,7 +8,7 @@ All updates, actions, and structural changes performed in this repository are re
 
 ### Updated
 - **`resources/AI analysis/PROJECT_STATE.md`**: Reinforced Rule 4 (Automatic Commit & Push Rule) to explicitly require `git add -A`, `git commit`, `git push origin main`, clean trailing-newline formatting, and a final `git status` check confirming `nothing to commit, working tree clean` after every change.
-- **`resources/interview/X.CO/01_company_analysis.md`–`04_interview_qa_playbook.md`**: Committed and pushed trailing-newline working-tree diffs left after the previous commit (`62448d82`).
+- **`resources/interview-preps/web-front-end/X.CO/01_company_analysis.md`–`04_interview_qa_playbook.md`**: Committed and pushed trailing-newline working-tree diffs and relocation from `resources/interview/X.CO/` to `resources/interview-preps/web-front-end/X.CO/` (`2cd74884`), and updated `PROJECT_STATE.md` directory map accordingly.
 
 ---
 
