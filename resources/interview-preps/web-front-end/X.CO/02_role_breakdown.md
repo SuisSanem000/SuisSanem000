@@ -46,3 +46,4 @@
 * **"Shared Client Leverage":** Frame every shared client contribution as an engineering multiplier that makes **monthly original (non-clone) releases** financially sustainable.
 * **"Math is the Source of Truth":** Explicitly recognize EXCO's philosophy—the RGS/math model drives the outcome; the front end's job is deterministic state presentation, resilient reconnect recovery, and crisp 60fps feedback.
 * **"Mobile-First Performance Discipline":** Highlight awareness of mobile GPU/memory constraints (texture atlas packing, lazy loading bonus assets, keeping frame times <16ms on mid-tier phones).
+

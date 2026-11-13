@@ -54,3 +54,4 @@ Your career breaks down into **four mutually reinforcing pillars** that match wh
 * **95%+ AI reasoning accuracy (<3% hallucination)** via multi-layer AJV schema validation at QueryLaw.
 * **120K+ readers** across 12 technical articles (**540% organic growth**).
 * **TOEFL iBT 110/120 (CEFR C1)** — clear, fluent English communication for remote international teams.
+

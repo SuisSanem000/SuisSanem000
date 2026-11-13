@@ -97,3 +97,4 @@
    **"Once a game goes live across hundreds of casino brands, what does your telemetry and bug-reproduction setup look like when an operator reports an edge-case issue?"**
 5. *(For Both — Role Scope & Next Steps):*
    **"In the first 60 days, would success look like owning a brand-new slot title end-to-end from Figma to launch, or starting by upgrading specific modules in the shared client—and what are the next steps in your hiring process?"**
+

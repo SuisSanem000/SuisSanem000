@@ -20,8 +20,9 @@ This repository manages Simin Shoeibi's (Shojaee) professional profile, technica
    - Contains source CV and LinkedIn documentation.
    - Original PDFs reside in `resources/Simin Shojaee Professional Background/resources/`.
    - Structured markdown extractions serve as the single source of truth for all role tailoring.
-4. **Automatic Commit & Push Rule:**
-   - Whenever any task or file modification is executed in this repository, immediately stage all changes, create a clear atomic commit, and push (`git push origin main`) so local and remote repositories remain continuously in sync.
+4. **Automatic Commit & Push Rule (MANDATORY EVERY TURN/CHANGE):**
+   - Whenever **any** task, edit, or file modification is executed in this repository, **ALWAYS** end by staging all changes (`git add -A`), creating a clear atomic commit, and pushing (`git push origin main`) so local and remote repositories remain continuously in sync.
+   - **Post-Push Verification:** Always run `git status` after pushing and explicitly confirm both `nothing to commit, working tree clean` and `Your branch is up to date with 'origin/main'` before replying. Also ensure Markdown files end with clean formatting (proper trailing newline) so IDE/editor save hooks do not immediately dirty the working tree.
 5. **No Folder Shortcuts / No Symlinks Rule (CRITICAL):**
    - **NEVER** create symlinks, aliases, or folder shortcuts (`ln -s`, etc.) inside any directory in this repository. Always work strictly with real directories and exact paths; never create convenience/compatibility symlinks.
 
@@ -60,12 +61,7 @@ SuisSanem000/
 ---
 
 ## 4. Current State & Last Completed Task
-- **Status:** Completed X.CO (EXCO Game Studio) screening interview preparation suite. Ready for follow-up or next-round prep.
+- **Status:** Completed X.CO (EXCO Game Studio) screening interview preparation suite and reinforced strict post-task commit, push, and clean-tree verification workflow. Ready for follow-up or next-round prep.
 - **Last Completed Task:** 
-  - Analyzed local EXCO briefing (`resources/interview-preps/web-front-end/resources/info-about-EXCO-Game-Studio.md`), candidate CV/LinkedIn markdowns, GitHub profile (`github.com/SuisSanem000`), and online intelligence on EXCO Game Studio (founded 2025 by Fredrik Elmqvist, Tequity RGS, SOFTSWISS distribution, GAMEX mechanics).
-  - Generated 4 structured interview prep guides inside `resources/interview/X.CO/`:
-    - `01_company_analysis.md`
-    - `02_role_breakdown.md`
-    - `03_candidate_profile.md`
-    - `04_interview_qa_playbook.md`
-  - Updated `PROJECT_STATE.md` and `CHANGELOG.md`, committed, and pushed to `origin/main`.
+  - Committed trailing-newline formatting diffs in `resources/interview/X.CO/*.md`, reinforced Rule 4 in `PROJECT_STATE.md` (mandatory `git add -A` + `git commit` + `git push origin main` + final `git status` clean-tree check), logged in `CHANGELOG.md`, and pushed to `origin/main`.
+  - Previously completed: Analyzed local EXCO briefing (`resources/interview-preps/web-front-end/resources/info-about-EXCO-Game-Studio.md`), candidate CV/LinkedIn markdowns, GitHub profile (`github.com/SuisSanem000`), and online intelligence on EXCO Game Studio, and generated `01_company_analysis.md` through `04_interview_qa_playbook.md` in `resources/interview/X.CO/`.

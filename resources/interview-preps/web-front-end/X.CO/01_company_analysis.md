@@ -57,3 +57,4 @@ Because the **CFO** is co-leading this screening call, anchor your technical poi
    * Highlight your **Harness Engineering** workflow (strict TypeScript types + automated validation gates) as a force multiplier that lets a lean remote engineer ship polished features faster with fewer regressions.
 4. **Live-Ops Maintenance Efficiency:**
    * Supporting live titles across hundreds of casino brands and mobile viewports is expensive if bugs aren't reproducible. Emphasize your telemetry, failure-reproduction tooling, and automated regression checks.
+
