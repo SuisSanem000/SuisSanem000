@@ -4,6 +4,16 @@ All updates, actions, and structural changes performed in this repository are re
 
 ---
 
+## [2026-11-13] — Policy Update: No Symlinks / Folder Shortcuts
+
+### Added
+- **No-Symlinks Policy:** Formalized Rule 5 in `PROJECT_STATE.md`: strictly prohibit creating symlinks, aliases, or folder shortcuts anywhere in the repository.
+
+### Removed
+- Removed all previously created folder symlinks from Git (`Simin Shojaee Professional Background`, `resources/ai-analysis`, `resources/simin-shoeibi-professional-background`).
+
+---
+
 ## [2026-11-13] — Workflow Policy: Automatic Commit and Push Rule Added
 
 ### Added

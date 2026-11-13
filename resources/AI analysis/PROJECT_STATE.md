@@ -16,12 +16,14 @@ This repository manages Simin Shoeibi's (Shojaee) professional profile, technica
 2. **`resources/interview/` (Exclusive Output Folder):**
    - Reserved exclusively for upcoming tailored interview preparation materials.
    - Do **not** generate unprompted content here; wait for explicit instructions from the user before generating new materials.
-3. **`Simin Shojaee Professional Background/` (Source of Truth):**
+3. **`resources/Simin Shojaee Professional Background/` (Source of Truth):**
    - Contains source CV and LinkedIn documentation.
-   - Original PDFs reside in `Simin Shojaee Professional Background/resources/`.
+   - Original PDFs reside in `resources/Simin Shojaee Professional Background/resources/`.
    - Structured markdown extractions serve as the single source of truth for all role tailoring.
 4. **Automatic Commit & Push Rule:**
    - Whenever any task or file modification is executed in this repository, immediately stage all changes, create a clear atomic commit, and push (`git push origin main`) so local and remote repositories remain continuously in sync.
+5. **No Folder Shortcuts / No Symlinks Rule (CRITICAL):**
+   - **NEVER** create symlinks, aliases, or folder shortcuts (`ln -s`, etc.) inside any directory in this repository. Always work strictly with real directories and exact paths; never create convenience/compatibility symlinks.
 
 ---
 
@@ -29,33 +31,30 @@ This repository manages Simin Shoeibi's (Shojaee) professional profile, technica
 
 ```text
 SuisSanem000/
-├── resources/
-│   ├── AI analysis/                                # Agent state & logs
-│   │   ├── INITIAL_PROMPT.md
-│   │   ├── PROJECT_STATE.md
-│   │   └── CHANGELOG.md
-│   ├── interview/                                  # Output folder for upcoming prep
-│   ├── Simin Shojaee Professional Background/      # Candidate profile & source of truth
-│   │   ├── cv-simin-shoeibi-fullstack-web-developer.md
-│   │   ├── linkedin-profile.md
-│   │   └── resources/
-│   │       ├── cv-simin-shoeibi-fullstack-web-developer.pdf
-│   │       └── linkedin Profile.pdf
-│   └── interview-preps/                            # Pre-existing technical knowledge base
-│       ├── ai-engineer/
-│       ├── web-backend/
-│       ├── web-front-end/
-│       └── web-fullstck/
-└── Simin Shojaee Professional Background/          # Root symlink for path convenience
+└── resources/
+    ├── AI analysis/                                # Agent state & logs
+    │   ├── INITIAL_PROMPT.md
+    │   ├── PROJECT_STATE.md
+    │   └── CHANGELOG.md
+    ├── Simin Shojaee Professional Background/      # Candidate profile & source of truth
+    │   ├── cv-simin-shoeibi-fullstack-web-developer.md
+    │   ├── linkedin-profile.md
+    │   └── resources/
+    │       ├── cv-simin-shoeibi-fullstack-web-developer.pdf
+    │       └── linkedin Profile.pdf
+    └── interview-preps/                            # Pre-existing technical knowledge base
+        ├── ai-engineer/
+        ├── web-backend/
+        ├── web-front-end/
+        └── web-fullstck/
 ```
+*(Note: `resources/interview/` is reserved for upcoming tailored interview preparation outputs upon user request.)*
 
 ---
 
 ## 4. Current State & Last Completed Task
 - **Status:** Setup phase complete; waiting for next prompt.
 - **Last Completed Task:** 
-  - Located, organized, and moved background PDF files into `Simin Shojaee Professional Background/resources/`.
-  - Extracted full, exact contents of both PDFs into high-fidelity structured Markdown documents (`cv-simin-shoeibi-fullstack-web-developer.md` and `linkedin-profile.md`).
-  - Created and initialized `resources/interview/`.
-  - Created and populated `resources/AI analysis/` (`INITIAL_PROMPT.md`, `PROJECT_STATE.md`, and `CHANGELOG.md`).
-
+  - Removed all previously created folder symlinks (`Simin Shojaee Professional Background`, `resources/ai-analysis`, `resources/simin-shoeibi-professional-background`) from the repository and Git history index.
+  - Recorded the strict **No Folder Shortcuts / No Symlinks** rule in `PROJECT_STATE.md` and `CHANGELOG.md`.
+  - Committed and pushed changes to `origin/main`.
