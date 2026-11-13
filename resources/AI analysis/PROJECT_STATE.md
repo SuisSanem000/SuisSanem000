@@ -20,6 +20,8 @@ This repository manages Simin Shoeibi's (Shojaee) professional profile, technica
    - Contains source CV and LinkedIn documentation.
    - Original PDFs reside in `Simin Shojaee Professional Background/resources/`.
    - Structured markdown extractions serve as the single source of truth for all role tailoring.
+4. **Automatic Commit & Push Rule:**
+   - Whenever any task or file modification is executed in this repository, immediately stage all changes, create a clear atomic commit, and push (`git push origin main`) so local and remote repositories remain continuously in sync.
 
 ---
 
@@ -56,3 +58,4 @@ SuisSanem000/
   - Extracted full, exact contents of both PDFs into high-fidelity structured Markdown documents (`cv-simin-shoeibi-fullstack-web-developer.md` and `linkedin-profile.md`).
   - Created and initialized `resources/interview/`.
   - Created and populated `resources/AI analysis/` (`INITIAL_PROMPT.md`, `PROJECT_STATE.md`, and `CHANGELOG.md`).
+

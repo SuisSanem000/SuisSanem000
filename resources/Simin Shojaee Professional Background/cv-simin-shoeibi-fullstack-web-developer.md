@@ -119,3 +119,4 @@ Earlier (2016–2019), I designed and optimized database systems using MySQL, Po
 
 - **English:** Full professional proficiency
 - **Persian:** Native
+

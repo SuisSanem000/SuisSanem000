@@ -112,3 +112,4 @@ Beyond coding, I am an experienced technical writer who has authored internal do
   *Master of Engineering - MEng, Computer Software Engineering* | January 2018 – December 2020
 - **Shahid Chamran University of Ahvaz (Jundi Shapur)**  
   *Bachelor's Degree, Computer Software Engineering* | January 2012 – December 2016
+

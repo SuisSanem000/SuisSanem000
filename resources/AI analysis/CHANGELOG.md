@@ -4,6 +4,13 @@ All updates, actions, and structural changes performed in this repository are re
 
 ---
 
+## [2026-11-13] — Workflow Policy: Automatic Commit and Push Rule Added
+
+### Added
+- **Auto-Sync Policy:** Formalized Rule 4 in `PROJECT_STATE.md`: all future changes, tasks, or file modifications must be immediately committed and pushed to `origin/main`.
+
+---
+
 ## [2026-11-13] — Workspace Organization & AI State Initialization
 
 ### Added
@@ -23,3 +30,4 @@ All updates, actions, and structural changes performed in this repository are re
 ### Completed
 - Background file organization and full markdown parsing complete.
 - AI state tracking initialized. Ready for upcoming interview preparation instructions.
+
