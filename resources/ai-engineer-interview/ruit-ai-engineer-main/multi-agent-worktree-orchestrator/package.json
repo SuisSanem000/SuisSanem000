@@ -1,0 +1,30 @@
+{
+  "name": "multi-agent-worktree-orchestrator",
+  "version": "1.0.0",
+  "description": "Production-grade prototype orchestrating 16 concurrent AI agents using Git worktrees, TypeScript, and OpenRouter with token-bucket rate limiting and sequential gated merges.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/orchestrator.ts",
+    "dev:mock": "tsx src/orchestrator.ts --mock",
+    "dev:cli": "tsx src/orchestrator.ts --mode=cli --mock",
+    "clean": "tsx src/orchestrator.ts --clean"
+  },
+  "keywords": [
+    "ai-agents",
+    "git-worktree",
+    "orchestrator",
+    "openrouter",
+    "claude-code",
+    "concurrency",
+    "typescript"
+  ],
+  "author": "Simin Shoeibi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
+
